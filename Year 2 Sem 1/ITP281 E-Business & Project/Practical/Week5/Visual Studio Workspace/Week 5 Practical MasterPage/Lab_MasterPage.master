@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Lab_MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+     <link rel="stylesheet" href="css/style.css">
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style1">
+            <tr>
+                <td colspan="2">
+                    <h1>Orchid Online Books</h1>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <h2>Categories</h2>
+                    <ul>
+                        <li><a href="Webpage1.aspx">Home</a></li>
+                        <li><a href="Webpage2.aspx">Products</a></li>
+                        <li><a href="Webpage3.aspx">Solutions</a></li>
+                        <li><a href="Webpage4.aspx">Contact Us</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                     </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" >
+                    <div id="three-container"></div>
+
+                    <div id="instructions">
+	                    click and drag to control the animation
+                    </div>
+                      <script src='http://cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js'></script>
+                    <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+                    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js'></script>
+                    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/OrbitControls-2.js'></script>
+
+  
+
+                        <script  src="js/index.js"></script>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
