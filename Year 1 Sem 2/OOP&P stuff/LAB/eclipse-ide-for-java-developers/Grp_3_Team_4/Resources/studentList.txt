@@ -1,0 +1,10 @@
+123456A;ABC;John Williams;No;123456A@mail.com;;
+789010B;DEF;Jackie Tan;No;789010B@mail.com;;
+111213C;GHI;Harvey Davidson;Yes;111213C@mail.com;;
+141516D;JKL;Loh Tian Wen;No;141446D@mail.com;;
+172737L;T0026507h;Tan Wei Jun, Terris;Yes;172737L@mymail.nyp.edu.sg;;
+174566W;Ground008th;Lee Bohui;Yes;174566W@mymail.nyp.edu.sg;;
+173122Y;lambo;Chua Yi Run Stace;Yes;173122Y@mymail.nyp.edu.sg;;
+170592Y;Hellokitty;Ng Shi Xuan;Yes;170592Y@mymail.nyp.edu.sg;;
+173508W;dog;Soh Bing Cheng;Yes;173508W@mymail.nyp.sg;;
+1;1;Sample;No;Sample@Sample.Sample;;
