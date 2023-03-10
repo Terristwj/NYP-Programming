@@ -1,0 +1,12 @@
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 04 - Implement 3 Tier App Part 1\IT2605Prac05_ACME\IT2605Prac05_ACME\bin\IT2605Prac05_ACME.dll.config
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 04 - Implement 3 Tier App Part 1\IT2605Prac05_ACME\IT2605Prac05_ACME\bin\IT2605Prac05_ACME.dll
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 04 - Implement 3 Tier App Part 1\IT2605Prac05_ACME\IT2605Prac05_ACME\bin\IT2605Prac05_ACME.pdb
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 04 - Implement 3 Tier App Part 1\IT2605Prac05_ACME\IT2605Prac05_ACME\obj\Debug\IT2605Prac05_ACME.csprojResolveAssemblyReference.cache
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 04 - Implement 3 Tier App Part 1\IT2605Prac05_ACME\IT2605Prac05_ACME\obj\Debug\IT2605Prac05_ACME.dll
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 04 - Implement 3 Tier App Part 1\IT2605Prac05_ACME\IT2605Prac05_ACME\obj\Debug\IT2605Prac05_ACME.pdb
+C:\Users\Terris Tan\Desktop\IT2605Prac05_ACME\IT2605Prac05_ACME\bin\IT2605Prac05_ACME.dll.config
+C:\Users\Terris Tan\Desktop\IT2605Prac05_ACME\IT2605Prac05_ACME\bin\IT2605Prac05_ACME.dll
+C:\Users\Terris Tan\Desktop\IT2605Prac05_ACME\IT2605Prac05_ACME\bin\IT2605Prac05_ACME.pdb
+C:\Users\Terris Tan\Desktop\IT2605Prac05_ACME\IT2605Prac05_ACME\obj\Debug\IT2605Prac05_ACME.csprojResolveAssemblyReference.cache
+C:\Users\Terris Tan\Desktop\IT2605Prac05_ACME\IT2605Prac05_ACME\obj\Debug\IT2605Prac05_ACME.dll
+C:\Users\Terris Tan\Desktop\IT2605Prac05_ACME\IT2605Prac05_ACME\obj\Debug\IT2605Prac05_ACME.pdb

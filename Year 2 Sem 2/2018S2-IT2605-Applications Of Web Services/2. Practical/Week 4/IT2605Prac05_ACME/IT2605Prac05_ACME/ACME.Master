@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ACME.master.cs" Inherits="IT2605Prac05_ACME.ACME" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="Stylesheet" type="text/css" href="Css/StyleSheet.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <div id="header">
+        <h1>
+          Acme Bookshop</h1>
+      </div>
+      <div id="content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+      </div>
+      <div id="footer">
+        Nanyang Polytechnic | School of IT | Diploma of Business Informatics | IT2605<br />
+        Copyright &copy; Nanyang Polytechnic. All rights reserved.
+      </div>    
+    </form>
+</body>
+</html>
