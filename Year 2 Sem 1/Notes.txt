@@ -1,0 +1,16 @@
+For E-biz, the project was runned on Visual Studio 2015. It is the most completed project.
+
+About:
+Website for selling Baby products, and creating online consultations with doctors.
+
+Unique Feature:
+Group Chat
+1-to-1 Chat
+Donation page
+
+Langauge:
+HTML,CSS,Javascript, C#
+
+Important:
+Project is VS->Websites. NOT project.
+Have unethical programming, like exposed SQL statements.
