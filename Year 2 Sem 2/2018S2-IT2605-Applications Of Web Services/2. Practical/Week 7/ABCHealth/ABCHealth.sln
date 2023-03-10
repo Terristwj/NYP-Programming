@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABCHealth", "ABCHealth\ABCHealth.csproj", "{76C9B7C7-1800-4101-AF24-9CB13C30262B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicLayer", "BusinessLogicLayer\BusinessLogicLayer.csproj", "{16F7501A-59D7-4A47-AFE2-E58DFB835AAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{F297D260-4620-4EFA-ACE3-B23561FFB9A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76C9B7C7-1800-4101-AF24-9CB13C30262B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76C9B7C7-1800-4101-AF24-9CB13C30262B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76C9B7C7-1800-4101-AF24-9CB13C30262B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76C9B7C7-1800-4101-AF24-9CB13C30262B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16F7501A-59D7-4A47-AFE2-E58DFB835AAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16F7501A-59D7-4A47-AFE2-E58DFB835AAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16F7501A-59D7-4A47-AFE2-E58DFB835AAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16F7501A-59D7-4A47-AFE2-E58DFB835AAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F297D260-4620-4EFA-ACE3-B23561FFB9A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F297D260-4620-4EFA-ACE3-B23561FFB9A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F297D260-4620-4EFA-ACE3-B23561FFB9A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F297D260-4620-4EFA-ACE3-B23561FFB9A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

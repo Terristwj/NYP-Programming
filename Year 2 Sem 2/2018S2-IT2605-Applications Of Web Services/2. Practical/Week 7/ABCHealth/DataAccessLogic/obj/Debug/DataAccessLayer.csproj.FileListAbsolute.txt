@@ -1,0 +1,6 @@
+D:\Workspace\IT2506\ABCHealth\DataAccessLogic\bin\Debug\DataAccessLogic.dll.config
+D:\Workspace\IT2506\ABCHealth\DataAccessLogic\bin\Debug\DataAccessLogic.dll
+D:\Workspace\IT2506\ABCHealth\DataAccessLogic\bin\Debug\DataAccessLogic.pdb
+D:\Workspace\IT2506\ABCHealth\DataAccessLogic\obj\Debug\DataAccessLogic.dll
+D:\Workspace\IT2506\ABCHealth\DataAccessLogic\obj\Debug\DataAccessLogic.pdb
+D:\Workspace\IT2506\ABCHealth\DataAccessLogic\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
