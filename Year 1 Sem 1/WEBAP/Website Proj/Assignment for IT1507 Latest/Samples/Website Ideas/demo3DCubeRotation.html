@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.wrapperDesert{
+  position: absolute;
+  perspective: 800px;
+  perspective-origin: 50% 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.cubeDesert{
+  position: relative;
+  width: 200px;
+  transform-style: preserve-3d;
+  transition: all 0.5s cubic-bezier(.57,-0.42,.46,1.4);
+  cursor: pointer;
+}
+
+.cubeDesert div{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+
+.frontDesert{
+  background-color: #6cd4ff;
+  transform: translateZ(100px);
+}
+
+.backDesert{
+  background-color: #8b80f9;
+  transform: rotateY(180deg) translateZ(100px);
+}
+.leftDesert{
+  background-color: #83858c;
+  transform: rotateY(-90deg) translateX(-100px);
+  transform-origin: left center;
+}
+
+.rightDesert{
+  background-color: #bdc4a7;
+  transform: rotateY(90deg) translateX(100px);
+  transform-origin: right center;
+}
+</style>
+</head>
+<body>
+<div class="wrapperDesert">
+  <div class="cubeDesert">
+    <div class="frontDesert" onclick="turn(-90)">
+		
+	</div>
+    <div class="backDesert"  onclick="turn(-270)">
+		
+	</div>
+    <div class="leftDesert"  onclick="turn(-0)">
+		
+	</div>
+    <div class="rightDesert"  onclick="turn(-180)">
+		
+	</div>
+  </div>
+</div>
+<script>
+	function turn(x)
+	{
+		document.getElementsByClassName("cubeDesert")[0].style.transform="rotateY("+x+"deg)";
+	}
+</script>
+</body>
+</html>

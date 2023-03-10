@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.tabLink {
+    background-color: #e6e6e6;
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tabContent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+#DesertDefault{
+	background-color: #f2f2f2;
+	padding: 50px;
+    text-align: center;
+	}
+
+#VanillaCone {background-color:#0073e6;}
+#OreoMcFlurry {background-color:#595959;}
+#HotFudgeSundae {background-color:#009933;}
+#ApplePie {background-color:#e67300;}
+.chosenDesert{color:white;}
+
+/*<!--Flipping Cube-->*/
+.wrapperDesert{
+  position: absolute;
+  perspective: 800px;
+  perspective-origin: 50% 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.cubeDesert{
+  position: relative;
+  width: 200px;
+  transform-style: preserve-3d;
+  transition: all 0.5s cubic-bezier(.57,-0.42,.46,1.4);
+  cursor: pointer;
+}
+
+.cubeDesert div{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+
+.frontDesert{
+  background-color: #6cd4ff;
+  transform: translateZ(100px);
+}
+
+.backDesert{
+  background-color: #8b80f9;
+  transform: rotateY(180deg) translateZ(100px);
+}
+.leftDesert{
+  background-color: #83858c;
+  transform: rotateY(-90deg) translateX(-100px);
+  transform-origin: left center;
+}
+
+.rightDesert{
+  background-color: #bdc4a7;
+  transform: rotateY(90deg) translateX(100px);
+  transform-origin: right center;
+}
+
+</style>
+</head>
+<body>
+
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div id="DesertDefault">
+  <h2>Welcome</h2>
+  <p>Click on one of the 4 options below.</p>
+  <p>Watch the cube spin!</p>
+</div>
+
+<div id="VanillaCone" class="tabContent">
+  <h2>Classical Cream</h2>
+  <p>A treat made with sweet, creamy vanilla soft serve in a crispy cone.</p>
+  <p>The Vanilla Cone is a silky world to taste. 
+  Sometimes, a Cone is enough to make your day.</p>
+</div>
+
+<div id="OreoMcFlurry" class="tabContent">
+  <h2>Best Enjoyed With Cookies</h2>
+  <p>Soft vanilla served with Oreo Cookies, mixed perfectly into it.</p> 
+  <p>The Oreo McFlurry is easily a fan favorite 
+  amongst kids with its delicious Oreo blend.</p>
+</div>
+
+<div id="HotFudgeSundae" class="tabContent">
+  <h2>Cool And Creamy Meets Warm Fudge</h2>
+  <p>Vanilla soft serve, smothered in chocolaty fudge sauce.</p>
+  <p>The Hot Fudge Sundae is irresistible 
+  and a great choice for chocolate lovers.</p>
+</div>
+
+<div id="ApplePie" class="tabContent">
+  <h2>Golden Baked Goodness</h2>
+  <p>Delicious apples, lightly spiced with cinnamon, baked in a flaky pastry.</p>
+  <p>The Apple Pie has been melting hearts 
+  and warming souls for a real long time.</p>
+</div>
+
+<button class="tabLink" onmouseover="desertOver(0)" onmouseout="desertOut(0)" onclick="displayVanillaCone(), turn(0)">Vanilla Cone</button>
+<button class="tabLink" onmouseover="desertOver(1)" onmouseout="desertOut(1)" onclick="displayOreoMcFlurry(), turn(-90)">Oreo McFlurry</button>
+<button class="tabLink" onmouseover="desertOver(2)" onmouseout="desertOut(2)" onclick="displayHotFudgeSundae(), turn(-180)">Hot Fudge Sundae</button>
+<button class="tabLink" onmouseover="desertOver(3)" onmouseout="desertOut(3)" onclick="displayApplePie(), turn(-270)">Apple Pie</button>
+
+<div class="wrapperDesert">
+  <div class="cubeDesert">
+    <div class="frontDesert" onclick="turn(-90)">
+		
+	</div>
+    <div class="backDesert"  onclick="turn(-270)">
+		
+	</div>
+    <div class="leftDesert"  onclick="turn(-0)">
+		
+	</div>
+    <div class="rightDesert"  onclick="turn(-180)">
+		
+	</div>
+  </div>
+</div>
+
+<script>
+
+var VC=0;
+var OMF=0;
+var HFS=0;
+var AP=0;
+function desertOver(num)
+{
+	if (VC==1&&num==0){}
+	else if (OMF==1&&num==1){}
+	else if (HFS==1&&num==2){}
+	else if (AP==1&&num==3){}
+	else
+		document.getElementsByClassName("tabLink")[num].style.backgroundColor="#cccccc"
+}
+
+function desertOut(num)
+{
+	if (VC==1&&num==0){}
+	else if (OMF==1&&num==1){}
+	else if (HFS==1&&num==2){}
+	else if (AP==1&&num==3){}
+	else
+	document.getElementsByClassName("tabLink")[num].style.backgroundColor="#e6e6e6"
+}
+
+function displayVanillaCone()
+{
+	if (VC!=1)
+	{
+		document.getElementById("DesertDefault").style.display="none";
+		var x = document.getElementsByClassName("tabContent");
+		for (var i = 0; i < x.length; i++)
+		{
+			x[i].style.display = "none";
+		}
+		
+		var y = document.getElementsByClassName("tabLink");
+		for (var i = 0; i < y.length; i++)
+		{
+			y[i].style.backgroundColor = "#e6e6e6";
+			y[i].classList.remove("chosenDesert");
+		}
+		
+		y[0].classList.add("chosenDesert");
+		document.getElementById("VanillaCone").style.display = "block";
+		y[0].style.backgroundColor = "#0073e6";
+		VC = 1;
+		OMF = 0;
+		HFS = 0;
+		AP = 0;
+	}
+	else
+	{
+		document.getElementById("DesertDefault").style.display="block";
+		document.getElementById("VanillaCone").style.display = "none";
+		document.getElementsByClassName("tabLink")[0].style.backgroundColor = "#cccccc";
+		document.getElementsByClassName("tabLink")[0].classList.remove("chosenDesert");
+		VC = 0;
+		OMF = 0;
+		HFS = 0;
+		AP = 0;
+	}
+}
+
+function displayOreoMcFlurry()
+{
+	if (OMF!=1)
+	{
+		document.getElementById("DesertDefault").style.display="none";
+		var x = document.getElementsByClassName("tabContent");
+		for (var i = 0; i < x.length; i++)
+		{
+			x[i].style.display = "none";
+		}
+		
+		var y = document.getElementsByClassName("tabLink");
+		for (var i = 0; i < y.length; i++)
+		{
+			y[i].style.backgroundColor = "#e6e6e6";
+			y[i].classList.remove("chosenDesert");
+		}
+		
+		y[1].classList.add("chosenDesert");
+		document.getElementById("OreoMcFlurry").style.display = "block";
+		y[1].style.backgroundColor = "#595959";
+		VC = 0;
+		OMF = 1;
+		HFS = 0;
+		AP = 0;
+	}
+	else
+	{
+		document.getElementById("DesertDefault").style.display="block";
+		document.getElementById("OreoMcFlurry").style.display = "none";
+		document.getElementsByClassName("tabLink")[1].style.backgroundColor = "#cccccc";
+		document.getElementsByClassName("tabLink")[1].classList.remove("chosenDesert");
+		VC = 0;
+		OMF = 0;
+		HFS = 0;
+		AP = 0;
+	}
+}
+
+function displayHotFudgeSundae()
+{
+	if (HFS!=1)
+	{
+		document.getElementById("DesertDefault").style.display="none";
+		var x = document.getElementsByClassName("tabContent");
+		for (var i = 0; i < x.length; i++)
+		{
+			x[i].style.display = "none";
+		}
+		
+		var y = document.getElementsByClassName("tabLink");
+		for (var i = 0; i < y.length; i++)
+		{
+			y[i].style.backgroundColor = "#e6e6e6";
+			y[i].classList.remove("chosenDesert");
+		}
+		
+		y[2].classList.add("chosenDesert");
+		document.getElementById("HotFudgeSundae").style.display = "block";
+		y[2].style.backgroundColor = "#009933";
+		VC = 0;
+		OMF = 0;
+		HFS = 1;
+		AP = 0;
+	}
+	else
+	{
+		document.getElementById("DesertDefault").style.display="block";
+		document.getElementById("HotFudgeSundae").style.display = "none";
+		document.getElementsByClassName("tabLink")[2].style.backgroundColor = "#cccccc";
+		document.getElementsByClassName("tabLink")[2].classList.remove("chosenDesert");
+		VC = 0;
+		OMF = 0;
+		HFS = 0;
+		AP = 0;
+	}
+}
+
+function displayApplePie()
+{
+	if (AP!=1)
+	{
+		document.getElementById("DesertDefault").style.display="none";
+		var x = document.getElementsByClassName("tabContent");
+		for (var i = 0; i < x.length; i++)
+		{
+			x[i].style.display = "none";
+		}
+		
+		var y = document.getElementsByClassName("tabLink");
+		for (var i = 0; i < y.length; i++)
+		{
+			y[i].style.backgroundColor = "#e6e6e6";
+			y[i].classList.remove("chosenDesert");
+		}
+		
+		y[3].classList.add("chosenDesert");
+		document.getElementById("ApplePie").style.display = "block";
+		y[3].style.backgroundColor = "#e67300";
+		VC = 0;
+		OMF = 0;
+		HFS = 0;
+		AP = 1;
+	}
+	else
+	{
+		document.getElementById("DesertDefault").style.display="block";
+		document.getElementById("ApplePie").style.display = "none";
+		document.getElementsByClassName("tabLink")[3].style.backgroundColor = "#cccccc";
+		document.getElementsByClassName("tabLink")[3].classList.remove("chosenDesert");
+		VC = 0;
+		OMF = 0;
+		HFS = 0;
+		AP = 0;
+	}
+}
+
+function turn(x)
+	{
+		document.getElementsByClassName("cubeDesert")[0].style.transform="rotateY("+x+"deg)";
+	}
+</script>
+     
+</body>
+</html> 

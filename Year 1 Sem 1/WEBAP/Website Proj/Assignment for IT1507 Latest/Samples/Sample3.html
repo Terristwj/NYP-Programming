@@ -1,0 +1,76 @@
+<html>
+<head>
+	<style>
+	.sub-menu-parent { position: relative; 
+		border:1px red solid;
+	}
+
+	.sub-menu { 
+	  opacity: 0;
+	  position: absolute;
+	  top: 100%;
+	  left: 0;
+	  width: 100%;
+	  transform: translateY(-2em);
+	  z-index: -1;
+	  transition: all 0.3s ease-in-out 0s, visibility 3s linear 0.3s, z-index 0s linear 0.01s;
+	}
+
+	.sub-menu-parent:hover .sub-menu {
+	  opacity: 1;
+	  z-index: 1;
+	  transform: translateY(0%);
+	  transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+	}
+
+	/* presentational */
+	body { padding: 2%; font: 18px/1.4 sans-serif; }
+
+	nav a { color: #E00; display: block; padding: 0.5em 1em; text-decoration: none; }
+	nav a:hover { color: #F55; }
+	nav ul,
+	nav ul li { list-style-type: none; padding: 0; margin: 0; }
+
+	nav > ul { background: #EEE; text-align: center; }
+	nav > ul > li { display: inline-block; border-left: solid 1px #aaa; }
+	nav > ul > li:first-child { border-left: none; }
+
+	.sub-menu {
+	  background: #DDD;
+	}
+	</style>
+</head>
+<body>
+	<nav>
+   <ul>
+     <li class="sub-menu-parent">
+       <a href="#">Menu Item 1</a>
+       <ul class="sub-menu">
+         <li><a href="#">Sub Item 1</a></li>
+         <li><a href="#">Sub Item 2</a></li>
+         <li><a href="#">Sub Item 3</a></li>
+         <li><a href="#">Sub Item 4</a></li>
+       </ul>
+     </li>
+     <li class="sub-menu-parent"><a href="#">Menu Item 2</a>
+       <ul class="sub-menu">
+         <li><a href="#">Sub Item 1</a></li>
+         <li><a href="#">Sub Item 2</a></li>
+         <li><a href="#">Sub Item 3</a></li>
+         <li><a href="#">Sub Item 4</a></li>
+         <li><a href="#">Sub Item 5</a></li>
+         <li><a href="#">Sub Item 6</a></li>
+       </ul>
+     </li>
+     <li class="sub-menu-parent"><a href="#">Menu Item 3</a>
+       <ul class="sub-menu">
+         <li><a href="#">Sub Item 1</a></li>
+         <li><a href="#">Sub Item 2</a></li>
+       </ul></li>
+   </ul>
+ </nav>
+	<script>
+
+	</script>
+</body>
+</html>

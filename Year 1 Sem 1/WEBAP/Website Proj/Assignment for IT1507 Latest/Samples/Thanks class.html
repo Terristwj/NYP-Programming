@@ -1,0 +1,68 @@
+<html>
+<head>
+	<style>
+	
+	#TheDesertBook{
+		position:relative;
+		margin:50px auto;
+		position:relative;
+		width: 200px;
+		height: 250px;
+		perspective: 1000px;
+	}
+	
+	.bookPages{
+		color:#666;
+		position:absolute;
+		width: 200px; 
+		height: 250px;
+		text-align: center;
+		box-shadow: 2px 2px 1px #8c8c8c;
+	}	
+	
+	#BookFrontPage{
+		background: #d0f1f2;
+		transform-origin: left center;
+		transition: all 2s, background-color 2s;
+		z-index:1;
+	}
+	
+	#BookFirstPage{
+		background: #ebf9fa;
+		z-index;2;
+	}
+
+	</style>
+</head>
+<body>
+<div id="TheDesertBook">
+	<div id="BookFrontPage" class="bookPages" onmouseover="openBook()" onmouseout="closeBook()">
+		<p>&nbsp;</p>
+		<h3>Do you know</h3>
+		<h3>how to be healthy</h3>
+		<h3>in McDonalds?</h3>
+	</div>
+  <div id="BookFirstPage" class="bookPages" onmouseover="openBook()" onmouseout="closeBook()">
+		<p>&nbsp;</p>
+		<p>Order only the Vanilla Cone</p>
+		<h3>Or</h3>
+		<p>Don't order at all!</p>
+  </div>  
+</div>
+<script>
+	function openBook()
+	{
+		var x =document.getElementById("BookFrontPage");
+		x.style.transform="rotateY(-90deg)";
+		x.style.background="#666";
+	}
+	
+	function closeBook()
+	{
+		var x =document.getElementById("BookFrontPage");
+		x.style.transform="rotateY(0deg)";
+		x.style.backgroundColor="#d0f1f2";
+	}
+</script>
+</body>
+</html>

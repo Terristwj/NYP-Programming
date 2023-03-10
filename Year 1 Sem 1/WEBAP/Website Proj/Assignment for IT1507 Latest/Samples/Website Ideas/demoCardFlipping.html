@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.saladCard {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    -webkit-perspective: 700;
+    
+    float: left;
+    margin: 10px;
+}
+.saladCard:hover .saladFront{
+    -webkit-transform: rotateY(-180deg);  
+}
+.saladCard:hover .saladBack {
+    -webkit-transform: rotateY(0deg);  
+}
+.saladCardard:hover .saladFace {
+    -webkit-transition: all 0.3s ease-out;
+}
+.saladFace {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    -webkit-transition: all 0.8s ease-out;
+}
+.saladFront {
+    -webkit-transform: rotateY(0deg);
+	background: #d9d9d9;
+}
+.saladBack {
+    background: #9dcc78;
+    -webkit-transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+<div class='saladCard'>
+    <div class='saladFront saladFace'>
+        <p>This is front</p>
+    </div>
+    <div class="saladBack saladFace">
+        <p>This is back</p>
+    </div>
+</div>
+</body>
+</html>

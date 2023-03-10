@@ -1,0 +1,38 @@
+<html>
+<head>
+<style type="text/css">
+#f1 input {
+	font-family:Verdana;
+	font-size:36px;
+	border:none;
+}
+</style>
+<script type="text/javascript">
+
+var words="Hello, please look at me :) nothing.";
+var pos=0;
+function writeChar() {
+   if (pos<words.length)
+   {
+	txt=words.substring(pos,0);
+	document.getElementById("f1").txtField.value=txt;
+	pos++;
+	timer=setTimeout("writeChar()",500);
+   }
+   else {
+	clearTimeout(timer);
+   }
+
+}
+
+</script>
+</head>
+<body>
+<form id="f1">
+<input type="text" name="txtField" size="200" value=""/>
+</form>
+<script type="text/javascript">
+writeChar();
+</script>
+</body>
+</html>
