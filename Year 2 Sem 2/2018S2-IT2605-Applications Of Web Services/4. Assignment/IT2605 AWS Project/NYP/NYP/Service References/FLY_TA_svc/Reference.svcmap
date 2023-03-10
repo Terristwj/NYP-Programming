@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b1ddfb30-206f-468e-b9af-e66afcd62f08" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1102/WsFLY-TA.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WsFLY-TA.xsd" MetadataType="Schema" ID="a449314d-3a62-4fb9-8bb1-f8b1ead06ef9" SourceId="1" SourceUrl="http://localhost:1102/WsFLY-TA.svc?xsd=xsd0" />
+    <MetadataFile FileName="WsFLY-TA1.xsd" MetadataType="Schema" ID="fe89845d-4f40-479a-b0e9-e8cc16a95f55" SourceId="1" SourceUrl="http://localhost:1102/WsFLY-TA.svc?xsd=xsd2" />
+    <MetadataFile FileName="WsFLY_TA.wsdl" MetadataType="Wsdl" ID="3d56a611-9ff8-4eed-894c-c9b56073d662" SourceId="1" SourceUrl="http://localhost:1102/WsFLY-TA.svc?wsdl" />
+    <MetadataFile FileName="WsFLY-TA.disco" MetadataType="Disco" ID="bec27439-5e1f-4bdb-9ffa-c950988ff282" SourceId="1" SourceUrl="http://localhost:1102/WsFLY-TA.svc?disco" />
+    <MetadataFile FileName="WsFLY-TA2.xsd" MetadataType="Schema" ID="ab45c1a4-b68d-47f5-a6c9-8e07133e1cf6" SourceId="1" SourceUrl="http://localhost:1102/WsFLY-TA.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
