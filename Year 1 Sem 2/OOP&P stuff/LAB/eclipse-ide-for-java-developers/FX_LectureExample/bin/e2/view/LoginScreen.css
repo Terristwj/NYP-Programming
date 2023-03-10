@@ -1,0 +1,22 @@
+.button {
+	-fx-background-color:brown;
+	-fx-text-fill:white;
+	-fx-border-radius:5px;
+}
+
+.button:hover {
+	-fx-background-color:white;
+	-fx-text-fill:brown;
+	-fx-border-radius:5px;
+}
+
+.pane {
+	-fx-background-image:url(/resources/images/bk.jpg);
+	-fx-background-repeat:no-repeat;
+	-fx-background-size:400px 200px;
+}
+
+.label {
+	-fx-font-family:Verdana;	
+	-fx-text-fill:brown;
+}
