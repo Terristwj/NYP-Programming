@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>The CSS box</title>
+	<style>
+		#outer{
+			background-color:#ffe2ff;
+			border: 5px solid yellow;
+			padding: 20px 60px 100px 20px;
+			}
+		
+		#inner{
+			background-color:orange;
+			border: 3px solid yellow;
+			margin:20px;
+			padding: 30px 0px 120px 30px;
+		}
+		
+		#theMargin{
+			border: 3px dotted green;
+			margin: 20px 20px 20px 15px;
+		}
+		
+		#thePadding{
+			border: 3px dotted black;
+			padding:10px;
+			margin:300px;
+		}
+	</style>
+</head>
+<body>
+	<div id="outer">
+		<p>Outer box</p>
+		<div id="inner">
+			<p>Inner box<p>
+			<p><span id="theMargin">I want to be further away from you</span>
+			<span id="thePadding">I need space</span></p>
+		</div>
+	</div>
+</body>
+</html>

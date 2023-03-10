@@ -1,0 +1,86 @@
+<html>
+<head>
+	<title>Form Processor</title>
+	<style>
+		fieldset{
+			border:solid black 1px;
+			padding: 10px;
+		}
+		
+		.fieldset2{
+			padding-bottom:50px;
+		}
+	
+		body{
+			font-family:Verdana, Geneva, sans-serif;
+			font-size:12px;
+		}
+		
+		form{
+			background-color:#FFF773;
+			border-radius:18px;
+			padding:20px;
+			width:600px;
+			margin:auto;
+		}
+		
+		legend{
+			font-size:10px;
+		}
+		
+		h1{
+			text-align:center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Survey Form</h1>
+	<form method="get" action="FormProcessor.html">
+		<fieldset>
+		<legend>Please fill in your personal details</legend>
+			
+			<label for="tbName">Name</label>
+			<input id="tbName" type="name" name="theName" placeholder="Enter your name" size="35" autofocus required><br>
+			
+			<label for="tbEmail">Email</label>
+			<input id="tbEmail" type="email" name="theEmail" placeholder="someone@example.com" size="35" required><br>
+			
+			<label for="rbGender">Select your gender</label>
+			<input id="rbGender" type="radio" name="theGender" value="male" required>Male
+			<input id="rbGender" type="radio" name="theGender" value="female" required>Female<br>
+			
+			<label for="nAge">Select your age</label>
+			<input id="nAge" type="number" name="theAge" min="5" max="90" placeholder=""><br>
+			
+			<label for="tbUrl">Your favourite website</label>
+			<input id="tbUrl" type="url" name="theUrl" placeholder="https://example.com.sg" size ="35">
+			
+		</fieldset>
+		
+		<fieldset class="fieldset2">
+		
+			<label for="ddlSource">How did you first learn of our web site?</label>
+			<select id="ddlSource" name ="theSource">
+				<option value="search engine">Search Engine</option>
+				<option value="people">Word of mouth</option>
+				<option value="email or newletter">Email or Newsletter</option>
+				<option value="advertisement">Advertisement</option>
+				<option value="other">Other</option>
+			</select><br><br>
+			
+			<label for="cbEmail">How do you like us to contact you?</label><br>
+			<input id="cbEmail" type="checkbox" name="contactEmail">Email
+			<input id="cbFb" type="checkbox" name="contactFb">Facebook
+			<input id="cbPhone" type="checkbox" name="contactPhone">Phone call<br><br>
+			
+			<label for="taSuggestions">Any suggestions to improve our website?</label><br>
+			<textarea id="taSuggestions" name="theSuggestions" rows="10" cols="30"></textarea>
+		
+		</fieldset>
+		
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset" style="margin-left:20px;">
+	</form>
+</body>
+</html>
+

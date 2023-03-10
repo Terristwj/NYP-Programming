@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<button onclick="myFunction()">Try it</button>
+
+<div> abc1
+</div>
+<div> abc2
+</div><div> abc3
+</div><div> abc4
+</div><div> abc5
+</div><div> abc6
+</div><div> abc7
+</div><div> abc8
+</div><div> abc9
+</div>
+
+<script>
+function myFunction() {
+	var x = document.getElementsByTagName("div");
+	for (var i = 0; i<x.length; i++){
+	x[i].innerHTML="";}
+}
+</script>
+</body>
+</html>
+
+
+<!--
+
+document.getElementById("link1").href="http://www.google.com";
+
+document.body.style.fontSize="2em";
+
+document.getElementsByTagName("div").innerHTML="";
+-->

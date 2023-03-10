@@ -1,0 +1,45 @@
+<html>
+<head>
+	<style>
+	fieldset{
+		background-color:#FFFCCC;
+		border-radius:20px;
+		width:400px;
+	}
+	</style>
+</head>
+<body>
+	<form>
+		<h1>Order Form</h1>
+		<fieldset>
+			<legend>Personal Details</legend>
+			<br>
+			<label for="nameInput">Name</label>
+			<input type="text" id="nameInput" placeholder="enter full name" required>
+			<br><br>
+			<label for="emailInput">Email:</label>
+			<input type="email" id="emailInput" placeholder="name@domain.com" required>
+			<br><br>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Order Details</legend>
+			<br>
+			<label>Select Product:&nbsp;</label>
+			<label for="productA">Printer</label>
+			<input type="radio" id="productA" name="products" value="printer">
+			<label for="productB">Fax</label>
+			<input type="radio" id="productB" name="products" value="fax">
+			<label for="productC">Copier</label>
+			<input type="radio" id="productC" name="products" value="copier">
+			<br><br>
+			<label for="quantity">Quantity (min 1, max 5):</label>
+			<input type="number" id="quantity" min="1" max="5" required>
+			<br><br>
+		</fieldset>
+		<br>
+		<input type="submit" value="Submit">
+		<input type="reset" value="Clear">
+	</form>
+</body>
+</html>

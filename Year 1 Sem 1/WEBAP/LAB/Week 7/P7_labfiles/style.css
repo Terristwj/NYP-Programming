@@ -1,0 +1,60 @@
+#header {
+	width : 900px;
+	color : white;
+	margin : 0 auto 0 auto;
+	padding : 10px;
+	background-color : #5452FF;
+	border-radius : 20px;
+	}
+	
+#nav {
+	width : 900px;
+	margin : 0 auto 0 auto;
+	height : 30px;
+	padding : 10px;
+	}
+	
+#container {
+	width : 900px;
+	height : 450px;
+	margin : 0 auto 0 auto;
+	padding : 10px;
+	}
+	
+#section {
+	width : 600px;
+	height : 440px;
+	float : left ;  
+	}
+
+#aside {
+	width : 250px;
+	height : 410px;
+	float : right;
+	padding : 20px;
+	}
+	
+#footer {
+	width: 900px;
+	clear : both;
+	color : grey;
+	text-align : center;
+	margin : 0 auto 0 auto;
+	}
+	
+ul	{
+	margin-left : 0px;
+	padding-left : 10px;
+	}
+
+li 	{
+	float : left;
+	margin : 0;
+	padding-right : 5px;
+	list-style : none;
+	}
+	
+img {
+	margin-top : 20px;
+	box-shadow : 10px 10px 5px #888888;
+	}

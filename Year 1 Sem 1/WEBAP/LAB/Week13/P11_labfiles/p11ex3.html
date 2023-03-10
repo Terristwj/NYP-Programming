@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript - using function</title>
+	<script type="text/javascript">
+		var count=0;
+		function countClick(){
+			count=count+1;
+			alert("You clicked me "+count+" times!");
+		}
+		function red(x){
+			x.style.color="red";
+		}
+		function normal(x){
+			x.style.color="black";
+		}
+	</script>
+</head>
+<body>
+	<input id="button" onmouseover="red(this)" onmouseout="normal(this)" onclick="countClick()" type="button" value="me"></input>
+</body>
+</html>

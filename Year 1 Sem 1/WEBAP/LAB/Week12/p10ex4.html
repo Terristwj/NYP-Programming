@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Calculate total price</title>
+</head>
+<body>
+	<script>
+		var name=prompt("Please enter item:");
+		var price=prompt("Please enter the price of item:");
+		var gSTPrice=parseFloat(price) / 100 * 7;
+		var totalPrice=parseInt(price)+gSTPrice; 
+		document.write("The price of the " + name + " is $" + totalPrice.toFixed(2) + ".");
+	</script>
+</body>
+</html>

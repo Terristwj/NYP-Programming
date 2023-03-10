@@ -1,0 +1,82 @@
+<html>
+<head>
+	<title>Form Processor</title>
+	<style>
+		fieldset{
+			border:solid black 1px;
+			padding: 10px;
+		}
+		
+		.fieldset2{
+			padding-bottom:50px;
+		}
+	
+		body{
+			font-family:Verdana, Geneva, sans-serif;
+			font-size:12px;
+		}
+		
+		form{
+			background-color:#FFF773;
+			border-radius;18px;
+			padding:20px;
+			width:600px;
+			margin:auto;
+		}
+		
+		h1{
+			text-align:center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Survey Form</h1>
+	<form method="get" action="FormProcessor.html">
+		<fieldset>
+		<legend>Please fill in your personal details</legend>
+			
+			Name
+			<input id="tbName" type="name" name="theName" placeholder="Enter your name" size="35" autofocus required><br>
+			
+			Email
+			<input id="tbEmail" type="email" name="theEmail" placeholder="someone@example.com" size="35" required><br>
+			
+			Select your gender
+			<input id="rbGender" type="radio" name="theGender" value="male" required>Male
+			<input id="rbGender" type="radio" name="theGender" value="female" required>Female<br>
+			
+			Select your age
+			<input id="nAge" type="number" name="theAge" min="5" max="90" placeholder=""><br>
+			
+			Your favourite website
+			<input id="tbUrl" type="textbox" name="theUrl" placeholder="https://example.com.sg" size ="35">
+			
+		</fieldset>
+		
+		<fieldset class="fieldset2">
+		
+			How did you first learn of our web site?
+			<select id="ddlSource" name ="theSource">
+				<option value="search engine">Search Engine</option>
+				<option value="people">Word of mouth</option>
+				<option value="email or newletter">Email or Newsletter</option>
+				<option value="advertisement">Advertisement</option>
+				<option value="other">Other</option>
+			</select><br><br>
+			
+			How do you like us to contact you?<br>
+			<input id="cbEmail" type="checkbox" name="contactEmail">Email
+			<input id="cbFb" type="checkbox" name="contactFb">Facebook
+			<input id="cbPhone" type="checkbox" name="contactPhone">Phone call<br><br>
+			
+			Any suggestions to improve our website?<br>
+			<textarea rows="10" cols="30"></textarea>
+		
+		</fieldset>
+		
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset" style="margin-left:20px;">
+	</form>
+</body>
+</html>
+

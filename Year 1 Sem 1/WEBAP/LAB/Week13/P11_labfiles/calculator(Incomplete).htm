@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Simple Calculator</title>
+	<style>
+	table,td {
+		border-collapse:collapse;
+	}
+	td { padding:2px; }
+	</style>
+	<script type="text/javascript">
+
+	var input=""; // the input to be calculated
+
+	function updateString(value) {
+		input=input+value;
+		document.getElementById("inputString").value=input;
+	}
+	function calculate() {
+		var result=eval(input);
+		document.getElementById("inputString").value=result;
+		input= result;
+		input= "";
+	}
+	function resetString() {
+		input="";
+		document.getElementById("inputString").value="";
+	}
+
+	</script>
+</head>
+<body>
+	<h1>Simple Calculator</h1>
+
+	<input type="text" size="16" id="inputString" readonly />
+	<table border="1">
+		<tr>
+		   <td><input type="button" value="7" onclick="updateString(7)" /></td>
+		   <td><input type="button" value="8" onclick="updateString(8)" /></td>
+		   <td><input type="button" value="9" onclick="updateString(9)" ></td>
+		   <td><input type="button" value="+" onclick="updateString('+')" /></td>
+		</tr>
+		<tr>
+		   <td><input type="button" value="4" onclick="updateString(4)" /></td>
+		   <td><input type="button" value="5" onclick="updateString(5)" /></td>
+		   <td><input type="button" value="6" onclick="updateString(6)" /></td>
+		   <td><input type="button" value="-" onclick="updateString('-')" /></td>
+		</tr>
+		<tr>
+		   <td><input type="button" value="3" onclick="updateString(3)" /></td>
+		   <td><input type="button" value="2" onclick="updateString(2)" /></td>
+		   <td><input type="button" value="1" onclick="updateString(1)" /></td>
+		   <td><input type="button" value="*" onclick="updateString('*')" /></td>
+		</tr>
+		<tr>
+		   <td><input type="button" value="0" onclick="updateString(0)" /></td>
+		   <td><input type="button" value="." onclick="updateString('.')" /></td>
+		   <td><input type="button" value="C" onclick="resetString()" /></td>
+		   <td><input type="button" value="=" onclick="calculate()" /></td>
+		</tr>
+	</table>
+
+</body>
+</html>

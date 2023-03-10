@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title></title>
+</head>
+<body>
+	<input type="input" id="numbers" placeholder="Key in numbers except 0"/>
+	<button onclick="getAnswers()">Submit</button>
+	<script>
+	
+		function getAnswers() 
+		{
+			var value = document.getElementById("numbers").value;
+			var length = value.length;
+			document.write("Original input is " + value);
+			document.write("<br>");
+			document.write("Length of numbers is: " + length);
+			document.write("<br>");
+			var array = [];
+			if (length != 0 )
+			{
+				for (var i = 0; i<=length-1; i++)
+				{
+					array.push(value.charAt(i));
+				}
+				document.write("The stored array of values are: " + array);
+			}
+			else 
+				document.write("The stored array of values are: none");
+			document.write("<br>");
+			document.write("<br>");
+			
+			
+			
+			
+			
+			document.write("Odd numbers are ");
+			if (length > 0 )
+			{
+				var sentence = "";
+				for (var i = 0; i<=length-1; i++)
+				{
+					if (array[i]%2 != 0)
+						sentence +=  array[i] + " and "
+				}
+				sentence = sentence.substring(0,sentence.length-5) + ".";
+				document.write(sentence);
+			}
+			else
+				document.write("none.");
+
+				
+				
+				
+				
+			
+			document.write("<br>");
+			document.write("<br>");
+			document.write("Multiples of 3 are ");
+			if (length > 0)
+			{
+				var sentence = "";
+				for (var i = 0; i<=length-1; i++)
+				{
+					if (array[i]%3 ==0)
+						sentence +=  array[i] + " and "
+				}
+				sentence = sentence.substring(0,sentence.length-5) + ".";
+				document.write(sentence);
+			}
+			else 
+				document.write("none.");
+			
+			
+			
+			
+			document.write("<br>");
+			document.write("<br>");
+			if (length > 0)
+			{
+				var max = Math.max(...array);
+				document.write("Biggest number is " + max + ".");
+				
+				document.write("<br>");
+				var hexa = max.toString(16);
+				document.write("Biggest number in hexadecimal form is " + hexa + ".");
+				
+				hexa = parseInt(value).toString(16);
+				document.write("<br>");
+				document.write("Entire string in hexadecimal form is " + hexa + ".");
+			}
+			else
+			{
+				document.write("Biggest number is none.");
+				document.write("<br>");
+				document.write("Biggest number in hexadecimal form is none.");
+				document.write("<br>");
+				document.write("Entire string in hexadecimal form is none.");
+			}
+			
+			
+			
+			
+			
+			document.write("<br>");
+			document.write("<br>");
+			document.write("Prime numbers are ");
+			if (length > 0)
+			{
+				var sentence = "";
+				for(var i = 0; i<=length-1; i++)
+				{
+					var num = array[i];
+					if (array[i] == 2 || array[i] == 3 || array[i] == 5 || array[i] == 7)
+						sentence +=  array[i] + " and "
+				}
+				sentence = sentence.substring(0,sentence.length-5) + ".";
+				document.write(sentence);
+			}
+			else
+				document.write("none.");
+			
+			
+			
+			
+			
+			document.write("<br>");
+			document.write("<br>");
+			if (length > 0)
+			{
+				array.sort(function(a, b){return a-b});
+				var middle = length/2;
+				var integer = Number.isInteger(middle);
+				document.write("The stored array of values in ascending order are: " + array + ".");
+				document.write("<br>");
+				document.write("Median number is ");
+				if (integer == false)
+					document.write(array[middle-0.5]);
+				else if (integer == true)
+				{
+					middleNum = parseInt(array[middle-1]) + parseInt(array[middle]);
+					middleNum /= 2 ;
+					document.write(middleNum + ".");
+				}
+			}
+			else
+				document.write("Median number is none.");
+		}
+		
+	
+	
+	</script>
+</body>
+</html>

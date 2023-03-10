@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript String</title>
+	<script>
+		var mySchool="Nanyang Polytechnic School of IT";
+		var schoolSize = mySchool.length;
+		var letter = mySchool.charAt(8);
+		var nYP = mySchool.substring(0,19);
+		var informationTechnology = mySchool.substring(schoolSize-2,schoolSize);	//Or .substr(schoolSize-2,2);
+	</script>
+</head>
+<body>
+	<script>
+		document.write("My school is "+ mySchool +"<br/>");
+		document.write("Variable mySchool is of size "+ schoolSize +"<br/>");
+		document.write("Letter "+ letter +" is the 9th character<br/>");
+		document.write("NYP stands for " + nYP +"<br/>");
+		document.write( informationTechnology + " stands for Information Technology<br/>");
+	</script>
+</body>
+</html>

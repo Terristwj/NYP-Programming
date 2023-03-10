@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Tony's Music Store</title>
+	<style>
+	ol {
+		list-style-type:upper-roman;
+		background-color:#FFA500;
+	}
+	ul {
+		list-style-type : square;
+		background-color : #FFEBCD;
+		width:210px
+	}
+	.Apple {
+		list-style-image: url('apple.gif');
+	}
+	caption {
+		font-size : 2em;
+		font-family : Verdana;
+		text-decoration : underline;
+		font-style : italic;
+	}
+	table {
+		background-color : #FFD39B;
+		border-color : #8B7355;
+		border-spacing: 2px;
+		border-style : color;
+		border-collapse : collapse;
+	}
+	.title {
+		color : brown;
+		background-color : #FFD39B;
+	}
+	.evenNum{
+		background-color : #FFFACD;
+	}
+	th, table, td {
+		padding : 10px;
+	}
+	</style>
+</head>
+<body>
+	<h1>Tony's Music Store</h1>
+	<ol>
+		<li>Apple</li>
+			<ul class=Apple>
+				<li>iPod Nano</li>
+				<li>iPod Shuffle</li>
+				<li>iPod Touch</li>
+			</ul>
+		<li>Sony</li>
+			<ul>
+				<li>W Series Walkman MP3 Player</li>
+				<li>S Series Walkman Video MP3</li>
+			</ul>
+		<li>Creative</li>
+	</ol>
+	<table border="1">
+		<caption>Sales Figures</caption>
+		<tr class=title>
+			<th rowspan=2></th>
+			<th colspan=3>Sales Amount</th>
+		</tr>
+		<tr class=title>
+			<th>Products</th>
+			<th>2010</th>
+			<th>2011</th>
+		</tr>
+		<tr class=evenNum>
+			<th class=title rowspan=3>Music Players</th>
+			<td>Ipod Nano</td>
+			<td>$200000</td>
+			<td>$450100</td>
+		</tr>
+		<tr>
+			<td>Ipod Shuffle</td>
+			<td>$168000</td>
+			<td>$650300</td>
+		</tr>
+		<tr class=evenNum>
+			<td>Ipod Touch</td>
+			<td>$389000</td>
+			<td>$900500</td>
+	</table>
+</body>
+</html>

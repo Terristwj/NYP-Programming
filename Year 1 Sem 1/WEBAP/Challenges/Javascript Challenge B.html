@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charSet="utf-8"/>
+<script>
+function addTraveller(){
+	var newRow=document.createElement("tr");
+	var cell,textNode;
+	var name = document.getElementById("nameInput").value;
+	var age = document.getElementById("ageInput").value;
+	
+	cell=document.createElement("td");
+	textNode=document.createTextNode(name);
+	cell.appendChild(textNode);
+	newRow.appendChild(cell);
+	
+	cell=document.createElement("td");
+	textNode=document.createTextNode(age);
+	cell.appendChild(textNode);
+	newRow.appendChild(cell);
+		
+	document.getElementById("travellerDetails").appendChild(newRow);
+}
+
+</script>
+</head>
+<body>
+	<p>
+		<label for="nameInput">Name:</label>
+		<input type="text" required id="nameInput" size="20"/>
+	</p>
+	<p>
+		<label for="ageInput">Age:</label>
+		<input type="number" required id="ageInput" min="5" max="70"/>
+	</p>
+	<p>
+		<input type="button" value="Add traveller" onclick="addTraveller()" />
+	</p>
+	<table id="travellerDetails" border="1" style="border-collapse: collapse">
+		<thead>
+			<th>Name</th>
+			<th>Age</th>
+		</thead>
+	</table>
+</body>
+</html>

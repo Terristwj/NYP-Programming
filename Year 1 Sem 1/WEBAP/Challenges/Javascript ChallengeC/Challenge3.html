@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- saved from url=(0110)https://learn.nyp.edu.sg/bbcswebdav/pid-2297484-dt-content-rid-9360415_1/courses/2017S1-IT1507/challenge3.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<script src="./challenge3_files/jquery.min.js.download"></script>
+<script>
+$(document).ready(function(){
+	var didIt = 0;
+	$("#q1Button").click(function() {
+		$(".q1").hide();
+	});
+	
+	$("#q2").hide();
+
+	$("#q2Button").click(function() {
+		$("#q2").fadeIn('slow');
+	});
+	
+	$("#q3Button").click(function() {
+		$("#q3").toggle();
+	});
+	
+	$("#q4Button").click(function() {
+		$("#q4Div").fadeOut('slow');
+	});
+
+	$("#q5Button").click(function() {
+		if (didIt === 0)
+		{
+			$("#q5Div").fadeOut(1000);
+			++didIt;
+		}
+		else
+		{
+			$("#q5Div").fadeIn(1000);
+			--didIt;
+		}
+	});
+	
+	$("#q6Button").click(function() {
+		$("tr:odd").css("background-color", "yellow");
+	});
+	
+	$("#q7Button").click(function() {
+		var x = $("#q7Input").val();
+		$("#q7Para").html(x);
+	});	
+});
+</script>
+</head>
+<body>
+
+	<div style="float: left; width: 45%">
+		<h3>Q1 (1 mark)</h3>
+		<p class="q1">Hide me!</p>
+		<p class="q1">Hide me too!</p>
+		<p class="q1">Hide me three!</p>
+		<button id="q1Button">Hide paragraphs with same class</button>
+		
+		
+		<h3>Q2 (1 mark)</h3>
+		<p id="q2" style="display: none;">Show me!</p>
+		<button id="q2Button">Show paragraph with id (speed "slow")</button>
+		
+		
+		<h3>Q3 (1 mark)</h3>
+		<p id="q3">Toggle me!</p>
+		<button id="q3Button">Toggle</button>
+		
+		
+		<h3>Q4 (1 mark)</h3>
+		<div id="q4Div" style="width:80px;height:80px;background-color:red;"></div>
+		<button id="q4Button">Fade out "slow"</button>
+		
+		
+		<h3>Q5 (1 mark)</h3>
+		<div id="q5Div" style="width:80px;height:80px;background-color:red;"></div>
+		<button id="q5Button">Fade in/out at speed of 1s (i.e. 1000ms)</button>
+	</div>
+	
+	
+	<div style="float: left; width: 45%">
+		<h3>Q6 (2 marks)</h3>
+		<table id="q6Table" border="1">
+			<tbody>
+				<tr>
+					<th>Company</th>
+					<th>Country</th>
+				</tr>
+				<tr>
+					<td>Ikea</td>
+					<td>Sweden</td>
+				</tr>
+				<tr>
+					<td>Nokia</td>
+					<td>Finland</td>
+				</tr>
+				<tr>
+					<td>Apple</td>
+					<td>USA</td>
+				</tr>
+				<tr>
+					<td>Alibaba</td>
+					<td>China</td>
+				</tr>
+				<tr>
+					<td>Tata</td>
+					<td>India</td>
+				</tr>
+			</tbody>
+		</table>
+		<button id="q6Button">Give yellow background to all odd rows</button>
+		
+		
+		<h3>Q7 (3 marks)</h3>
+		<input type="text" id="q7Input">	
+		<div>Text in input box should be copied down here:
+			<p id="q7Para"></p>
+		</div>
+		<button id="q7Button">Copies text in input box #q7Input to paragraph #q7Para</button>
+	</div>
+
+</body>
+</html>
