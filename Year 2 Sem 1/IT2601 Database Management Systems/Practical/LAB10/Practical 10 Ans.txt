@@ -1,0 +1,107 @@
+Practical 10
+-----------
+Group:  3
+Name:   Terris
+Admin No: 172737L
+
+(Aggregate Functions)
+Q1.
+(i)	select *
+	from customer;
+
+(ii)	select count(*)
+	from customer;
+
+Q2.
+(i)	select c.*
+	from customer c
+	inner join state s
+	on c.state_code=s.state_code
+	where s.state_name = 'California';
+
+(ii)	select count(*)
+	from customer c
+	inner join state s
+	on c.state_code=s.state_code
+	where s.state_name = 'California';
+	
+Q3.
+(i)	select o.order_num, o.ship_charge
+	from orders o
+	inner join customer c
+	on o.customer_num=c.customer_num
+	where c.fname|| ' ' ||c.lname = 'Anthony Higgins';
+
+(ii)	select count(*)|| ', $' ||sum(ship_charge)
+	from orders o
+	inner join customer c
+	on o.customer_num=c.customer_num
+	where c.fname|| ' ' ||c.lname = 'Anthony Higgins';
+
+Q4.
+(i)	select unit_price
+	from product;
+
+(ii)	select '$'||max(unit_price)
+	from product;
+
+Q5.
+(i)	select p.prod_num, p.unit_price
+	from product p
+	inner join product_desc pd
+	on p.prod_num=pd.prod_num
+	where pd.prod_desc = 'running shoes';
+
+(ii)	select count(*)|| ', $' ||max(p.unit_price)|| ', $' ||round(min(p.unit_price),2)|| ', $' ||round(avg(p.unit_price),2)
+	from product p
+	inner join product_desc pd
+	on p.prod_num=pd.prod_num
+	where pd.prod_desc = 'running shoes';
+
+(Aggregate Functions, GROUP BY & HAVING clause)
+Q6.
+(i)	select c.customer_num, count(*)
+	from customer c
+	inner join orders o
+	on c.customer_num=o.customer_num
+	group by c.customer_num;
+
+(ii)	select c.customer_num, count(*), c.fname|| ' ' ||c.lname
+	from customer c
+	inner join orders o
+	on c.customer_num=o.customer_num
+	group by c.customer_num, c.fname|| ' ' ||c.lname;
+
+(iii)	select c.customer_num, count(*), c.fname|| ' ' ||c.lname
+	from customer c
+	inner join orders o
+	on c.customer_num=o.customer_num
+	group by c.customer_num, c.fname|| ' ' ||c.lname
+	having count(*)>1;
+
+Q7.
+(i)	select order_num, count(*)
+	from order_detail
+	group by order_num;
+
+(ii)	select order_num, count(*), sum(total_price)
+	from order_detail
+	group by order_num;
+
+(iii)	select order_num, count(*), sum(total_price)
+	from order_detail
+	group by order_num
+	having count(prod_num)>3;
+	
+(Subqueries) (Optional)
+Q8.	select p.prod_num|| ', ' ||p.suppl_code|| ', ' ||p.unit_price|| ', ' ||pd.prod_desc prod_detail
+	from product p
+	inner join product_desc pd
+	on p.prod_num=pd.prod_num
+	where unit_price = (select max(unit_price)
+                            from product);
+
+Q9.	
+
+
+Q10.

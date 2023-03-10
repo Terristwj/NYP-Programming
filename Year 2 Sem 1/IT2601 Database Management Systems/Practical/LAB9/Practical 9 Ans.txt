@@ -1,0 +1,121 @@
+Practical 9
+-----------
+Group:  3
+Name:   Terris
+Admin No: 172737L
+
+(Select ... From ... Order by ...)
+Q1.
+(i)	select *
+	from orders;
+
+	select order_num, order_date, customer_num, ship_instruct, backlog, po_num, ship_date, ship_weight, ship_charge, paid_date
+	from orders;
+
+(ii)	In ascending order of order_num
+
+(iii)	select *
+	from orders
+	order by customer_num;
+
+Q2.
+(i)	select fname, lname, address1, address2, city, state_code, zipcode
+	from customer;
+	
+(ii)	CA, NJ, OK, MA, DE, CO, NY, FL, AZ
+
+(iii)	select lname, fname fullname, address1, address2, city, state_code, zipcode
+	from customer
+	order by lname;
+
+(Computed/derived column, round() function)
+Q3.
+(i)	select order_num, ship_charge, ship_charge*1.1 new_ship_charge
+	from orders;
+
+(ii)	select order_num, ship_charge, round(ship_charge*1.1, 0) new_ship_charge
+	from orders;
+
+(Concatenation, substr() function)
+Q4.
+(i)	select fname ||''|| lname full_name
+	from customer;
+
+(ii)	select substr(zipcode,3,5)
+	from customer;
+
+(Where condition clause)
+Q5.
+(i)	select fname, lname, address1, address2, city, state_code, zipcode
+	from customer
+	where state_code='AZ';
+
+(ii)	select *
+	from orders
+	where paid_date is null;
+
+(iii)	select *
+	from product
+	where suppl_code='HRO';
+
+(iv)	select prod_num, prod_desc
+	from product_desc
+	where prod_desc like 'tennis%';
+
+(v)	select suppl_code, suppl_name
+	from supplier
+	where substr(suppl_name,1,1)='H';
+
+(Multiple Tables Queries (Inner join... On))
+Q6.
+	select c.customer_num, c.fname, c.lname, o.order_num, o.order_date
+	from customer c
+	inner join orders o
+	on c.customer_num=o.customer_num;
+
+	1001, 1011, 1013, 1003
+
+Q7.	
+	select o.order_num, o.order_date, od.prod_num, od.quantity
+	from orders o
+	inner join order_detail od
+	on o.order_num=od.order_num;
+
+	309, 303, 6
+
+Q8.
+	select p.prod_num, pd.prod_desc, s.suppl_code, s.suppl_name
+	from product p
+	inner join product_desc pd
+	on  p.prod_num=pd.prod_num
+	inner join supplier s
+	on p.suppl_code=s.suppl_code;
+	
+	Hero, Husky
+
+Additional: 
+(Multiple Table Queries (Self-Join))
+Q9.
+	select c1.fname ||''|| c1.lname customer_name, c2.fname ||''|| c2.lname referral
+	from customer c1
+	join customer c2
+	on c1.referred_by=c2.customer_num
+	order by customer_name;
+
+	JasonWallack, MarvinHanlon
+
+(Multiple Table Queries (Left/Right Outer Join ... On))
+Q10.
+
+	select s.state_name, customer_num
+	from state s left outer join customer c
+	on s.state_code=c.state_code
+	where c.customer_num is not null;
+
+	Alaska, Alabama, Arkansas
+	
+
+
+
+
+

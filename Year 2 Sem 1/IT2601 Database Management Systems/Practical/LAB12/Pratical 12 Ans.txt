@@ -1,0 +1,40 @@
+Practical 12
+-----------
+Group:  3
+Name:   Terris
+Admin No: 172737L
+
+a)	Login
+
+b)	CREATE TABLE g172737l_Supplier(
+		SNo	Varchar2(5)	NOT NULL,
+		SName	Varchar2(15)	NULL,
+		Status	Varchar2(5)	NULL,
+		City	Varchar2(15) 	NULL,
+		PRIMARY KEY (SNo));
+
+	Desc g172737L_Supplier
+
+	INSERT INTO g172737L_Supplier
+	  VALUES ('S1', 'S1 in Paris', 'OK', 'Paris');
+		Commit;
+
+	INSERT INTO g172737L_Supplier
+	  VALUES ('S2', 'S2 in London', 'OK', 'London');
+	Commit;
+
+	SELECT * FROM g172737L_Supplier;
+
+c)	CREATE OR REPLACE VIEW g172737L_Paris_Suppliers
+	AS
+	SELECT	SNo, SName
+	FROM	g172737L_Supplier
+	WHERE	City = 'Paris';
+
+	SELECT * FROM g172737L_Paris_Suppliers;
+
+d)	GRANT SELECT on g172737L_Paris_Suppliers TO dbms_student;
+
+e)	SELECT * FROM dbms_dbi02.g172737L_Paris_Suppliers;
+
+f)	REVOKE SELECT on g172737L_Paris_Suppliers FROM dbms_student;
