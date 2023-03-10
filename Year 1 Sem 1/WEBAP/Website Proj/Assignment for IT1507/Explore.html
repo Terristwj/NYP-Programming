@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="Images/favicon.png" />
+	<title>Explore</title>
+	<link href="Images/MainFormat.css" rel="stylesheet" type="text/css"/>
+	<script src="Images/MainScript.js"></script>
+	<style>
+		.catergory{
+			display:inline;
+			background-color: #e7e7e7;
+			color: black;
+			border: none;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+
+		#burgerContent, #frenchContent, #chickenContent, #desertContent
+		{
+			display: none;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="top">
+		</div>
+		
+		<div id="container">
+			<div id="header">
+				<div class="banner">
+					<a href="MainWebPage.html">
+						<img src ="Images/logo.png" height="60" width="60">
+					</a>
+				</div>
+				
+				<div id="caption">
+					<h1 id="title">
+						<a href="MainWebPage.html" title="A Healthier McDonalds">A Healthier McDonalds</a>
+					</h1>
+					<div id="tagline">Your guide to a healthier experience in McDonalds!</div>
+				</div>
+			</div>
+			
+			<div id="navigation">
+					<ul id="menus" class="menu">
+						<li>
+							<a class="home" href="MainWebPage.html" title="Home">Home</a>
+						</li>
+						
+						<li>
+							<a class="homeButton item" href="MainWebPage.html">Home</a>
+						</li>
+						
+						<li>
+							<a class="about item" href="AboutMe.html">About Me</a>
+						</li>
+						
+						<li>	<!--class="explore"-->
+							<a class="currentPage item" href="Explore.html">Explore</a>
+						</li>
+						
+						<li>
+							<a class="support item" href="Support.html">Support</a>
+						</li>
+						
+						<li>
+							<a title="Click Me!">
+								<form class="clock2" name="clockForm">
+									<input id="clock" name="clockButton" onClick="showDate()" readonly />
+								</form>	
+							</a>
+						</li>
+					</ul>
+			</div>
+			<div id="content">
+				<h1 class="contentHeader">
+					<div>
+						<button id="burger" class="catergory" onmouseover="exploreOver(0)" onmouseout="exploreOut(0)" onclick="exploreClick(0)">Burgers</button>
+						<button id="french" class="catergory" onmouseover="exploreOver(1)" onmouseout="exploreOut(1)" onclick="exploreClick(1)">French Fries</button>
+						<button id="chicken" class="catergory" onmouseover="exploreOver(2)" onmouseout="exploreOut(2)" onclick="exploreClick(2)">Chicken</button>
+						<button id="desert" class="catergory" onmouseover="exploreOver(3)" onmouseout="exploreOut(3)" onclick="exploreClick(3)">Deserts</button>
+					</div>
+				</h1>
+				<div class="scroll">
+					<div class="scrollContainer">
+						<div id="defaultContent">
+							<button onclick="topFunction()" id="myBtn" title="Refresh to go top">Top</button>
+							<br>
+							<h1>Welcome to Explore!</h1>
+							
+						</div>
+						<div id="burgerContent" class="catergoryContent">
+							This is my DIV element1.
+						</div>
+						<div id="frenchContent" class="catergoryContent">
+							This is my DIV element2.
+						</div>
+						<div id="chickenContent" class="catergoryContent">
+							This is my DIV element3.
+						</div>
+						<div id="desertContent" class="catergoryContent">
+							This is my DIV element4.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="Images/favicon.png" />
+	<title>About Me</title>
+	<link href="Images/MainFormat.css" rel="stylesheet" type="text/css"/>
+	<script src="Images/MainScript.js"></script>
+	<style>
+		.healthyLogo{
+			display:block;
+			margin-left:34%;	<!--margin-left:auto; , still not in middle-->
+			margin-right:auto;
+		}
+		
+		.obeseLogo{
+			display:block;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		
+		.intro{
+			float:left;
+		}
+		
+		.NYP{
+			float:right;
+		}
+		
+		#BMI_Chart, #BMICalculator{
+			width:75%;
+			margin-top:10px;
+			margin-left:auto;
+			margin-right:auto;
+			border: 1px solid grey;
+			border-collapse:collapse;
+		}
+		
+		th{
+			background-color:#d0f1f2;
+		}
+		
+		td, th{
+			padding:20px;
+			border:1px solid #cfcfd1;
+		}
+		
+		sup{
+			font-size:80%;
+			position:relative;
+			bottom:0.6em;
+		}
+		
+		#BMI_Input{
+			padding-right:50px;
+		}
+		
+		.button{
+			padding: 5px 5px;
+			text-align: center;
+			background-color:#d0f1f2;
+			border-radius: -100px;
+		}
+		
+		.BMIHeader{
+			padding:8px;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="top">
+		</div>
+		
+		<div id="container">
+			<div id="header">
+				<div class="banner">
+					<a href="MainWebPage.html">
+						<img src ="Images/logo.png" height="60" width="60">
+					</a>
+				</div>
+				
+				<div id="caption">
+					<h1 id="title">
+						<a href="MainWebPage.html" title="A Healthier McDonalds">A Healthier McDonalds</a>
+					</h1>
+					<div id="tagline">Your guide to a healthier experience in McDonalds!</div>
+				</div>
+			</div>
+			
+			<div id="navigation">
+					<ul id="menus" class="menu">
+						<li>
+							<a class="home" href="MainWebPage.html" title="Home">Home</a>
+						</li>
+						
+						<li>   
+							<a class="homeButton item" href="MainWebPage.html">Home</a>
+						</li>
+						
+						<li>	<!--class="about"-->
+							<a class="currentPage item" href="AboutMe.html">About Me</a>
+						</li>
+						
+						<li>
+							<a class="explore item" href="Explore.html">Explore</a>
+						</li>
+						
+						<li>
+							<a class="support item" href="Support.html">Support</a>
+						</li>
+						
+						<li>
+							<a title="Click Me!">
+								<form class="clock2" name="clockForm">
+									<input id="clock" name="clockButton" onClick="showDate()" readonly />
+								</form>	
+							</a>
+						</li>
+					</ul>
+			</div>
+			<div id="content">
+				<h1 class="contentHeader">About Me</h1>
+				<div class="scroll">
+					<div class="scrollContainer">
+						<button onclick="topFunction()" id="myBtn" title="Refresh to go top">Top</button>
+						<br>
+						<div class="intro">
+							<p>Hi! My name is Terris, and I am a student of Nanyang Polytechnic from School of
+							   Information Technology.
+							</p>
+							<p>My website is aimed to help motivate and spread awareness of being healthy.
+							   Especially in McDonalds.</p>
+							</div>
+							<div class="NYP">
+							<a href=http://nyp.edu.sg/ target="_blank" title="To NYP"><img src="Images/NYPLogo.jpg" height="30px" width="140px"></a>
+							<a href=http://nyp.edu.sg/schools/sit.html target="_blank" title="To SIT At NYP"><img src="Images/NYP_SIT.jpg" height="30px" width="80px"></a>
+						</div>
+						<a><img class="healthyLogo" src="Images/HealthyLiving.png" height="260px" width="280px"></a>
+						<p>In today's society, not many are convinced to keep themselves healthy. Slowy, but steadily,
+						   more teenagers and working adults are being inclined to higher risk of potential health issues
+						   such as high blood pressure, diabetes, heart diseases, and even cancer.
+						   <br>
+						   All these medical problems leads from the same factor: Obesity.
+						</p>
+						<a><img class="obeseLogo" src="Images/ObesityExample.jpg" height="240px" width="500px"></a>
+						<br><br><br>
+						<p id="promptDown" onmouseenter="disappear()">You can scroll here!</p>
+						<br>
+						<p>Want to test yourself? Try my very own BMI calculator to get your weight!</p>
+						<p>Here is a chart for reference as well:</p>
+						<table id="BMI_Chart">
+							<tbody>
+								<tr>
+									<th><b>BMI in kg/m<sup>2</sup></b></th>
+									<th><b>Weight Category</b></th>
+								</tr>
+								<tr>
+									<td>Below 18.5</td>
+									<td>Underweight</td>
+								</tr>
+								<tr>
+									<td>18.5 to 24.9</td>
+									<td>Normal</td>
+								</tr>
+								<tr>
+									<td>25.0 to 29.9</td>
+									<td>Overweight</td>
+								</tr>
+								<tr>
+									<td>30.0 to 39.9</td>
+									<td>Obese</td>
+								</tr>
+								<tr>
+									<td>40.0 or higher</td>
+									<td>Severely obese</td>
+								</tr>
+							</tbody>
+						</table>
+						<br>
+						<p>BMI calculator:</p>
+						<form name="bmiForm">
+							<table id="BMICalculator">
+								<tbody>
+									<tr>
+										<th class="BMIHeader"><b>Input</b></th>
+										<th class="BMIHeader"><b>Output</b></th>
+									</tr>
+									<tr>
+										<td id="BMI_Input">
+											<label for="weightInput" required>Your Weight(kg): </label>
+											<input id="weightInput" type="text" name="weight" size="10"/>
+											<br>
+											<label for="heightInput" required>Your Height(cm): </label>
+											<input id="heightInput" type="text" name="height" size="10"/>
+											<br>
+											<input type="button" class="button" value="Calculate BMI" onClick="calculateBmi()" title="Click Me"/>
+											<br>
+										</td>
+										<td id="BMI_Output">
+											<label for="BMIDisplay">Your BMI: &nbsp</label>
+											<input id="BMIDisplay"type="text" name="bmi" size="10" readonly/>
+											<br>
+											<label for="meaning">This Means: </label>
+											<input for="meaning" type="text" name="meaning" size="25" readonly/>
+											<br>
+											<input type="reset" class="button" value="Reset" title="Again!" />
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</form>
+						<br>
+						<br>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
