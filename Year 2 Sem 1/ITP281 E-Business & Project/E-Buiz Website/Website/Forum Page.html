@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="Bootstrap 4.0.0/css/bootstrap-grid.min.css"/>
+	<script src="Bootstrap 4.0.0/jquery.min.js"></script>
+	<script src="Bootstrap 4.0.0/js/bootstrap.min.js"></script>
+	<script src="JQuery 3.3.1/jquery-3.3.1.js"></script>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="Images/favicon.png" />
+	<title>Mum's Story Forum</title>
+	<link href="Images/MainFormat.css" rel="stylesheet" type="text/css"/>
+	<script src="Images/MainScript.js"></script>
+	
+	<style>
+	
+		.tab-links:after {
+			display:block;
+			clear:both;
+			content:'';
+		}
+		
+		.tab-links li {
+			margin:0px 5px;
+			float:left;
+			list-style:none;
+		}
+		
+		.tab-links a {
+			padding:9px 15px;
+			display:inline-block;
+			border-radius:3px 3px 0px 0px;
+			background:#ffe6ee;
+			font-size:16px;
+			font-weight:600;
+			color:#4c4c4c;
+			transition:all linear 0.15s;
+			text-decoration:none;
+		}
+		
+		.tab-links2:after {
+			display:block;
+			clear:both;
+			content:'';
+		}
+		
+		.tab-links2 li {
+			margin:0px 5px;
+			float:left;
+			list-style:none;
+		}
+		
+		.tab-links2 a {
+			padding:9px 15px;
+			display:inline-block;
+			border-radius:3px 3px 0px 0px;
+			background:#7FB5DA;
+			font-size:16px;
+			font-weight:600;
+			color:#4c4c4c;
+			transition:all linear 0.15s;
+			text-decoration:none;
+			transition-duration:0.5s;
+		}
+		
+		.tab-links a:hover {
+			background:#d0f1f2;
+			text-decoration:none;
+			transition-duration:0.5s;
+		}
+		
+		li.active a, li.active a:hover {
+			background:#fff;
+			color:#4c4c4c;
+		}
+		
+		.tab-content {
+			border:1px black solid;
+			border-radius:3px;
+			box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+			background:#fff;
+			border-top:none;
+			width:100%;
+		}
+		
+		.tab {	
+			padding-left:15px;
+			padding-right:15px;
+			display:none;
+		}
+		
+		.tab.active {
+			display:block;
+		}
+		
+		.thread{
+			border:1px black solid;
+			padding-top:25px;
+			padding-bottom:25px;
+			border-left:none;
+			border-right:none;
+			
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="container">
+			<div id="header">
+			
+				<div id="ChipsSection">  <!--Just links to social media platforms, not actual profile-->
+					<div class="contactChip">
+						<a class="chipName" href="http://facebook.com/" target="_blank" onmouseover="overChip(0)" onmouseout="outChip(0)">
+							<img src="images/FacebookLogo.png" style="background-color:#3b5998;">
+							<button class="chipName" style="background-color:transparent;">
+								<p class="chipName2">Facebook</p>
+							</button>
+						</a>
+					</div>
+					<div class="contactChip">
+						<a class="chipName" href="https://twitter.com/" target="_blank" onmouseover="overChip(1)" onmouseout="outChip(1)">
+							<img src="images/TwitterLogo.png" style="background-color:#1da1f2;">
+							<button class="chipName" style="background-color:transparent;">
+								<p class="chipName2">Twitter</p>
+							</button>
+						</a>
+					</div>
+					<div class="contactChip">
+						<a class="chipName" href="https://instagram.com/" target="_blank" onmouseover="overChip(2)" onmouseout="outChip(2)">
+							<img src="images/InstagramLogo.jpg" style="background-color:white;">
+							<button class="chipName" style="background-color:transparent;">
+								<p class="chipName2">Instagram</p>
+							</button>
+						</a>
+					</div>
+				</div>
+				
+				<div class="sign-up">
+					<a href="Profile Page.html" style="text-decoration:none;" onmouseover="overLogin(0)" onmouseout="outLogin(0)">
+						<div class="sign-upContatiner">
+							<p class="username">Login</p>   <!--Auto size name-->
+						</div>
+					</a>
+				</div>
+				
+				<div id="caption">
+					<h1 id="title">
+						<a title="Mum's Story" href="Main Page.html">Mum's Story</a>
+						<a href="Main Page.html">
+							<img class="logo" src="Images/logo.png"/>
+						</a>
+					</h1>
+					<div id="tagline">
+						<p>A community you can trust!&nbsp;</p>
+					</div>
+				</div>
+			</div>
+			
+			<div id="navigation">
+				<div class="boxFiller">
+				</div>
+					<ul id="menus" class="menu">
+						<li>
+							<a class="home" href="Main Page.html" title="Home">Home</a>
+						</li>
+						
+						<li>
+							<a class="homePage item" href="Main Page.html">Home</a>
+						</li>
+						
+						<li>
+							<a class="onlineDoctor item" href="Online Doctor Page.html">Online Doctor</a>
+						</li>
+						
+						<li>
+							<a class="currentPage fourm" href="Forum Page.html">Forum</a>
+						</li>
+						
+						<li>
+							<a class="store item" href="Store Page.html">Store</a>
+						</li>
+						
+						<li>
+							<a class="profile item" href="Profile Page.html">Profile</a>
+						</li>
+						
+						<li>
+							<a class="donate item" href="Donate Page.html">Donate</a>
+						</li>
+						
+						<li>
+							<a class="contact item" href="Contact Page.html">Contact Us</a>
+						</li>
+						
+						<li>
+							<a style="width:0px">
+							</a>
+						</li>
+						<div id="clockSection">
+								<form name="clockForm" title="Date">
+										<input id="clock" name="clockButton" onClick="showDate()" readonly />
+								</form>
+						</div>
+					</ul>
+			</div>
+			<div id="content"> 
+				<div class="row" style="height:760px;">
+					
+					<div class="col-2 advertisement" style="border:1px black solid;">
+						<p style="text-align:center;">Advert.</p>
+					</div>
+					
+					
+					<div class="col-8">
+						<div class="scroll">
+							<div class="scrollContainer">
+							
+								<br><br><br><br>
+								
+								<div class="container">
+									<div class="tabs">
+									
+										<ul class="tab-links">
+										
+											<li class="active">
+												<a class="view" href="#tab1">Announcement</a>
+											</li>
+											
+											<li>
+												<a class="view" href="#tab2">New</a>
+											</li>
+											
+											<li>
+												<a class="view" href="#tab3">All</a>
+											</li>
+											
+											<li>
+												<a class="view" href="#tab4">Top</a>
+											</li>
+											
+											<div style="float:right;cursor:pointer;">
+												<li>
+													<a>Delete</a>
+												</li>
+												
+												<li>
+													<a>Create</a>
+												</li>
+											</div>
+										</ul>
+										
+										<div class="tab-content">
+										
+											<div id="tab1" class="tab active" style="padding-top:0;">
+												<div class="row">
+													<div class="thread announcement col-12" align="left">
+														<p>Announcment</p>
+													</div>
+													<div class="thread announcement col-12" align="left">
+														<p>Announcment</p>
+													</div>
+													<div class="thread announcement col-12" align="left">
+														<p>Announcment</p>
+													</div>
+													<div class="thread announcement col-12" align="left">
+														<p>Announcment</p>
+													</div>
+													<div class="thread announcement col-12" align="left">
+														<p>Announcment</p>
+													</div>
+													<div class="thread announcement col-12" align="left">
+														<p>Announcment</p>
+													</div>
+													<div class="thread announcement col-12" align="left">
+														<p>Announcment</p>
+													</div>
+													<div class="thread announcement col-12" align="left">
+														<p>Announcment</p>
+													</div>
+													<div class="thread announcement col-12" align="left">
+														<p>Announcment</p>
+													</div>
+													<div class="thread announcement col-12" align="left">
+														<p>Announcment</p>
+													</div>
+													<div class="thread announcement col-12" align="left">
+														<p>Announcment</p>
+													</div>
+													<div class="thread announcement col-12" align="left">
+														<p>Announcment</p>
+													</div>
+													<div class="thread announcement col-12" align="left">
+														<p>Announcment</p>
+													</div>
+													<div class="thread announcement col-12" align="left">
+														<p>Announcment</p>
+													</div>
+													<div class="thread announcement col-12" align="left">
+														<p>Announcment</p>
+													</div>
+												</div>
+											</div>
+											
+											<div id="tab2" class="tab">
+												<div class="row">
+													<div class="thread newThread col-12" align="left">
+														<p>New</p>
+													</div>
+													<div class="thread newThread col-12" align="left">
+														<p>New</p>
+													</div>
+													<div class="thread newThread col-12" align="left">
+														<p>New</p>
+													</div>
+													<div class="thread newThread col-12" align="left">
+														<p>New</p>
+													</div>
+													<div class="thread newThread col-12" align="left">
+														<p>New</p>
+													</div>
+													<div class="thread newThread col-12" align="left">
+														<p>New</p>
+													</div>
+													<div class="thread newThread col-12" align="left">
+														<p>New</p>
+													</div>
+													<div class="thread newThread col-12" align="left">
+														<p>New</p>
+													</div>
+													<div class="thread newThread col-12" align="left">
+														<p>New</p>
+													</div>
+													<div class="thread newThread col-12" align="left">
+														<p>New</p>
+													</div>
+													<div class="thread newThread col-12" align="left">
+														<p>New</p>
+													</div>
+													<div class="thread newThread col-12" align="left">
+														<p>New</p>
+													</div>
+													<div class="thread newThread col-12" align="left">
+														<p>New</p>
+													</div>
+													<div class="thread newThread col-12" align="left">
+														<p>New</p>
+													</div>
+													<div class="thread newThread col-12" align="left">
+														<p>New</p>
+													</div>
+												</div>
+											</div>
+											
+											<div id="tab3" class="tab">
+												<div class="row">
+													<div class="thread allThread col-12" align="left">
+														<p>Thread</p>
+													</div>
+													<div class="thread allThread col-12" align="left">
+														<p>Thread</p>
+													</div>
+													<div class="thread allThread col-12" align="left">
+														<p>Thread</p>
+													</div>
+													<div class="thread allThread col-12" align="left">
+														<p>Thread</p>
+													</div>
+													<div class="thread allThread col-12" align="left">
+														<p>Thread</p>
+													</div>
+													<div class="thread allThread col-12" align="left">
+														<p>Thread</p>
+													</div>
+													<div class="thread allThread col-12" align="left">
+														<p>Thread</p>
+													</div>
+													<div class="thread allThread col-12" align="left">
+														<p>Thread</p>
+													</div>
+													<div class="thread allThread col-12" align="left">
+														<p>Thread</p>
+													</div>
+													<div class="thread allThread col-12" align="left">
+														<p>Thread</p>
+													</div>
+													<div class="thread allThread col-12" align="left">
+														<p>Thread</p>
+													</div>
+													<div class="thread allThread col-12" align="left">
+														<p>Thread</p>
+													</div>
+													<div class="thread allThread col-12" align="left">
+														<p>Thread</p>
+													</div>
+													<div class="thread allThread col-12" align="left">
+														<p>Thread</p>
+													</div>
+													<div class="thread allThread col-12" align="left">
+														<p>Thread</p>
+													</div>
+												</div>
+											</div>
+											
+											<div id="tab4" class="tab">
+												<div class="row">
+													<div class="thread topThread col-12" align="left">
+														<p>Top</p>
+													</div>
+													<div class="thread topThread col-12" align="left">
+														<p>Top</p>
+													</div>
+													<div class="thread topThread col-12" align="left">
+														<p>Top</p>
+													</div>
+													<div class="thread topThread col-12" align="left">
+														<p>Top</p>
+													</div>
+													<div class="thread topThread col-12" align="left">
+														<p>Top</p>
+													</div>
+													<div class="thread topThread col-12" align="left">
+														<p>Top</p>
+													</div>
+													<div class="thread topThread col-12" align="left">
+														<p>Top</p>
+													</div>
+													<div class="thread topThread col-12" align="left">
+														<p>Top</p>
+													</div>
+													<div class="thread topThread col-12" align="left">
+														<p>Top</p>
+													</div>
+													<div class="thread topThread col-12" align="left">
+														<p>Top</p>
+													</div>
+													<div class="thread topThread col-12" align="left">
+														<p>Top</p>
+													</div>
+													<div class="thread topThread col-12" align="left">
+														<p>Top</p>
+													</div>
+													<div class="thread topThread col-12" align="left">
+														<p>Top</p>
+													</div>
+													<div class="thread topThread col-12" align="left">
+														<p>Top</p>
+													</div>
+													<div class="thread topThread col-12" align="left">
+														<p>Top</p>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-2 advertisement" style="border:1px black solid;">
+						<p style="text-align:center;">Advert.</p>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		jQuery(document).ready(
+			function() {
+				jQuery('.tabs .tab-links .view').on('click', function(e) {
+					var currentAttrValue = jQuery(this).attr('href');
+					// Show/Hide Tabs
+					jQuery('.tabs ' + currentAttrValue).fadeIn(700).siblings().hide();
+					// Change/remove current tab to active
+					jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+					e.preventDefault();
+					}
+				);
+			}
+		);
+	</script>
+</body>
+</html>

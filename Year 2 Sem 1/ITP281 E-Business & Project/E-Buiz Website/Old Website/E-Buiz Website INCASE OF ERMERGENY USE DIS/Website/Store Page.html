@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="Images/favicon.png" />
+	<title>Mum's Story Store</title>
+	<link href="Images/MainFormat.css" rel="stylesheet" type="text/css"/>
+	<script src="Images/MainScript.js"></script>
+	<style>
+		.catergory{								/*<!-- Done in:								    -->*/
+			display:inline;						/*<!-- 1920 x 1080 Resolution					-->*/
+			background-color: #e7e7e7;			/*<!-- Size of Text, Apps and other items: 100% -->*/
+			color: black;
+			border: none;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+
+		.nutrients{
+			font-size: 0.95em;
+		}
+		
+		#productsContent, #foodContent, #medicineContent, #sponsorProductsContent, #cartContent
+		{
+			display: none;
+		}
+		
+		.special{
+			height:632.2px;
+		}
+		
+		th{
+			background-color:#d0f1f2;
+		}
+		
+		.welcomePage{
+			height:145px;
+		}
+		
+		td, th{
+			padding:25px;
+			border:1px solid #cfcfd1;
+			text-align:center;
+		}
+		
+		td {
+			font-size:17px;
+		}
+		
+		#welcome{
+			width:75%;
+			margin-top:10px;
+			margin-left:auto;
+			margin-right:auto;
+			border: 1px solid grey;
+			border-collapse:collapse;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="top">
+		</div>
+		
+		<div id="container">
+			<div id="header">
+				<div class="sign-up">
+					<a href="Profile Page.html">
+						<div class="sign-upContatiner">
+							<h3>Sign up</h3>
+						</div>
+					</a>
+				</div>
+				
+				<div id="caption">
+					<h1 id="title">
+						<a title="Mum's Story" href="Main Page.html">Mum's Story</a>
+						<a href="Main Page.html">
+							<img class="logo" src="Images/logo.png"/>
+						</a>
+					</h1>
+					<div id="tagline">
+						<p>A community you can trust!&nbsp;</p>
+					</div>
+				</div>
+			</div>
+			
+			<div id="navigation">
+					<ul id="menus" class="menu">
+						<li>
+							<a class="home" href="Main Page.html" title="Home">Home</a>
+						</li>
+						
+						<li>   <!--class="homeButton"-->
+							<a class="homepage item" href="Main Page.html">Home</a>
+						</li>
+						
+						<li>
+							<a class="onlineDoctor item" href="Online Doctor Page.html">Online Doctor</a>
+						</li>
+						
+						<li>
+							<a class="forum item" href="Main Page.html">Forum</a>
+						</li>
+						
+						<li>
+							<a class="currentPage item" href="Store Page.html">Store</a>
+						</li>
+						
+						<li>
+							<a class="profile item" href="Profile Page.html">Profile</a>
+						</li>
+						
+						<li>
+							<a class="donate item" href="Donate Page.html">Donate</a>
+						</li>
+						
+						<li>
+							<a class="contact item" href="Contact Page.html">Contact Us</a>
+						</li>
+						
+						<li>
+							<a title="Click Me!">
+								<form class="clock2" name="clockForm">
+									<input id="clock" name="clockButton" onClick="showDate()" readonly />
+								</form>	
+							</a>
+						</li>
+					</ul>
+			</div>
+			<div id="content">
+				<h1 class="contentHeader">
+					<div>
+						<button id="mainPage" class="catergory" onmouseover="exploreOver(0)" onmouseout="exploreOut(0)" onclick="exploreClick(0)" autofocus>Main Page</button>
+						<button id="products" class="catergory" onmouseover="exploreOver(1)" onmouseout="exploreOut(1)" onclick="exploreClick(1)">Baby Products</button>
+						<button id="food" class="catergory" onmouseover="exploreOver(2)" onmouseout="exploreOut(2)" onclick="exploreClick(2)">Baby Food</button>
+						<button id="medicine" class="catergory" onmouseover="exploreOver(3)" onmouseout="exploreOut(3)" onclick="exploreClick(3)">Medicine</button>
+						<button id="sponsor" class="catergory" onmouseover="exploreOver(4)" onmouseout="exploreOut(4)" onclick="exploreClick(4)" style="width:185px;text-align:left;padding-left:30px;padding-right:0;">Sponsor Products</button>	
+						<button id="cart" class="catergory" onmouseover="exploreOver(5)" onmouseout="exploreOut(5)" onclick="exploreClick(5)">Cart</button>
+					</div>
+				</h1>
+				<div class="scroll special">
+					<div class="scrollContainer">
+						<div id="defaultContent" class="catergoryContent">
+							<br>
+							<table id="welcome">
+								<tbody>
+									<tr>
+										<th><h2>Welcome to the Store!</h2></th>
+									</tr>
+									<tr>
+										<td class="welcomePage">We offer a variety of baby products here.
+										<br>The products ranges from food to medication to necessities.
+										</td>
+									</tr>
+									<tr>
+										<th><h2>How to use this page?</h2></th>
+									</tr>
+									<tr>
+										<td class="welcomePage">Click on the other catergories to behin shopping!</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div id="productsContent" class="catergoryContent">
+							<br>
+							<h1 class="contentHeader">Baby Products</h1>
+							<br>
+							<div style="border:1px red solid;width:230px;height:250px;margin-left:55px;float:left;">
+								<h2 style="text-align:center;margin-top:100px;">Item</h2>
+							</div>
+							<div style="border:1px red solid;width:230px;height:250px;margin-left:55px;float:left;">
+								<h2 style="text-align:center;margin-top:100px;">Item</h2>
+							</div>
+							<div style="border:1px red solid;width:230px;height:250px;margin-left:55px;float:left;">
+								<h2 style="text-align:center;margin-top:100px;">Item</h2>
+							</div>
+							
+							
+							<div style="border:1px red solid;width:230px;height:250px;margin-left:55px;margin-top:40px;float:left;">
+								<h2 style="text-align:center;margin-top:100px;">Item</h2>
+							</div>
+							<div style="border:1px red solid;width:230px;height:250px;margin-left:55px;margin-top:40px;float:left;">
+								<h2 style="text-align:center;margin-top:100px;">Item</h2>
+							</div>
+							<div style="border:1px red solid;width:230px;height:250px;margin-left:55px;margin-top:40px;float:left;">
+								<h2 style="text-align:center;margin-top:100px;">Item</h2>
+							</div>
+							<br>
+						</div>
+						
+						<div id="foodContent" class="catergoryContent">
+							<br>
+							<h1 class="contentHeader">Baby Food</h1>
+							<br>
+							<p>abcde</p>
+							<br><br><br>
+						</div>
+						<div id="medicineContent" class="catergoryContent">
+							<br>
+							<h1 class="contentHeader">Medicine</h1>
+							<br>
+							<p>abcdegh</p>
+							<br><br><br>
+						</div>
+						
+						<div id="sponsorProductsContent" class="catergoryContent">
+							<br>
+							<h1 class="contentHeader">Sponsor Products</h1>
+							<br>
+							<p>abcdegh</p>
+							<br><br><br>
+						</div>
+						
+						<div id="cartContent" class="catergoryContent">
+							<br>
+							<h1 class="contentHeader">Cart</h1>
+							<br>
+							<p>abcdegh</p>
+							<br><br><br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+	
+	//	Explore Button mouseover
+	function exploreOver(i)
+	{
+		var x = document.getElementsByClassName("catergory");
+		x[i].style.backgroundColor = "#555555";
+		x[i].style.color = "white";
+		x[i].style.transitionDuration = "0.25s";
+	}
+
+
+	//	Explore Button mouseout
+	function exploreOut(i)
+	{
+		var x = document.getElementsByClassName("catergory");
+		x[i].style.backgroundColor = "#e7e7e7";
+		x[i].style.color = "black";
+		x[i].style.transitionDuration = "0.5s";
+	}
+
+
+	//	Explore Button mouseClick (Part_1)
+	function exploreClick(i)
+	{
+		var x = document.getElementsByClassName("catergory");
+		x[i].style.backgroundColor = "#e7e7e7";
+		x[i].style.color = "black";
+		x[i].style.transitionDuration = "0.5s";
+		display(i);
+	}
+	//	Explore Button mouseClick (Part_2)
+	function display(i)
+	{
+		var x = document.getElementsByClassName("catergoryContent");
+		var y = document.getElementById("defaultContent");
+		y.style.display = 'none';
+		for (var n=0; n<x.length; n++)
+		{
+			x[n].style.display = 'none';
+		}
+		
+		if (x[i].style.display == 'block') 
+		{
+			x[i].style.display = 'none';
+		} 
+		else 
+		{
+			x[i].style.display = 'block';
+		}
+	}
+	
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="Bootstrap 4.0.0/css/bootstrap-grid.min.css"/>
+	<script src="Bootstrap 4.0.0/jquery.min.js"></script>
+	<script src="Bootstrap 4.0.0/js/bootstrap.min.js"></script>
+
+
+	<link rel="shortcut icon" type="image/x-icon" href="Images/favicon.png" />
+	<title>Mum's Story Donate</title>
+	<link href="Images/MainFormat.css" rel="stylesheet" type="text/css"/>
+	<script src="Images/MainScript.js"></script>
+	
+</head>
+<body>
+	<div id="wrap">
+		<div id="container">
+			<div id="header">
+			
+				<div id="ChipsSection">  <!--Just links to social media platforms, not actual profile-->
+					<div class="contactChip">
+						<a class="chipName" href="http://facebook.com/" target="_blank" onmouseover="overChip(0)" onmouseout="outChip(0)">
+							<img src="images/FacebookLogo.png" style="background-color:#3b5998;">
+							<button class="chipName" style="background-color:transparent;">
+								<p class="chipName2">Facebook</p>
+							</button>
+						</a>
+					</div>
+					<div class="contactChip">
+						<a class="chipName" href="https://twitter.com/" target="_blank" onmouseover="overChip(1)" onmouseout="outChip(1)">
+							<img src="images/TwitterLogo.png" style="background-color:#1da1f2;">
+							<button class="chipName" style="background-color:transparent;">
+								<p class="chipName2">Twitter</p>
+							</button>
+						</a>
+					</div>
+					<div class="contactChip">
+						<a class="chipName" href="https://instagram.com/" target="_blank" onmouseover="overChip(2)" onmouseout="outChip(2)">
+							<img src="images/InstagramLogo.jpg" style="background-color:white;">
+							<button class="chipName" style="background-color:transparent;">
+								<p class="chipName2">Instagram</p>
+							</button>
+						</a>
+					</div>
+				</div>
+				
+				<div class="sign-up">
+					<a href="Profile Page.html" style="text-decoration:none;" onmouseover="overLogin(0)" onmouseout="outLogin(0)">
+						<div class="sign-upContatiner">
+							<p class="username">Login</p>   <!--Auto size name-->
+						</div>
+					</a>
+				</div>
+				
+				<div id="caption">
+					<h1 id="title">
+						<a title="Mum's Story" href="Main Page.html">Mum's Story</a>
+						<a href="Main Page.html">
+							<img class="logo" src="Images/logo.png"/>
+						</a>
+					</h1>
+					<div id="tagline">
+						<p>A community you can trust!&nbsp;</p>
+					</div>
+				</div>
+			</div>
+			
+			<div id="navigation">
+				<div class="boxFiller">
+				</div>
+					<ul id="menus" class="menu">
+						<li>
+							<a class="home" href="Main Page.html" title="Home">Home</a>
+						</li>
+						
+						<li>   <!--class="homeButton"-->
+							<a class="homepage item" href="Main Page.html">Home</a>
+						</li>
+						
+						<li>
+							<a class="onlineDoctor item" href="Online Doctor Page.html">Online Doctor</a>
+						</li>
+						
+						<li>
+							<a class="forum item" href="Forum Page.html">Forum</a>
+						</li>
+						
+						<li>
+							<a class="store item" href="Store Page.html">Store</a>
+						</li>
+						
+						<li>
+							<a class="profile item" href="Profile Page.html">Profile</a>
+						</li>
+						
+						<li>
+							<a class="currentPage donate" href="Donate Page.html">Donate</a>
+						</li>
+						
+						<li>
+							<a class="contact item" href="Contact Page.html">Contact Us</a>
+						</li>
+						
+						<li>
+							<a style="width:0px">
+							</a>
+						</li>
+						<div id="clockSection">
+								<form name="clockForm" title="Date">
+										<input id="clock" name="clockButton" onClick="showDate()" readonly />
+								</form>
+						</div>
+					</ul>
+			</div>
+			<div id="content"> 
+				<div class="row" style="height:760px;">
+					
+					<div class="col-2 advertisement" style="border:1px black solid;">
+						<p style="text-align:center;">Advert.</p>
+					</div>
+					
+					
+					<div class="col-8">
+						<div class="scroll">
+							<div class="scrollContainer">
+							
+								<div class="container">
+									<div class="col-12"style="border:1px red solid;margin:auto;margin-top:20px;margin-bottom:20px;width:99%;margin-left:-0.01%;">
+										<div style="height:200px;">
+											<h1 style="text-align:center;padding-top:85px;">Donation Form</h1>
+										</div>
+									</div>
+								</div>
+								
+								<div class="container">
+							
+									<div class="row">
+										
+											<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-left:16px;">
+												<h2 style="text-align:center;padding-top:10px;text-decoration:underline;">Top 10 Donation List</h2>
+												<div class="container">
+													<div class="row">
+														<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="float:left;">
+															<ol style="padding-left:20px;">
+																<li style="padding-top:11px;">
+																	<p>Micheal donated $1040.40</p>
+																</li>
+																<li style="padding-top:9px;">
+																	<p>Natasha donated $120 </p>
+																</li>
+																<li style="padding-top:9px;">
+																	<p>William donated $70</p>
+																</li>
+																<li style="padding-top:9px;">
+																	<p>Ilaek donated $67</p>
+																</li>
+																<li style="padding-top:9px;">
+																	<p>Waffle donated $60</p>
+																</li>
+															</ol>
+															<br>
+														</div>
+														<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="float:left;">
+															<ol start="6" style="padding-left:20px;">
+																<li style="padding-top:9px;">
+																	<p>Donald donated $52</p>
+																</li>
+																<li style="padding-top:9px;">
+																	<p>Malven donated $46</p>
+																</li>
+																<li style="padding-top:9px;">
+																	<p>Albert donated $42</p>
+																</li>
+																<li style="padding-top:9px;">
+																	<p>Lily donated $32</p>
+																</li>
+																<li style="padding-top:9px;">
+																	<p>Micheal donated $30</p>
+																</li>
+															</ol>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+												<h2 style="text-align:center;padding-top:9px;text-decoration:underline;">A Word From Us</h2>
+												
+												<p style="padding-top:9px;">
+													As a community-service organization, we do not have much ways to sustain our website. 
+												</p>
+												<br>
+												<p style="padding-top:9px;">
+												Help donate a small sum to us to help sustain this community. 
+												</p>
+												<br>
+												<p style="padding-top:9px;">
+												A total of _______ have been raised by our community so far! We really appreciate the support!
+												</p>
+											</div>
+											
+											<div class="container" style="margin-top:30px;">
+											<div class="row">
+												<div class="col-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;text-decoration:underline;">All Donators</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 1</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 2</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 3</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 4</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 5</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 6</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 7</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 8</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 9</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 10</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 11</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 12</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 13</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 14</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 15</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 16</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 17</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 18</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 19</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 20</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 21</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 22</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 23</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 24</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 25</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 26</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 27</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 28</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 29</h2>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-xs-12" style="border:1px red solid;padding-top:10px;padding-bottom:10px;">
+													<h2 style="text-align:center;padding-top:9px;">Donator 30</h2>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-2 advertisement" style="border:1px black solid;">
+						<p style="text-align:center;">Advert.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

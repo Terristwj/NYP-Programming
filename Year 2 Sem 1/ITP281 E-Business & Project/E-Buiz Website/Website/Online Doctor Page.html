@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="Bootstrap 4.0.0/css/bootstrap-grid.min.css"/>
+	<script src="Bootstrap 4.0.0/jquery.min.js"></script>
+	<script src="Bootstrap 4.0.0/js/bootstrap.min.js"></script>
+	
+	
+	<link rel="shortcut icon" type="image/x-icon" href="Images/favicon.png" />
+	<title>Mum's Story Online Doctor</title>
+	<link href="Images/MainFormat.css" rel="stylesheet" type="text/css"/>
+	<script src="Images/MainScript.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="container">
+			<div id="header">
+			
+				<div id="ChipsSection">  <!--Just links to social media platforms, not actual profile-->
+					<div class="contactChip">
+						<a class="chipName" href="http://facebook.com/" target="_blank" onmouseover="overChip(0)" onmouseout="outChip(0)">
+							<img src="images/FacebookLogo.png" style="background-color:#3b5998;">
+							<button class="chipName" style="background-color:transparent;">
+								<p class="chipName2">Facebook</p>
+							</button>
+						</a>
+					</div>
+					<div class="contactChip">
+						<a class="chipName" href="https://twitter.com/" target="_blank" onmouseover="overChip(1)" onmouseout="outChip(1)">
+							<img src="images/TwitterLogo.png" style="background-color:#1da1f2;">
+							<button class="chipName" style="background-color:transparent;">
+								<p class="chipName2">Twitter</p>
+							</button>
+						</a>
+					</div>
+					<div class="contactChip">
+						<a class="chipName" href="https://instagram.com/" target="_blank" onmouseover="overChip(2)" onmouseout="outChip(2)">
+							<img src="images/InstagramLogo.jpg" style="background-color:white;">
+							<button class="chipName" style="background-color:transparent;">
+								<p class="chipName2">Instagram</p>
+							</button>
+						</a>
+					</div>
+				</div>
+				
+				<div class="sign-up">
+					<a href="Profile Page.html" style="text-decoration:none;" onmouseover="overLogin(0)" onmouseout="outLogin(0)">
+						<div class="sign-upContatiner">
+							<p class="username">Login</p>   <!--Auto size name-->
+						</div>
+					</a>
+				</div>
+				
+				<div id="caption">
+					<h1 id="title">
+						<a title="Mum's Story" href="Main Page.html">Mum's Story</a>
+						<a href="Main Page.html">
+							<img class="logo" src="Images/logo.png"/>
+						</a>
+					</h1>
+					<div id="tagline">
+						<p>A community you can trust!&nbsp;</p>
+					</div>
+				</div>
+			</div>
+			
+			<div id="navigation">
+				<div class="boxFiller">
+				</div>
+					<ul id="menus" class="menu">
+						<li>
+							<a class="home" href="Main Page.html" title="Home">Home</a>
+						</li>
+						
+						<li>
+							<a class="homePage item" href="Main Page.html">Home</a>
+						</li>
+						
+						<li>
+							<a class="currentPage onlineDoctor" href="Online Doctor Page.html">Online Doctor</a>
+						</li>
+						
+						<li>
+							<a class="forum item" href="Forum Page.html">Forum</a>
+						</li>
+						
+						<li>
+							<a class="store item" href="Store Page.html">Store</a>
+						</li>
+						
+						<li>
+							<a class="profile item" href="Profile Page.html">Profile</a>
+						</li>
+						
+						<li>
+							<a class="donate item" href="Donate Page.html">Donate</a>
+						</li>
+						
+						<li>
+							<a class="contact item" href="Contact Page.html">Contact Us</a>
+						</li>
+						
+						<li>
+							<a style="width:0px">
+							</a>
+						</li>
+						<div id="clockSection">
+								<form name="clockForm" title="Date">
+										<input id="clock" name="clockButton" onClick="showDate()" readonly />
+								</form>
+						</div>
+					</ul>
+			</div>
+			<div id="content"> 
+				<div class="row" style="height:760px;">
+					
+					<div class="col-2 advertisement" style="border:1px black solid;">
+						<p style="text-align:center;">Advert.</p>
+					</div>
+					
+					
+					<div class="col-8">
+						<div class="scroll">
+							<div class="scrollContainer">
+								
+								<div class="optionBox container" style="margin-top:30px;">
+									<div class="row">
+										<div class="col-12" style="border:1px black solid;height:90px;">
+											<h2 style="text-align:center;margin-top:35px;">Choose an option:</h2>
+										</div>
+										
+										
+										<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-left:25px;border:1px black solid;">
+											<h2 style="text-align:center;padding-top:20px;text-decoration:underline;">Certified Doctor</h2>
+											
+											<div>
+												<p style="padding-top:9px;">
+													Get connected with our Certified Doctors from all around the world 24/7.<br>
+												</p>
+												<p style="padding-top:12px;font-size: 14px;">
+													Option includes:
+													<br>1)Consultation (SGD40 per 30mins)
+													<br>2)Purchase Of Special Medication (Additional payment)
+												</p>
+												<p style="padding-top:12px;font-size: 14px;">
+												Prerequirement:
+												<br>1)Linked Skype Account</p>
+												<br>
+											</div>
+												
+											<div style="position:absolute;border:1px solid black;width:70px;height:40px;cursor:pointer;bottom:0;right:0;">
+												<a>
+													<h3 style="margin-left:17px;margin-top:8px;color:black;">Call</h3>
+												</a>
+											</div>
+											
+										</div>
+										
+										
+										<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-left:25px;border:1px black solid;">
+											<h2 style="text-align:center;padding-top:20px;text-decoration:underline;">Voluntary Help</h2>
+											
+											<div>
+												<p style="padding-top:9px;">
+												Get free help from fellow members of the community. A voluntary doctor may help too!
+												</p>
+												<p style="padding-top:12px;font-size: 14px;">
+													Option includes:
+												<br>1)Free Consultation
+												</p>
+												<p style="padding-top:12px;font-size: 14px;">
+												Prerequirement:
+												<br>1)Linked Skype Account</p>
+											</div>
+												
+											<div style="position:absolute;border:1px solid black;width:70px;height:40px;cursor:pointer;bottom:0;right:0;">
+												<a>
+													<h3 style="margin-left:17px;margin-top:8px;color:black;">Call</h3>
+												</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								
+								<div class="container" style="margin-top:25px;">
+									<div class="row">
+									
+										<div class="Instructions col-lg-6 col-md-6 col-sm-12 col-xs-12" style="width:50%;">
+											<h2 style="text-align:center;margin-top:20px;text-decoration:underline;">Instructions</h2>	
+											<div class="instructionText" style="padding-left:30%;padding-top:20px;">
+												<ol>
+													<li><p>Remember to be log in</p></li>
+													<li><p style="margin-top:3px;">Choose one of the options</p></li>
+													<li><p style="margin-top:3px;">Fill in a short form</p></li>
+													<li><p style="margin-top:3px;">Wait while we find a partner</p></li>
+													<li><p style="margin-top:3px;">Accept Request</p></li>
+													<li><p style="margin-top:3px;">Connect to skype</p></li>
+													<li><p style="margin-top:3px;">Begin of Consultation</p></li>
+												</ol>
+											</div>
+										</div>
+										
+										<div class="information col-lg-6 col-md-6 col-sm-12 col-xs-12" style="width:50%;">
+											<h2 style="text-align:center;margin-top:20px;text-decoration:underline;">Information</h2>
+											<div class="instructionText" style="padding-left:6.5%;padding-top:20px;">
+												<ol>
+													<li><p>Must be logged-in and have a skype account linked</p></li>
+													<li><p style="margin-top:3px;">All consultations are through skype</p></li>
+													<li><p style="margin-top:3px;">Priority search for Singaporean doctors and helpers</p></li>
+													<li><p style="margin-top:3px;">Foreign doctors and helpers will be partnered if no Singaporeans are available past 5mins in queue</p></li>
+													<li><p style="margin-top:3px;">Additonal charges will vary</p></li>
+													<li><p style="margin-top:3px;">24/7 Service</p></li>
+												</ol>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="optionBox container" style="margin-top:40px;">
+									<div class="row">
+										<div class="col-12" style="border:1px black solid;height:90px;">
+											<h2 style="text-align:center;margin-top:35px;">Want to volunteer?</h2>
+										</div>
+										
+										
+										<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-left:25px;border:1px black solid;">
+											<h2 style="text-align:center;padding-top:20px;text-decoration:underline;">Certified Doctor</h2>
+											
+											<div>
+												<p style="padding-top:9px;">
+													Offer free help whenever possible.<br>Queue up by clicking the <b>Apply</b> below.<br>
+												</p>
+												<p style="padding-top:12px;font-size: 14px;">
+													Reward includes:
+													<br>1)Reward Points
+													<br>2)Recognition For Volunteering
+												</p>
+												<p style="padding-top:12px;font-size: 14px;">
+												Prerequirement:
+												<br>1)Linked Skype Account</p>
+												<br>
+											</div>
+												
+											<div style="position:absolute;border:1px solid black;width:70px;height:40px;cursor:pointer;bottom:0;right:0;">
+												<a>
+													<h3 style="margin-left:12px;margin-top:8px;color:black;">Apply</h3>
+												</a>
+											</div>
+											
+										</div>
+										
+										
+										<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-left:25px;border:1px black solid;">
+											<h2 style="text-align:center;padding-top:20px;text-decoration:underline;">Community</h2>
+											
+											<div>
+												<p style="padding-top:9px;">
+												Help grow the community and give advice.<br>Queue up by clicking the <b>Apply</b> below.
+												</p>
+												<p style="padding-top:12px;font-size: 14px;">
+													Reward includes:
+													<br>1)Reward Points
+													<br>2)Recognition For Volunteering
+												</p>
+												<p style="padding-top:12px;font-size: 14px;">
+												Prerequirement:
+												<br>1)Linked Skype Account</p>
+												<br>
+											</div>
+												
+											<div style="position:absolute;border:1px solid black;width:70px;height:40px;cursor:pointer;bottom:0;right:0;">
+												<a>
+													<h3 style="margin-left:12px;margin-top:8px;color:black;">Apply</h3>
+												</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-2 advertisement" style="border:1px black solid;">
+						<p style="text-align:center;">Advert.</p>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

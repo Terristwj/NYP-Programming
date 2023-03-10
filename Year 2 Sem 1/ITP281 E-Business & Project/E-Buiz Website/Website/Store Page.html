@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="Bootstrap 4.0.0/css/bootstrap-grid.min.css"/>
+	<script src="Bootstrap 4.0.0/jquery.min.js"></script>
+	<script src="Bootstrap 4.0.0/js/bootstrap.min.js"></script>
+
+	
+	<link rel="shortcut icon" type="image/x-icon" href="Images/favicon.png" />
+	<title>Mum's Story Store</title>
+	<link href="Images/MainFormat.css" rel="stylesheet" type="text/css"/>
+	<script src="Images/MainScript.js"></script>
+	<style>
+		.category{	
+			background-color: #e7e7e7;
+			border: none;
+			height:50px;
+			width:100%;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		
+		.categoryHeader{
+			display:block;
+			min-height:50px;
+			max-height:520px;
+		}
+		
+		@media (min-width: 0px) {
+			.special{
+				height:456px;
+			}
+		}
+		
+		@media (min-width: 768px) {
+			.special{
+				height:606px;
+			}
+		}
+		
+		@media (min-width: 992px) {
+			.special{
+				height:706px;
+			}
+		}
+		
+		#productsContent, #foodContent, #medicineContent, #sponsorProductsContent, #cartContent
+		{
+			display: none;
+		}
+		
+		th{
+			background-color:#d0f1f2;
+		}
+		
+		.welcomePage{
+			height:215px;
+		}
+		
+		td, th{
+			padding:25px;
+			border:1px solid #cfcfd1;
+			text-align:center;
+		}
+		
+		td {
+			font-size:17px;
+		}
+		
+		#welcome{
+			width:75%;
+			margin-top:10px;
+			margin-left:auto;
+			margin-right:auto;
+			border: 1px solid grey;
+			border-collapse:collapse;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="container">
+			<div id="header">
+			
+				<div id="ChipsSection">  <!--Just links to social media platforms, not actual profile-->
+					<div class="contactChip">
+						<a class="chipName" href="http://facebook.com/" target="_blank" onmouseover="overChip(0)" onmouseout="outChip(0)">
+							<img src="images/FacebookLogo.png" style="background-color:#3b5998;">
+							<button class="chipName" style="background-color:transparent;">
+								<p class="chipName2">Facebook</p>
+							</button>
+						</a>
+					</div>
+					<div class="contactChip">
+						<a class="chipName" href="https://twitter.com/" target="_blank" onmouseover="overChip(1)" onmouseout="outChip(1)">
+							<img src="images/TwitterLogo.png" style="background-color:#1da1f2;">
+							<button class="chipName" style="background-color:transparent;">
+								<p class="chipName2">Twitter</p>
+							</button>
+						</a>
+					</div>
+					<div class="contactChip">
+						<a class="chipName" href="https://instagram.com/" target="_blank" onmouseover="overChip(2)" onmouseout="outChip(2)">
+							<img src="images/InstagramLogo.jpg" style="background-color:white;">
+							<button class="chipName" style="background-color:transparent;">
+								<p class="chipName2">Instagram</p>
+							</button>
+						</a>
+					</div>
+				</div>
+				
+				<div class="sign-up">
+					<a href="Profile Page.html" style="text-decoration:none;" onmouseover="overLogin(0)" onmouseout="outLogin(0)">
+						<div class="sign-upContatiner">
+							<p class="username">Login</p>   <!--Auto size name-->
+						</div>
+					</a>
+				</div>
+				
+				<div id="caption">
+					<h1 id="title">
+						<a title="Mum's Story" href="Main Page.html">Mum's Story</a>
+						<a href="Main Page.html">
+							<img class="logo" src="Images/logo.png"/>
+						</a>
+					</h1>
+					<div id="tagline">
+						<p>A community you can trust!&nbsp;</p>
+					</div>
+				</div>
+			</div>
+			
+			<div id="navigation">
+				<div class="boxFiller">
+				</div>
+					<ul id="menus" class="menu">
+						<li>
+							<a class="home" href="Main Page.html" title="Home">Home</a>
+						</li>
+						
+						<li>   <!--class="homeButton"-->
+							<a class="homepage item" href="Main Page.html">Home</a>
+						</li>
+						
+						<li>
+							<a class="onlineDoctor item" href="Online Doctor Page.html">Online Doctor</a>
+						</li>
+						
+						<li>
+							<a class="forum item" href="Forum Page.html">Forum</a>
+						</li>
+						
+						<li>
+							<a class="currentPage store" href="Store Page.html">Store</a>
+						</li>
+						
+						<li>
+							<a class="profile item" href="Profile Page.html">Profile</a>
+						</li>
+						
+						<li>
+							<a class="donate item" href="Donate Page.html">Donate</a>
+						</li>
+						
+						<li>
+							<a class="contact item" href="Contact Page.html">Contact Us</a>
+						</li>
+						
+						<li>
+							<a style="width:0px">
+							</a>
+						</li>
+						<div id="clockSection">
+								<form name="clockForm" title="Date">
+										<input id="clock" name="clockButton" onClick="showDate()" readonly />
+								</form>
+						</div>
+					</ul>
+			</div>
+			<div id="content"> 
+				<div class="row" style="height:760px;">
+						
+					<div class="col-2 advertisement" style="border:1px black solid;">
+						<p style="text-align:center;">Advert.</p>
+					</div>
+					
+					<div class="col-8">
+						<div style="border:black solid 1px;min-height:200px;max-height:760px;">
+							<div style="border:red 1px solid;">
+								<div class="categoryHeader container">
+									<div class="row">
+										<button id="mainPage" class="category col-xl-2 col-lg-2 col-md-6 col-sm-12" onmouseover="exploreOver(0)" onmouseout="exploreOut(0)" onclick="exploreClick(0)" autofocus>Main Page</button>
+										<button id="products" class="category col-xl-2 col-lg-2 col-md-6 col-sm-12" onmouseover="exploreOver(1)" onmouseout="exploreOut(1)" onclick="exploreClick(1)">Baby Necessities</button>
+										<button id="food" class="category col-xl-2 col-lg-2 col-md-6 col-sm-12" onmouseover="exploreOver(2)" onmouseout="exploreOut(2)" onclick="exploreClick(2)">Baby Food</button>
+										<button id="medicine" class="category col-xl-2 col-lg-2 col-md-6 col-sm-12" onmouseover="exploreOver(3)" onmouseout="exploreOut(3)" onclick="exploreClick(3)">Medicine</button>
+										<button id="sponsor" class="category col-xl-2 col-lg-2 col-md-6 col-sm-12" onmouseover="exploreOver(4)" onmouseout="exploreOut(4)" onclick="exploreClick(4)">Sponsor Products</button>	
+										<button id="cart" class="category col-xl-2 col-lg-2 col-md-6 col-sm-12" onmouseover="exploreOver(5)" onmouseout="exploreOut(5)" onclick="exploreClick(5)">Cart</button>
+									</div>
+								</div>
+							</div>
+							<div class="scroll special">
+							
+								<div class="scrollContainer">
+									<div id="defaultContent" class="categoryContent">
+										<br>
+										<table id="welcome">
+											<tbody>
+												<tr>
+													<th><h2>Welcome to the Store!</h2></th>
+												</tr>
+												<tr>
+													<td class="welcomePage">We offer a variety of baby products here.
+													<br>The products ranges from food to medication to necessities.
+													</td>
+												</tr>
+												<tr>
+													<th><h2>How to use this page?</h2></th>
+												</tr>
+												<tr>
+													<td class="welcomePage">Click on the other categories to behin shopping!</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div id="productsContent" class="categoryContent">
+										<br>
+										<h1 class="contentHeader">Baby Necessities</h1>
+										
+										<div class="row" style="border:1px solid blue;width:99%;margin-left:0.1%">
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div id="foodContent" class="categoryContent">
+										<br>
+										<h1 class="contentHeader">Baby Food</h1>
+										<div class="row" style="border:1px solid blue;width:99%;margin-left:0.1%">
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="medicineContent" class="categoryContent">
+										<br>
+										<h1 class="contentHeader">Medicine</h1>
+										<div class="row" style="border:1px solid blue;width:99%;margin-left:0.1%">
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="sponsorProductsContent" class="categoryContent">
+										<br>
+										<h1 class="contentHeader">Sponsor Products</h1>
+										<div class="row" style="border:1px solid blue;width:99%;margin-left:0.1%">
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+											<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+												<div style="border:1px red solid;margin:20px 5px 20px 5px;height:300px;">
+													<h2 style="text-align:center;margin-top:130px;">Item</h2>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div id="cartContent" class="categoryContent">
+										<br>
+										<h1 class="contentHeader">Cart</h1>
+										<br>
+										<div class="container">
+											<div class="row">
+												<div class="col-12"style="border:1px red solid;margin:auto;margin-top:20px;margin-bottom:20px;width:99%;margin-left:-0.01%;">
+													<div style="height:200px;">
+														<h1 style="text-align:center;padding-top:85px;">Cart</h1>
+													</div>
+												</div>
+												<div class="col-lg-6 col-sm-12"style="border:1px red solid;margin:auto;margin-top:20px;margin-bottom:20px;width:99%;margin-left:-0.01%;">
+													<div style="height:200px;">
+														<h1 style="text-align:center;padding-top:85px;">Payment Details</h1>
+													</div>
+												</div>
+												<div class="col-lg-6 col-sm-12"style="border:1px red solid;margin:auto;margin-top:20px;margin-bottom:20px;width:99%;margin-left:-0.01%;">
+													<div style="height:200px;">
+														<h1 style="text-align:center;padding-top:85px;">Shipping Details</h1>
+													</div>
+												</div>
+												
+												<form style="margin-left:auto;margin-right:auto;">
+													<input type="submit" value="Confirm" style="margin-top:8px;color:black;font-size:22px;border:black 1px solid; background-color:transparent;padding:10px;cursor:pointer;"/>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-2 advertisement" style="border:1px black solid;">
+						<p style="text-align:center;">Advert.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+	
+	//	Explore Button mouseover
+	function exploreOver(i)
+	{
+		var x = document.getElementsByClassName("category");
+		x[i].style.backgroundColor = "#555555";
+		x[i].style.color = "white";
+		x[i].style.transitionDuration = "0.25s";
+	}
+
+
+	//	Explore Button mouseout
+	function exploreOut(i)
+	{
+		var x = document.getElementsByClassName("category");
+		x[i].style.backgroundColor = "#e7e7e7";
+		x[i].style.color = "black";
+		x[i].style.transitionDuration = "0.5s";
+	}
+
+
+	//	Explore Button mouseClick (Part_1)
+	function exploreClick(i)
+	{
+		var x = document.getElementsByClassName("category");
+		x[i].style.backgroundColor = "#e7e7e7";
+		x[i].style.color = "black";
+		x[i].style.transitionDuration = "0.5s";
+		display(i);
+	}
+	//	Explore Button mouseClick (Part_2)
+	function display(i)
+	{
+		var x = document.getElementsByClassName("categoryContent");
+		var y = document.getElementById("defaultContent");
+		y.style.display = 'none';
+		for (var n=0; n<x.length; n++)
+		{
+			x[n].style.display = 'none';
+		}
+		
+		if (x[i].style.display == 'block') 
+		{
+			x[i].style.display = 'none';
+		} 
+		else 
+		{
+			x[i].style.display = 'block';
+		}
+	}
+	
+	
+	</script>
+</body>
+</html>
