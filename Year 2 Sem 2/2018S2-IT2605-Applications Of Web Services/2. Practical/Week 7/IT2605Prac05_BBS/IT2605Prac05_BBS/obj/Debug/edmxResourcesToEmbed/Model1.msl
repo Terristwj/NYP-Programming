@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BetterBookSupplierModelStoreContainer" CdmEntityContainer="BetterBookSupplierEntities">
+    <EntitySetMapping Name="orderItems">
+      <EntityTypeMapping TypeName="BetterBookSupplierModel.orderItem">
+        <MappingFragment StoreEntitySet="orderItem">
+          <ScalarProperty Name="orderItemId" ColumnName="orderItemId" />
+          <ScalarProperty Name="orderId" ColumnName="orderId" />
+          <ScalarProperty Name="isbn" ColumnName="isbn" />
+          <ScalarProperty Name="orderQty" ColumnName="orderQty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="orders">
+      <EntityTypeMapping TypeName="BetterBookSupplierModel.order">
+        <MappingFragment StoreEntitySet="orders">
+          <ScalarProperty Name="orderId" ColumnName="orderId" />
+          <ScalarProperty Name="orderDate" ColumnName="orderDate" />
+          <ScalarProperty Name="custId" ColumnName="custId" />
+          <ScalarProperty Name="orderStatus" ColumnName="orderStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

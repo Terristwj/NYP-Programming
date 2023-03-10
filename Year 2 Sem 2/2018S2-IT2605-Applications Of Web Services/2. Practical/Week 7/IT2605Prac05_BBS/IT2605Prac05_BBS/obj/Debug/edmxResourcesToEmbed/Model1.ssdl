@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BetterBookSupplierModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="orderItem">
+    <Key>
+      <PropertyRef Name="orderItemId" />
+    </Key>
+    <Property Name="orderItemId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="orderId" Type="int" Nullable="false" />
+    <Property Name="isbn" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="orderQty" Type="int" />
+  </EntityType>
+  <EntityType Name="orders">
+    <Key>
+      <PropertyRef Name="orderId" />
+    </Key>
+    <Property Name="orderId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="orderDate" Type="date" />
+    <Property Name="custId" Type="varchar" MaxLength="20" />
+    <Property Name="orderStatus" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <Association Name="Fk_orderItem_order">
+    <End Role="orders" Type="Self.orders" Multiplicity="1" />
+    <End Role="orderItem" Type="Self.orderItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="orders">
+        <PropertyRef Name="orderId" />
+      </Principal>
+      <Dependent Role="orderItem">
+        <PropertyRef Name="orderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BetterBookSupplierModelStoreContainer">
+    <EntitySet Name="orderItem" EntityType="Self.orderItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="orders" EntityType="Self.orders" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="Fk_orderItem_order" Association="Self.Fk_orderItem_order">
+      <End Role="orders" EntitySet="orders" />
+      <End Role="orderItem" EntitySet="orderItem" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
