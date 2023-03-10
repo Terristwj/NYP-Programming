@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BookstoreApp.controller.RemoveItemDialogueController">
+   <children>
+      <Button fx:id="btnUpdate" alignment="CENTER" layoutX="268.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleUpdate" prefHeight="25.0" prefWidth="150.0" text="Update">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <GridPane layoutX="1.0" layoutY="40.0" prefHeight="138.0" prefWidth="700.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.6666259765625" minWidth="10.0" prefWidth="165.6666259765625" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="507.0" minWidth="10.0" prefWidth="484.3333740234375" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label graphicTextGap="0.0" style="-fx-font-weight: bold;" text="Item Name : " textAlignment="RIGHT" GridPane.halignment="RIGHT">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <TextField fx:id="userInput" prefHeight="49.0" prefWidth="333.0" promptText="Enter name of item" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets right="25.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <Label fx:id="errorMessage" alignment="CENTER" layoutY="160.0" prefHeight="27.0" prefWidth="700.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorMessage1" alignment="CENTER" layoutX="1.0" layoutY="25.0" prefHeight="27.0" prefWidth="700.0" text="Instruction: Enter the name of the item you want to remove">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

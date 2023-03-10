@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1300.0" stylesheets="@DefaultCSS.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BookstoreApp.controller.ReservationController">
+   <children>
+      <StackPane prefHeight="108.0" prefWidth="1300.0" style="-fx-background-color: #ff8080;">
+         <children>
+            <HBox prefHeight="108.0" prefWidth="1195.0">
+               <children>
+                  <StackPane prefHeight="108.0" prefWidth="378.0">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="-65.0" />
+                     </padding>
+                     <children>
+                        <Button fx:id="btnBackHome" mnemonicParsing="false" onAction="#handleBackHome" prefHeight="64.0" prefWidth="136.0" style="-fx-font-size: 25px; -fx-background-color: white; -fx-border-color: #000000;" text="Back">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </StackPane>
+                  <ImageView fitHeight="108.0" fitWidth="439.0">
+                     <image>
+                        <Image url="@../../Images/Popular%20Logo.png" />
+                     </image>
+                  </ImageView>
+                  <StackPane prefHeight="108.0" prefWidth="208.0">
+                     <padding>
+                        <Insets right="-14.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </StackPane>
+                  <StackPane prefHeight="108.0" prefWidth="183.0">
+                     <padding>
+                        <Insets right="-14.0" />
+                     </padding>
+                     <children>
+                        <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#handleLogout" prefHeight="64.0" prefWidth="136.0" style="-fx-font-size: 25px; -fx-background-color: white; -fx-border-color: #000000;" text="Logout">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </StackPane>
+               </children>
+               <StackPane.margin>
+                  <Insets left="10.0" />
+               </StackPane.margin>
+               <padding>
+                  <Insets left="-10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </StackPane>
+      <Pane layoutX="494.0" layoutY="127.0" prefHeight="80.0" prefWidth="347.0" style="-fx-background-color: white; -fx-border-color: black;">
+         <children>
+            <Text fill="#d31616" layoutX="70.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Reservation" wrappingWidth="207.9999953508377">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <VBox layoutX="81.0" layoutY="221.0" prefHeight="387.0" prefWidth="1173.0">
+         <children>
+            <Pane prefHeight="49.0" prefWidth="1173.0">
+               <children>
+                  <HBox prefHeight="50.0" prefWidth="1158.0" style="-fx-border-color: black; -fx-background-color: white;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <Pane prefHeight="48.0" prefWidth="423.0" style="-fx-border-color: black;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <Label layoutX="150.0" layoutY="6.0" text="Item Name">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="48.0" prefWidth="197.0" style="-fx-border-color: black;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <Label layoutX="51.0" layoutY="6.0" text="Quantity">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="48.0" prefWidth="199.0" style="-fx-border-color: black;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <Label layoutX="29.0" layoutY="6.0" text="Unit Price ($)">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="48.0" prefWidth="199.0" style="-fx-border-color: black;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <Label layoutX="24.0" layoutY="6.0" text="Total Price ($)">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="48.0" prefWidth="138.0" style="-fx-border-color: black;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <Label layoutX="24.0" layoutY="6.0" text="Remove">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="1.0" />
+               </VBox.margin>
+            </Pane>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="338.0" prefWidth="1173.0" style="-fx-background-color: transparent;">
+               <content>
+                  <VBox prefHeight="337.0" prefWidth="1158.0" style="-fx-background-color: white; -fx-border-color: black;">
+                     <children>
+                        <GridPane fx:id="gridPane" gridLinesVisible="true" prefHeight="0.0" prefWidth="1156.0" style="-fx-background-color: white; -fx-border-color: black;">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="428.0" minWidth="10.0" prefWidth="421.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="722.0" minWidth="0.0" prefWidth="70.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="722.0" minWidth="10.0" prefWidth="57.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="722.0" minWidth="10.0" prefWidth="70.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="915.0" minWidth="10.0" prefWidth="199.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="915.0" minWidth="10.0" prefWidth="199.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="915.0" minWidth="0.0" prefWidth="137.0" />
+                           </columnConstraints>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <Pane layoutX="81.0" layoutY="607.0" prefHeight="1.0" prefWidth="1159.0" style="-fx-background-color: black;" />
+      <VBox layoutY="658.0" prefHeight="192.0" prefWidth="1300.0">
+         <children>
+            <HBox prefHeight="201.0" prefWidth="1300.0">
+               <children>
+                  <Pane prefHeight="100.0" prefWidth="1020.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="46.0" layoutX="298.0" stroke="BLACK" strokeType="INSIDE" width="241.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="119.0" layoutX="298.0" layoutY="46.0" stroke="BLACK" strokeType="INSIDE" width="708.0" />
+                        <Text layoutX="318.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discount (if applicable)">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="318.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voucher Code :">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="btnApplyVoucher" layoutX="865.0" layoutY="84.0" mnemonicParsing="false" onAction="#handleApplyVoucher" prefHeight="46.0" prefWidth="100.0" text="Apply">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="voucherCode" layoutX="464.0" layoutY="84.0" prefHeight="46.0" prefWidth="378.0" />
+                        <Label fx:id="errorMessage" alignment="CENTER" layoutX="524.0" layoutY="128.0" prefHeight="37.0" prefWidth="257.0" textFill="RED">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Button fx:id="btnConfirm" mnemonicParsing="false" onAction="#handleConfirm" prefHeight="59.0" prefWidth="183.0" style="-fx-background-color: white; -fx-border-color: black;" text="Confirm">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="40.0" top="75.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
