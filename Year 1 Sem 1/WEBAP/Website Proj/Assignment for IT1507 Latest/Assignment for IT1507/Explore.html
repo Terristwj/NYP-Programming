@@ -1,0 +1,1906 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="Images/favicon.png" />
+	<title>Explore</title>
+	<link href="Images/MainFormat.css" rel="stylesheet" type="text/css"/>
+	<script src="Images/MainScript.js"></script>
+	<style>
+		.catergory{								/*<!-- Done in:								    -->*/
+			display:inline;						/*<!-- 1920 x 1080 Resolution					-->*/
+			background-color: #e7e7e7;			/*<!-- Size of Text, Apps and other items: 100% -->*/
+			color: black;
+			border: none;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+
+		.nutrients{
+			font-size: 0.95em;
+		}
+		
+		#burgerContent, #frenchContent, #chickenContent, #desertContent
+		{
+			display: none;
+		}
+		
+		.special{
+			height:636px;
+		}
+		
+		th{
+			background-color:#d0f1f2;
+		}
+		
+		.welcomePage{
+			height:145px;
+		}
+		
+		td, th{
+			padding:25px;
+			border:1px solid #cfcfd1;
+			text-align:center;
+		}
+		
+		#welcome{
+			width:75%;
+			margin-top:10px;
+			margin-left:auto;
+			margin-right:auto;
+			border: 1px solid grey;
+			border-collapse:collapse;
+		}
+		
+		.special1:hover{
+			font-size:13px;
+			font-style:italic;
+			color: brown;
+		}
+		
+		.special2:hover{
+			font-size:13px;
+			font-style:italic;
+			color: #e6b800;
+		}
+		
+		.special3:hover{
+			font-size:13px;
+			font-style:italic;
+			color: red;
+		}
+		
+		.special4:hover{
+			font-style:italic;
+			color: brown;
+		}
+		
+		.special5:hover{
+			font-style:italic;
+			color: #e6b800;
+		}
+		
+		.special6:hover{
+			font-style:italic;
+			color: red;
+		}
+		
+		.photo{
+			margin-top: 20px;
+			margin-left: 18%;
+			width:600px;
+			height:330px;
+		}
+		
+		.photoTable{
+			margin-top: 20px;
+			width:400px;
+			height:330px;
+		}
+		
+		.photoBurger{
+			margin-top: 20px;
+			margin-left: 27.5%;
+			width:600px;
+			height:330px;
+		}
+		
+		.slideshow-container {
+			max-width: 1000px;
+			position: relative;
+			margin: auto;
+			font-family: Verdana;
+		}
+
+		/*<!--Next & previous buttons-->*/
+		.prev, .next {
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			width: auto;
+			padding: 16px;
+			margin-top: -22px;
+			color: #bfbfbf;
+			font-weight: bold;
+			font-size: 18px;
+			transition: 0.6s ease;
+			border-radius: 0 3px 3px 0;
+		}
+
+		/*<!--Position the "next button" to the right-->*/
+		.next {
+			right: 0;
+			border-radius: 3px 0 0 3px;
+		}
+
+		/*<!--On hover, add a black background color with a little bit see-through-->*/
+		.prev:hover, .next:hover {
+			background-color: rgba(0,0,0,0.8);
+		}
+
+		/*<!--Caption text-->*/
+		.text {
+			left:-13px;
+			color: black;
+			font-size: 15px;
+			padding: 8px 12px;
+			position: absolute;
+			bottom: 8px;
+			width: 100%;
+			text-align: center;
+		}
+
+		/*<!--Number text (1/3)-->*/
+		.numbertext {
+			color: #bfbfbf;
+			font-size: 12px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 0;
+		}
+
+		/*<!--The dots/bullets/indicators-->*/
+		.dot {
+			cursor:pointer;
+			height: 13px;
+			width: 13px;
+			margin: 0 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+		}
+
+		.active, .dot:hover {
+			background-color: #717171;
+		}
+
+		/*<!--Fading animation Start*-->*/
+		.fade {
+			-webkit-animation-name: fade;
+			-webkit-animation-duration: 1.5s;
+			animation-name: fade;
+			animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+			from {opacity: .4} 
+			to {opacity: 1}
+		}
+
+		@keyframes fade {
+			from {opacity: .4} 
+			to {opacity: 1}
+		}
+		/*<!--Fading animation End*-->*/
+		
+		/*<!--Start Of French Fries section-->*/
+		.frenchFriesIntroContainer{
+			height:240px;
+			border:black solid 1px;
+			padding-top:10px;
+			box-shadow: 5px 5px 5px #d0f1f2;
+		}
+		
+		.frenchFriesIntro{
+			float:left;
+			width:40%;
+			margin-left:6%;
+			line-height:180%;
+		}
+
+		.photoPotato{
+			width:400px;
+			height:230px;
+			float:right;
+			opacity: 1;
+			display: block;
+			transition: .5s ease;
+			backface-visibility: hidden;
+		}
+		
+		.potato-Profile-Container {
+			margin-right: 6%;
+			width:400px;
+			height:230px;
+			float:right;
+			box-shadow: 3px 3px 1px gray;
+		}
+		
+		.change {
+			transition: .5s ease;
+			opacity: 0;
+			position: relative;
+			top: 50%;
+			left: 50%;
+			width:180px;
+			margin-left:-90px;
+			margin-top: -55px;
+		}
+
+		.potato-Profile-Container:hover .photoPotato {
+			opacity: 0.3;
+		}
+
+		.potato-Profile-Container:hover .change {
+			opacity: 1;
+		}
+
+		.potatoProfileText {	
+			background-color: #d0f1f2;
+			font-size: 16px;
+			position: absolute;
+			padding: 16px 32px;
+			margin-top:10px;
+			text-align:center;
+			cursor:default;
+		}
+		
+		/*<!--Bar related-->*/
+		.friesContentLabel {
+			color: white;
+			padding: 7px 12px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-family:"Verdana";
+			width: 110px;
+		}
+
+		.proteinLabel {
+			background-color: #4CAF50;
+		}
+
+		.fatLabel {
+			background-color: #2196F3;
+		}
+
+		.carbohydrateLabel {
+			background-color: #f44336;
+		}
+
+		.saltLabel {
+			background-color: #808080;
+		}
+
+		.friesPercentageContainer {
+			width: 100%;
+			background-color: #ddd;
+			box-sizing: border-box
+		}
+
+		.friesContent {
+			text-align: right;
+			padding-right: 20px;
+			line-height: 40px;
+			color: white;
+		}
+
+		.proteinPercentage {
+			width: 6%; 
+			background-color: #4CAF50;
+		}
+			
+		.fatPercentage {
+			width: 26%; 
+			background-color: #2196F3;
+		}
+			
+		.carbohydratePercentage {
+			width: 65%; 
+			background-color: #f44336;
+		}
+			
+		.saltPercentage {
+			width: 1%; 
+			background-color: #808080;  
+		}
+		
+		.proteinPercentage, .fatPercentage, .carbohydratePercentage, .saltPercentage{
+			float:left; 
+			text-align:center;
+			box-sizing: border-box
+		}
+		
+		#aboutProtein{
+			width: 99%;
+			background-color: #4CAF50;
+			color:white;
+			border:1px solid #4CAF50;
+			border-top:none;
+			visibility:hidden;
+			height:0px;
+			opacity:0;
+			transition: all 1s, opacity 0.5s, height 1s, ease-in-out 1s ;
+		}
+		
+		#aboutFat{
+			width: 99%;
+			margin-top:-1px;
+			background-color: #2196F3;
+			color:white;
+			border:1px solid #2196F3;
+			border-top:none;
+			visibility:hidden;
+			height:0px;
+			opacity:0;
+			transition: all 1s, opacity 0.5s, height 1s, ease-in-out 1s ;
+		}
+		
+		#aboutCarbohydrate{
+			width: 99%;
+			margin-top:-2px;
+			background-color: #f44336;
+			color:white;
+			border:1px solid #f44336;
+			border-top:none;
+			visibility:hidden;
+			height:0px;
+			opacity:0;
+			transition: all 1s, opacity 0.5s, height 1s, ease-in-out 1s ;
+		}
+		
+		#aboutSalt{
+			width: 99%;
+			margin-top:-3px;
+			background-color: #808080;
+			color:white;
+			border:1px solid #808080;
+			border-top:none;
+			visibility:hidden;
+			height:0px;
+			opacity:0;
+			transition: all 1s, opacity 0.5s, height 1s, ease-in-out 1s ;
+		}
+		
+		.questionnButton{
+			background-color:#d0f1f2;
+			color: black;
+			border: none;
+			padding: 5px 5px;
+			margin-left: 15px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		
+		/*<!--Chicken section-->*/
+		.cardLeft {
+			float:left;
+			margin-left: 50px;
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+			transition: all 0.3s, background-color 1.5s;
+			width: 40%;
+			border-radius: 5px;
+			cursor:pointer;
+		}
+		
+		.cardRight {
+			float:right;
+			margin-right: 50px;
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+			transition: all 0.3s, background-color 1.5s;
+			width: 40%;
+			border-radius: 5px;
+			cursor:pointer;
+		}
+
+		.card:hover {
+			box-shadow: 2px 8px 24px rgba(0,0,0,0.2);
+			background-color:#d0f1f2;
+		}
+
+		.imageCard {
+			height:340px;
+			border-radius: 5px 5px 0 0;
+		}
+
+		.cardText {
+			padding: 12px 16px;
+		}
+		
+		#chickenDescription{
+			margin: 420px 50px 0 50px;
+			height:243px;
+			clear: both;
+			border: 4px solid #d0f1f2;
+			border-bottom: 8px solid #d0f1f2;;
+			box-shadow: 2px 8px 12px rgba(0,0,0,0.2);
+		}
+		
+		#chickenDescriptionTextContainer{
+			margin-left: 345px;
+			margin-right: 335px;
+		}
+		
+		.typingEffect{
+			overflow: hidden;
+			border-right: .15em solid black;
+			margin: 0 auto;
+			animation: typing 1.4s steps(40, end), blink-caret .75s step-end infinite;
+		}
+		
+		@keyframes typing {
+		    from { width: 0 }
+		    to { width: 100% }
+		}
+
+		@keyframes blink-caret {
+		    from, to { border-color: transparent }
+		    50% { border-color: black; }
+		}
+		
+		#chickenDescriptionHeader{
+			background-color: #d0f1f2;
+			text-align:center;
+			padding: 12px 16px;
+		}
+		
+		/*<!--Cube Card-->*/
+		.cubeWrapper{
+			position: relative;
+			perspective-origin: 50% 100px;
+			left: 20%;
+			width:200px;
+			transform: translate(-50%,-50%);
+		}
+
+		.cube{
+			position: absolute;
+			width: 200px;
+			transform-style: preserve-3d;
+			transition: all 0.5s cubic-bezier(.57,-0.42,.46,1.4);
+		}
+
+		.cube div{
+			position: absolute;
+		}
+
+		.front{
+			border:1px solid blue;
+			height:200px;
+			width:670px;
+			background-color: #6cd4ff;
+			transform: translateZ(100px);
+			font-size:20px;
+			opacity:1;
+		}
+		
+		.left{
+			border:1px solid black;
+			height:200px;
+			width:670px;
+			background-color: #83858c;
+			transform: rotateY(-90deg) translateX(-100px);
+			transform-origin: left center;
+		}
+
+		.right{
+			border:1px solid #83858c;
+			height:200px;
+			width:670px;
+			background-color: #bdc4a7;
+			transform: rotateY(90deg) translateX(100px);
+			transform-origin: right center;
+		}
+		
+		.boxContent{
+			margin:10px;
+			background: white;
+			height:175px;
+			width:645px;
+			text-align:center;
+		}
+
+		/*<!--Salad Card-->*/
+		.saladCard {
+			position: relative;
+			perspective: 700;
+			margin-top:-180px;
+			cursor: help;
+		}
+		
+		.saladFace {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			backface-visibility: hidden; 
+			transition: all 0.8s ease-out;
+		}
+		
+		.saladFront {
+			transform: rotateY(0deg);
+			background: #d9d9d9;
+		}
+		
+		.saladBack {
+			background: #9dcc78;
+			transform: rotateY(180deg);
+		}
+
+		/*<!--Start of Deserts-->*/
+		.tabLink {
+			background-color: #e6e6e6;
+			color: black;
+			float: left;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			padding: 14px 16px;
+			font-size: 17px;
+			width: 25%;
+		}
+
+		.tabContent {
+			border-radius:10px 10px 0 0;
+			color: white;
+			display: none;
+			padding: 50px;
+			text-align: center;
+			height:51px;
+		}
+
+		#DesertDefault{
+			border-radius:10px 10px 0 0;
+			color:white;
+			background-color: #808080;
+			padding: 50px;
+			text-align: center;
+			}
+
+		#VanillaCone {background-color:#0073e6;}
+		#OreoMcFlurry {background-color:#595959;}
+		#HotFudgeSundae {background-color:#009933;}
+		#ApplePie {background-color:#e67300;}
+		.chosenDesert{color:white;}
+
+		/*<!--Flipping Cube-->*/
+		#DesertCubeContainer{
+			position:relative;
+			margin:100px;
+		}
+		.wrapperDesert{
+			position: absolute;
+			perspective: 800px;
+			perspective-origin: 50% 100px;
+			top: 65%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+
+		.cubeDesert{
+			position: relative;
+			width: 200px;
+			transform-style: preserve-3d;
+			transition: all 0.5s cubic-bezier(.57,-0.42,.46,1.4);
+			cursor: pointer;
+		}
+
+		.cubeDesert div{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+		}
+
+		.frontDesert{
+			background-color: #4da6ff;
+			transform: translateZ(100px);
+		}
+
+		.backDesert{
+			background-color: #1aff66;
+			transform: rotateY(180deg) translateZ(100px);
+		}
+		.leftDesert{
+			background-color: #ff9933;
+			transform: rotateY(-90deg) translateX(-100px);
+			transform-origin: left center;
+		}
+
+		.rightDesert{
+			background-color: #83858c;
+			transform: rotateY(90deg) translateX(100px);
+			transform-origin: right center;
+		}
+
+		.cubeImage{
+			width: 200px;
+			height: 200px;
+		}
+		
+		/*<!--Desert Book-->*/
+		#TheDesertBook{
+			position:relative;
+			margin:50px auto;
+			position:relative;
+			width: 200px;
+			height: 250px;
+			perspective: 1000px;
+			cursor:help;
+		}
+		
+		.bookPages{
+			color:#666;
+			position:absolute;
+			width: 200px; 
+			height: 250px;
+			text-align: center;
+			box-shadow: 2px 2px 1px #8c8c8c;
+		}	
+		
+		#BookFrontPage{
+			background: #d0f1f2;
+			transform-origin: left center;
+			transition: all 1s, background-color 0.8s;
+			z-index:1;
+		}
+		
+		#BookFirstPage{
+			background: #ebf9fa;
+			z-index;2;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="top">
+		</div>
+		
+		<div id="container">
+			<div id="header">
+				<div class="banner">
+					<a href="MainWebPage.html">
+						<img src ="Images/logo.png" height="60" width="60"/>
+					</a>
+				</div>
+				
+				<div id="caption">
+					<h1 id="title">
+						<a href="MainWebPage.html" title="A Healthier McDonalds">A Healthier McDonalds</a>
+					</h1>
+					<div id="tagline">Your guide to a healthier experience in McDonalds!</div>
+				</div>
+			</div>
+			
+			<div id="navigation">
+					<ul id="menus" class="menu">
+						<li>
+							<a class="home" href="MainWebPage.html" title="Home">Home</a>
+						</li>
+						
+						<li>
+							<a class="homeButton item" href="MainWebPage.html">Home</a>
+						</li>
+						
+						<li>
+							<a class="about item" href="AboutMe.html">About Me</a>
+						</li>
+						
+						<li>	<!--class="explore"-->
+							<a class="currentPage" href="Explore.html">Explore</a>
+						</li>
+						
+						<li>
+							<a class="support item" href="Support.html">Support</a>
+						</li>
+						
+						<li>
+							<a title="Click Me!">
+								<form class="clock2" name="clockForm">
+									<input id="clock" name="clockButton" onClick="showDate()" readonly />
+								</form>	
+							</a>
+						</li>
+					</ul>
+			</div>
+			<div id="content">
+				<h1 class="contentHeader">
+					<div>
+						<button id="burger" class="catergory" onmouseover="exploreOver(0)" onmouseout="exploreOut(0)" onclick="exploreClick(0)">Burgers</button>
+						<button id="french" class="catergory" onmouseover="exploreOver(1)" onmouseout="exploreOut(1)" onclick="exploreClick(1)">French Fries</button>
+						<button id="chicken" class="catergory" onmouseover="exploreOver(2)" onmouseout="exploreOut(2)" onclick="exploreClick(2), setTimeout(removeTypingEffect,4000)">Chicken</button>
+						<button id="desert" class="catergory" onmouseover="exploreOver(3)" onmouseout="exploreOut(3)" onclick="exploreClick(3)">Deserts</button>
+					</div>
+				</h1>
+				<div class="scroll special">
+					<div class="scrollContainer">
+						<button onclick="topFunction()" id="myBtn" title="Refresh to go Explore">Explore</button>
+						<div id="defaultContent">
+							<br>
+							<table id="welcome">
+								<tbody>
+									<tr>
+										<th><h2>Welcome to Explore!</h2></th>
+									</tr>
+									<tr>
+										<td class="welcomePage">Here, I will share information that I have gathered over the course of 
+										this assignment.</td>
+									</tr>
+									<tr>
+										<th><h2>How to use this page?</h2></th>
+									</tr>
+									<tr>
+										<td class="welcomePage">Click on one of the 4 catergories to begin your tour!</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div id="burgerContent" class="catergoryContent">
+							<br>
+							<h1 class="contentHeader">Burgers</h1>
+							<br>
+							<p>McDonalds is well-known for their wide variety of delicious, mouth-watering
+							food menu items. The burgers they produce are one of the many reasons they are able
+							to attract their customers as it is affordable and delicious, perfect for a student
+							meal. They also serve regional, and seasonal burgers that are specially made for
+							the taste buds of the locals and the occasion.</p>
+							<br>
+							<h4>All time favourites</h4>
+							<p>In Singapore, the all time favourites are as follows: <span class=special1>Big Mac®</span>, 
+							<span class=special2>Double Cheeseburger</span>, and the <span class=special3>infamous McSpicy</span>.</p>
+							<div class="slideshow-container">
+								<div class="mySlidesBurger fade">
+									<div class="numbertext">1 / 3</div>
+										<img class="photoBurger" src="images/BigMac.png" style="width:400px; height:300px;"/>
+									<div class="text">Big Mac</div>
+								</div>
+								<div class="mySlidesBurger fade">
+									<div class="numbertext">2 / 3</div>
+										<img class="photoBurger" src="images/DoubleCheeseBurger.png" style="width:400px; height:300px;"/>
+									<div class="text">Double Cheeseburger</div>
+								</div>
+								<div class="mySlidesBurger fade">
+									<div class="numbertext">3 / 3</div>
+										<img class="photoBurger" src="images/McSpicy.png" style="width:400px; height:300px;"/>
+									<div class="text">McSpicy</div>
+								</div>
+								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1)">&#10095;</a>
+							</div>
+							<br>
+							<div style="text-align:center">
+							  <span class="dot" onclick="currentSlide(1)"></span> 
+							  <span class="dot" onclick="currentSlide(2)"></span> 
+							  <span class="dot" onclick="currentSlide(3)"></span> 
+							</div>
+							<br>
+							<br>
+							<h3><span class=special4>Big Mac®</span></h3>
+							<p>The Big Mac® was first introduced in 1968 and has grown to be an icon for burger
+							lovers everywhere. This mouth-watering perfection starts off with two sear-sizzled 100%
+							all-beef patties, with a special sauce topped with shredded lettuce, american cheese, pickles,
+							and onions, between a sesame seed bun. Making it a one-of-a-kind experience</p>
+							<br>
+							<div class="nutrients">
+								<h3>Nutrients:</h3>
+								<p>28.0g Protein. &nbsp;&nbsp;26.0g Fat. &nbsp;&nbsp;43.0g Carbohydrate. &nbsp;&nbsp;970.0mg Salt.</p>
+							</div>
+							<div class="slideshow-container">
+								<div class="mySlidesBM fade">
+									<img class="photo" src="images/Big Mac 1.jpg"/>
+								</div>
+
+								<div class="mySlidesBM fade">
+									<img class="photo" src="images/Big Mac 2.jpg"/>
+								</div>
+
+								<div class="mySlidesBM fade">
+									<img class="photo" src="images/Big Mac 3.jpg"/>
+								</div>
+							</div>
+							<br>
+							<br>
+							<br>
+							<h3><span class=special5>Double Cheeseburger</span></h3>
+							<p>The Double Cheeseburger features two 100% pure beef patties with absolutely no fillers,
+							additives or preservatives, seasoned with a pinch of salt and pepper, and topped with tangy pickles,
+							chopped onions, ketchup, mustard and two slices of melty American cheese. Doubling on the beef and 
+							cheese, to double your enjoyment with every one bite.</p>
+							<br>
+							<div class="nutrients">
+								<h3>Nutrients:</h3>
+								<p>28.0g Protein. &nbsp;&nbsp;22.0g Fat. &nbsp;&nbsp;32.0g Carbohydrate. &nbsp;&nbsp;1060.0mg Salt.</p>
+							</div>
+							<div class="slideshow-container">
+								<div class="mySlidesDCB fade">
+									<img class="photo" src="images/DoubleCheeseBurger1.png"/>
+								</div>
+
+								<div class="mySlidesDCB fade">
+									<img class="photo" src="images/DoubleCheeseBurger2.png"/>
+								</div>
+
+								<div class="mySlidesDCB fade">
+									<img class="photo" src="images/DoubleCheeseBurger3.jpg"/>
+								</div>
+							</div>
+							<br>
+							<br>
+							<h3><span class=special6>McSpicy</span></h3>
+							<p>With a thick, juicy and crispy chicken cutlet topped with mayonnaise, shredded lettuce, and served on a perfectly
+							toasty sesame seed bun. This ferocious chicken burger is no ordinary chicken. The McSpicy has added value in spice to 
+							challenge the most courages Singaporeans that exist in Singapore. Just the thought of the spice stings your tounge.</p>
+							<br>
+							<div class="nutrients">
+								<h3>Nutrients:</h3>
+								<p>24.0g Protein. &nbsp;&nbsp;25.0g Fat. &nbsp;&nbsp;50.0g Carbohydrate. &nbsp;&nbsp;1280.0mg Salt.</p>
+							</div>
+							<div class="slideshow-container">
+								<div class="mySlidesMS fade">
+									<img class="photo" src="images/McSpicy1.png"/>
+								</div>
+
+								<div class="mySlidesMS fade">
+									<img class="photo" src="images/McSpicy2.jpg"/>
+								</div>
+
+								<div class="mySlidesMS fade">
+									<img class="photo" src="images/McSpicy3.jpg"/>
+								</div>
+							</div>
+							<br>
+							<br>
+							<br>
+							<table id="welcome">
+								<tbody>
+									<caption><h3>Do you know how to be healthy in McDonalds?</h3></caption>
+									<tr>
+										<th><h2>Ways to be order healthier burgers</h2></th>
+									</tr>
+									<tr>
+										<td>Go for simpler burgers like the Veggie Crunch or a cheeseburger!</td>
+									</tr>
+									<tr>
+										<td>Only order a single burger and not a set meal, but you will get hungry.</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="slideshow-container">
+												<div class="mySlidesHB fade">
+													<img class="photoTable" src="images/VeggieCrunch.jpg"/>
+												</div>
+
+												<div class="mySlidesHB fade">
+													<img class="photoTable" src="images/Cheeseburger.jpg"/>
+												</div>
+
+												<div class="mySlidesHB fade">
+													<img class="photoTable" src="images/HamBurger.png"/>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<br>
+							<div class="nutrients" style="float:left;margin-left:70px;">
+								<h3>Veggie Crunch Nutrients:</h3>
+								<p>13.0g Protein. &nbsp;&nbsp;18.0g Fat. &nbsp;&nbsp;36.0g Carbohydrate. &nbsp;&nbsp;0.0mg Salt.</p>
+							</div>
+							<div class="nutrients" style="float:left;margin-left:30px;">
+								<h3>Cheeseburger Nutrients:</h3>
+								<p>17.0g Protein. &nbsp;&nbsp;12.0g Fat. &nbsp;&nbsp;32.0g Carbohydrate. &nbsp;&nbsp;710.0mg Salt.</p>
+							</div>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+						</div>
+						
+						<div id="frenchContent" class="catergoryContent">
+							<br>
+							<h1 class="contentHeader">French Fries</h1>
+							<br>
+							<div class="frenchFriesIntroContainer">
+								<div class="frenchFriesIntro">
+									<h3><span style="line-height:100%;">The crisp, craveable, fan favorite.</span></h3>
+									<p>These World Famous Fries are born from premium potatoes such as the Russet Burbank and the Shepody.
+									With zero grams of trans fat per labeled serving, these epic fries are crispy and golden on the outsite
+									and fluffy on the inside. For winning flavor and texture, they are fried in 100% vegetable oil with no
+									trans-fat. Their cholesterol-free fries do not contain any wheat, gluton nor beef extract.</p>
+								</div>
+								<div class="potato-Profile-Container">
+									<img class="photoPotato" src="images/Potato.jpg"/>
+									<div class="change">
+										<div class="potatoProfileText">
+											<p>100% wheat,</p>
+											<p>gluton and beef</p>
+											<p>extract free</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<br>
+							<div>
+								<div style="cursor:pointer;">
+									<h2 style="text-decoration:underline">Contents</h2>
+									<p class="friesContentLabel proteinLabel protein" onmouseover="proteinColorChange()" onmouseout="proteinColorBack()" onclick="proteinAbout()">Protein</p>
+									<p class="friesContentLabel fatLabel fat" onmouseover="fatColorChange()" onmouseout="fatColorBack()" onclick="fatAbout()">Total fat</p>
+									<p class="friesContentLabel carbohydrateLabel carbohydrate" onmouseover="carbohydrateColorChange()" onmouseout="carbohydrateColorBack()" onclick="carbohydrateAbout()">Carbohydrate</p>
+									<p class="friesContentLabel saltLabel salt" onmouseover="saltColorChange()" onmouseout="saltColorBack()" onclick="saltAbout()">Salt</p>
+									<div style="height:8px;">
+									</div>
+									<div class="friesPercentageContainer">
+										<div class="friesContent proteinPercentage protein" onmouseover="proteinColorChange()" onmouseout="proteinColorBack()" onclick="proteinAbout()">6%</div>
+										<div class="friesContent fatPercentage fat" onmouseover="fatColorChange()" onmouseout="fatColorBack()" onclick="fatAbout()">25%</div>
+										<div class="friesContent carbohydratePercentage carbohydrate" onmouseover="carbohydrateColorChange()" onmouseout="carbohydrateColorBack()" onclick="carbohydrateAbout()">68%</div>
+										<div class="friesContent saltPercentage salt" onmouseover="saltColorChange()" onmouseout="saltColorBack()" onclick="saltAbout()">1%</div>
+									</div>
+								</div>
+								<div style="height:40px;">
+								</div>
+								<div id="aboutProtein">
+									<div style="height:7px;"></div>
+									<h2 style="text-weight:normal; display:inline;">Protein</h2>
+									<h3 style="text-weight:normal; display:inline;">&nbsp;&nbsp;4.0 g</h3>
+									<br>
+									<p>Proteins are essential nutrients for the human body. They are one of the building blocks of body tissue, and can also serve as a fuel source.
+									As a fuel, proteins provide as much energy density as carbohydrates. Protein is a nutrient needed by the human body for growth and maintenance.
+									Aside from water, proteins are the most abundant kind of molecules in the body. Protein can be found in all cells of the body and is the major 
+									structural component of all cells in the body, especially muscle. This also includes body organs, hair and skin. Proteins are also used in membranes,
+									such as glycoproteins. When broken down into amino acids, they are used as precursors to hormones, immune response, cellular
+									repair, and other molecules essential for life. Additionally, protein is needed to form blood cells.</p>
+								</div>
+								<div id="aboutFat">
+									<div style="height:7px;"></div>
+									<h2 style="text-weight:normal; display:inline;">Fat</h2>
+									<h3 style="text-weight:normal; display:inline;">&nbsp;&nbsp;17.0 g</h3>
+									<br>
+									<p>Fat is one of the three main macronutrients, along with carbohydrate and protein. Fats are esters of three fatty acid chains and the alcohol
+									glycerol. Fats are generally hydrophobic, and are soluble in organic solvents and insoluble in water. Fat is an important foodstuff for many 
+									forms of life, and fats serve both structural and metabolic functions. They are a necessary part of our diet. Some fatty acids that are set free 
+									by the digestion of fats are called essential because they cannot be synthesized in the body from simpler constituents. Fats are broken down in 
+									the body by enzymes called lipases produced in the pancreas.</p>
+								</div>
+								<div id="aboutCarbohydrate">
+									<div style="height:7px;"></div>
+									<h2 style="text-weight:normal; display:inline;">Carbohydrate</h2>
+									<h3 style="text-weight:normal; display:inline;">&nbsp;&nbsp;45.0 g</h3>
+									<br>
+									<p>Carbohydrates are biological molecules. Carbohydrate consumed in food yields 3.87 calories of energy per gram for simple sugars, and 3.57 to
+									4.12 calories per gram for complex carbohydrate in most other foods. Relatively high levels of carbohydrate are associated with processed foods 
+									or refined foods made from plants. Lower amounts of carbohydrate are usually associated with unrefined foods, including beans, tubers, rice, and
+									unrefined fruit. Animal-based foods generally have the lowest carbohydrate levels, although milk does contain a high proportion of lactose. 
+									Carbohydrates are a common source of energy, however, no carbohydrate is an essential nutrient. Protein and fats are able provide all the required
+									energy, though the potential for some negative health effects of extreme carbohydrate restriction remains.</p>
+								</div>
+								<div id="aboutSalt">
+									<div style="height:7px;"></div>
+									<h2 style="text-weight:normal; display:inline;">Salt</h2>
+									<h3 style="text-weight:normal; display:inline;">&nbsp;&nbsp;240.0 mg</h3>
+									<br>
+									<p>Salt is about 40 percent sodium and 60 percent chloride. It adds flavor to food and is also used as a preservative, binder, and stabilizer.
+									The human body needs a very small amount of sodium to conduct nerve impulses, contract and relax muscles, and maintain the proper balance of water 
+									and minerals. But too much sodium in the diet can lead to high blood pressure, heart disease, and even stroke. Accordingly, numerous world health 
+									associations and experts in developed countries recommend reducing consumption of popular salty foods. The World Health Organization recommends 
+									that adults should consume less than 2,000 mg of sodium, equivalent to 5 grams of salt per day.</p>
+								</div>
+								<br>
+								<h3>Information</h3>
+								<p>Despite McDonalds' description of their fan-favorite French Fries, they still contain excessive amounts
+								of fats and carbohyrates.</p>
+								<p style="display:inline;">Do you still think is worth to purchase French Fries for every visit to McDonalds?</p>
+								<input class="questionnButton" type="button" value="Yes" onclick="yesMessage()">
+								<input class="questionnButton" type="button" value="No" onclick="noMessage()">
+								<div id="yesContent" style="display:none;">
+									<br>
+									<p>Me too, they are so Delicious!</p>
+									<p>But we should still learn to control our temptation for them.</p>
+									<p>Click "No" to learn how.</p>
+								</div>
+								<div id="noContent" style="display:none;">
+									<br>
+									<p id="noOriginal">Well said! Let me show you how.</p>
+									<h3>Scroll Down!</h3>
+									<br>
+									<br>
+									<br>
+									<br>
+									<br><br><br><br>
+									<table id="welcome">
+										<tbody>
+											<caption><h3>Do you know how to be healthy in McDonalds?</h3></caption>
+											<tr>
+												<th><h2>Ways to be avoid French Fries</h2></th>
+											</tr>
+											<tr>
+												<td>Don't even order them!</td>
+											</tr>
+											<tr>
+												<td>Order corn as a side dish instead.</td>
+											</tr>
+											<tr>
+												<td>
+													<img class="photoTable" src="images/Corn.jpg"/>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<br>
+									<div class="nutrients">
+										<h3 style="margin-left:265px;">Nutrients:</h3>
+										<p style="text-align:center;">4.0g Protein. &nbsp;&nbsp;1.0g Fat. &nbsp;&nbsp;18.0g Carbohydrate. &nbsp;&nbsp;100.0mg Salt.</p>
+									</div>
+								</div>
+								<br><br><br>
+							</div>
+						</div>
+						<div id="chickenContent" class="catergoryContent">
+							<br>
+							<h1 class="contentHeader">Chicken</h1>
+							<br>
+							<div>
+								<div class="card cardLeft" onclick="displayNugget(), wingsHeader()">
+									<img class="imageCard" src="images/Nuggets.jpg" style="width:100%">
+									<div class="cardText">
+										<h2 style="text-align:center;">Chicken McNugget</h2>
+									</div>
+								</div>
+								<div class="card cardRight" onclick="displayWings()">
+									<img class="imageCard" src="images/McWings.jpg" style="width:100%">
+									<div class="cardText">
+										<h2 style="text-align:center;">Chicken McWings</h2>
+									</div>
+								</div>
+							</div>
+							<div id="chickenDescription">
+								<div id="chickenDescriptionHeader">
+									<div id="chickenDescriptionTextContainer">
+										<h2 id="chickenDescriptionText" class="typingEffect">Chicken</h2>
+									</div>
+								</div>
+								<div class="cubeWrapper">
+									  <div class="cube">
+											<div class="front">
+												<div class="boxContent" style="border:1px solid blue;">
+													<br><br><br><br>
+													<p>Click on one of the 2 cards.</p>
+												</div>
+											</div>
+											<div class="left">
+												<div class="boxContent" style="border:1px solid black;">
+													<h2 style="line-height:40px;">Chicken McNugget</h2>
+													<p>A boxful of bite-sized treats, beautifully battered, good as a quick snack or as part of a hearty meal.</p>
+													<p>These great nuggets are available in boxes of 6, 9 or 20 piece servings.</p>
+													<p>The Chicken McNuggets are a childhood favourite that you won’t outgrow.</p>
+													<p>The golden, tender and juicy McNuggets are made with 100% white meat chicken.</p>
+													<p>No artificial colors, flavors nor preservatives added.</p>
+													<br>
+													<div class="nutrients" style="text-align:initial; margin-left:150px;">
+														<h3>Nutrients Per Piece:</h3>
+														<p >2.7g Protein. &nbsp;&nbsp;3.1g Fat. &nbsp;&nbsp;3.0g Carbohydrate. &nbsp;&nbsp;87.0mg Salt.</p>
+													</div>
+												</div>
+											</div>
+											<div class="right">
+												<div class="boxContent" style="border:1px solid #83858c;">
+													<h2 style="line-height:40px;">Chicken McWings</h2>
+													<p>The McWings come in 4 pieces, with each bite tasting better and greater.</p>
+													<p>These cripsy roasted wings are rich in all of your crunchy goodness.</p>
+													<p>The McWings are one of the secret fan favorites which will always excite you.</p>
+													<p>The crisp it gives off can be felt from just looking at it.</p>
+													<p>The moment you give a bite, they will disappear from your hands without a trace.</p>
+													<br>
+													<div class="nutrients" style="text-align:initial; margin-left:150px;">
+														<h3>Nutrients Per Piece:</h3>
+														<p >7.8g Protein. &nbsp;&nbsp;8.0g Fat. &nbsp;&nbsp;5.3g Carbohydrate. &nbsp;&nbsp;282.5mg Salt.</p>
+													</div>
+												</div>
+											</div>
+									  </div>
+								</div>
+							</div>
+							<br><br><br><br><br><br>
+							<div>
+								<table id="welcome">
+									<tbody>
+										<caption><h3>Do you know how to be healthy in McDonalds?</h3></caption>
+										<tr>
+											<th><h2>Ways to be avoid the Chicken</h2></th>
+										</tr>
+										<tr>
+											<td>Don't even order them!</td>
+										</tr>
+										<tr>
+											<td>Be healthy and order a salad!</td>
+										</tr>
+										<tr height="405px;">
+											<td>
+												<div class='saladCard' title="Click Me!">
+													<div class='saladFront saladFace' onclick="flipSalad()">
+														<img class="photoTable" src="images/salad1.png">
+													</div>
+													<div class="saladBack saladFace" onclick="flipSalad()">
+														<img class="photoTable" src="images/salad2.jpg">
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<br>
+								<div class="nutrients">
+									<h3 style="margin-left:272px;">Nutrients:</h3>
+									<p style="text-align:center;">1.0g Protein. &nbsp;&nbsp;0.0g Fat. &nbsp;&nbsp;4.0g Carbohydrate. &nbsp;&nbsp;10.0mg Salt.</p>
+								</div>
+							</div>
+							<br><br><br>
+						</div>
+						
+						<div id="desertContent" class="catergoryContent">
+							<br>
+							<h1 class="contentHeader">Deserts</h1>
+							<br>
+							<p></p>
+							<div id="DesertDefault">
+								<h2>Welcome</h2>
+								<p>Click on one of the 4 options below.</p>
+								<p>Watch the cube spin!</p>
+							</div>
+
+							<div id="VanillaCone" class="tabContent">
+								<h2>Classical Cream</h2>
+								<p>A treat made with sweet, creamy vanilla soft serve in a crispy cone.</p>
+								<p>The Vanilla Cone is a silky world to taste. 
+								Sometimes, a Cone is enough to make your day.</p>
+								<br>
+								<div class="nutrients" style="line-height:14px;">
+									<h3>Nutrients:</h3>
+									<p>2.0g Protein. &nbsp;&nbsp;4.0g Fat. &nbsp;&nbsp;25.0g Carbohydrate. &nbsp;&nbsp;70.0mg Salt.</p>
+								</div>
+							</div>
+
+							<div id="OreoMcFlurry" class="tabContent">
+								<h2>Best Enjoyed With Cookies</h2>
+								<p>Soft vanilla served with Oreo Cookies, mixed perfectly into it.</p> 
+								<p>The Oreo McFlurry is easily a fan favorite 
+								amongst kids with its delicious Oreo blend.</p>
+								<br>
+								<div class="nutrients" style="line-height:14px;">
+									<h3>Nutrients:</h3>
+									<p>6.0g Protein. &nbsp;&nbsp;14.0g Fat. &nbsp;&nbsp;64.0g Carbohydrate. &nbsp;&nbsp;260.0mg Salt.</p>
+								</div>
+							</div>
+
+							<div id="HotFudgeSundae" class="tabContent">
+								<h2>Cool And Creamy Meets Warm Fudge</h2>
+								<p>Vanilla soft serve, smothered in chocolaty fudge sauce.</p>
+								<p>The Hot Fudge Sundae is irresistible 
+								and a great choice for chocolate lovers.</p>
+								<br>
+								<div class="nutrients" style="line-height:14px;">
+									<h3>Nutrients:</h3>
+									<p>5.0g Protein. &nbsp;&nbsp;11.0g Fat. &nbsp;&nbsp;57.0g Carbohydrate. &nbsp;&nbsp;200.0mg Salt.</p>
+								</div>
+							</div>
+
+							<div id="ApplePie" class="tabContent">
+								<h2>Golden Baked Goodness</h2>
+								<p>Delicious apples, lightly spiced with cinnamon, baked in a flaky pastry.</p>
+								<p>The Apple Pie has been melting hearts 
+								and warming souls for a real long time.</p>
+								<br>
+								<div class="nutrients" style="line-height:14px;">
+									<h3>Nutrients:</h3>
+									<p>2.0g Protein. &nbsp;&nbsp;15.0g Fat. &nbsp;&nbsp;26.0g Carbohydrate. &nbsp;&nbsp;145.0mg Salt.</p>
+								</div>
+							</div>
+
+							<button class="tabLink" onmouseover="desertOver(0)" onmouseout="desertOut(0)" onclick="displayVanillaCone(), turnVanillaCone()">Vanilla Cone</button>
+							<button class="tabLink" onmouseover="desertOver(1)" onmouseout="desertOut(1)" onclick="displayOreoMcFlurry(), turnOreoMcFlurry()">Oreo McFlurry</button>
+							<button class="tabLink" onmouseover="desertOver(2)" onmouseout="desertOut(2)" onclick="displayHotFudgeSundae(), turnHotFudgeSundae()">Hot Fudge Sundae</button>
+							<button class="tabLink" onmouseover="desertOver(3)" onmouseout="desertOut(3)" onclick="displayApplePie(), turnApplePie()">Apple Pie</button>
+							<div id="DesertCubeContainer">
+								<div class="wrapperDesert">
+									<div class="cubeDesert" title="Click Me!">
+										<div class="frontDesert" onclick="turn(-90)">
+											<img class="cubeImage" src="images/VanillaCone.png">
+										</div>
+										<div class="backDesert"  onclick="turn(-270)">
+											<img class="cubeImage" src="images/HotFudgeSundae.png">
+										</div>
+										<div class="leftDesert"  onclick="turn(0)">
+											<img class="cubeImage" src="images/ApplePie.png">
+										</div>
+										<div class="rightDesert"  onclick="turn(-180)">
+											<img class="cubeImage" src="images/OreoMcFlurry.png">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div style="height:370px;">
+							</div>
+							<div id="TheDesertBook">
+								<div id="BookFrontPage" class="bookPages" onmouseover="openBook()" onmouseout="closeBook()">
+									<br><br><br><br>
+									<h2>Do you know</h2>
+									<h2>how to be healthy</h2>
+									<h2>in McDonalds?</h2>
+								</div>
+								<div id="BookFirstPage" class="bookPages" onmouseover="openBook()" onmouseout="closeBook()">
+									<br><br><br><br>
+									<p style="font-size:12px;">Order only the Vanilla Cone</p>
+									<br>
+									<h3>Or</h3>
+									<br>
+									<p style="font-size:12px;">Don't order at all!</p>
+							  </div>  
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+	var slideIndexBurger = 1;
+	showSlidesBurger(slideIndexBurger);
+
+	function plusSlides(n) 
+	{
+		showSlidesBurger(slideIndexBurger += n);
+	}
+
+	function currentSlide(n) 
+	{
+		showSlidesBurger(slideIndexBurger = n);
+	}
+
+	function showSlidesBurger(n) 
+	{
+		var i;
+		var slides = document.getElementsByClassName("mySlidesBurger");
+		var dots = document.getElementsByClassName("dot");
+		if (n > slides.length)
+		{slideIndexBurger = 1}    
+		if (n < 1)
+		{slideIndexBurger = slides.length}
+		for (i = 0; i < slides.length; i++)
+		{slides[i].style.display = "none";}
+		for (i = 0; i < dots.length; i++) 
+		{dots[i].className = dots[i].className.replace(" active", "");}
+		slides[slideIndexBurger-1].style.display = "block";  
+		dots[slideIndexBurger-1].className += " active";
+	}
+	
+	var slideIndexBM = 0;
+	showSlidesBM();
+
+	function showSlidesBM() 
+	{
+		var i;
+		var slides = document.getElementsByClassName("mySlidesBM");
+		for (i = 0; i < slides.length; i++) 
+		{slides[i].style.display = "none";}
+		slideIndexBM++;
+		if (slideIndexBM> slides.length) 
+		{slideIndexBM = 1}      
+		slides[slideIndexBM-1].style.display = "block";  
+		setTimeout(showSlidesBM, 2000); // Change image every 2 seconds
+	}
+	
+	var slideIndexDCB = 0;
+	showSlidesDCB();
+
+	function showSlidesDCB() 
+	{
+		var i;
+		var slides = document.getElementsByClassName("mySlidesDCB");
+		for (i = 0; i < slides.length; i++) 
+		{slides[i].style.display = "none";}
+		slideIndexDCB++;
+		if (slideIndexDCB> slides.length) 
+		{slideIndexDCB = 1}      
+		slides[slideIndexDCB-1].style.display = "block";  
+		setTimeout(showSlidesDCB, 2000); // Change image every 2 seconds
+	}
+	
+	var slideIndexMS = 0;
+	showSlidesMS();
+	
+	function showSlidesMS() 
+	{
+		var i;
+		var slides = document.getElementsByClassName("mySlidesMS");
+		for (i = 0; i < slides.length; i++) 
+		{slides[i].style.display = "none";}
+		slideIndexMS++;
+		if (slideIndexMS> slides.length) 
+		{slideIndexMS = 1}      
+		slides[slideIndexMS-1].style.display = "block";  
+		setTimeout(showSlidesMS, 2000); // Change image every 2 seconds
+	}
+		
+	var slideIndexHB = 0;
+	showSlidesHB();
+	
+	function showSlidesHB() 
+	{
+		var i;
+		var slides = document.getElementsByClassName("mySlidesHB");
+		for (i = 0; i < slides.length; i++) 
+		{slides[i].style.display = "none";}
+		slideIndexHB++;
+		if (slideIndexHB> slides.length) 
+		{slideIndexHB = 1}      
+		slides[slideIndexHB-1].style.display = "block";  
+		setTimeout(showSlidesHB, 2000); // Change image every 2 seconds
+	}
+	
+	function proteinColorChange()
+	{
+		var x = document.getElementsByClassName("protein");
+		x[0].style.backgroundColor="#46a049";
+		x[1].style.backgroundColor="#46a049";
+	}
+	
+	function proteinColorBack()
+	{
+		var x = document.getElementsByClassName("protein");
+		x[0].style.backgroundColor="#4CAF50";
+		x[1].style.backgroundColor="#4CAF50";
+	}
+	function fatColorChange()
+	{
+		var x = document.getElementsByClassName("fat");
+		x[0].style.backgroundColor="#0b7dda";
+		x[1].style.backgroundColor="#0b7dda";
+	}
+	
+	function fatColorBack()
+	{
+		var x = document.getElementsByClassName("fat");
+		x[0].style.backgroundColor="#2196F3 ";
+		x[1].style.backgroundColor="#2196F3 ";
+	}
+	function carbohydrateColorChange()
+	{
+		var x = document.getElementsByClassName("carbohydrate");
+		x[0].style.backgroundColor="#da190b";
+		x[1].style.backgroundColor="#da190b";
+	}
+	
+	function carbohydrateColorBack()
+	{
+		var x = document.getElementsByClassName("carbohydrate");
+		x[0].style.backgroundColor="#f44336";
+		x[1].style.backgroundColor="#f44336";
+	}
+	function saltColorChange()
+	{
+		var x = document.getElementsByClassName("salt");
+		x[0].style.backgroundColor="#595959";
+		x[1].style.backgroundColor="#595959";
+	}
+	
+	function saltColorBack()
+	{
+		var x = document.getElementsByClassName("salt");
+		x[0].style.backgroundColor="#808080";
+		x[1].style.backgroundColor="#808080";
+	}
+	
+	var openedProtein = 0;
+	var openedFat = 0;
+	var openedCarbohydrate = 0;
+	var openedSalt = 0;
+	
+	function proteinAbout()
+	{
+		var x = document.getElementById("aboutProtein");
+		if(openedProtein==0)
+		{
+			if(openedFat==1)
+			{	
+				var y = document.getElementById("aboutFat");
+				y.style.height="0px";
+				y.style.visibility="hidden";
+				y.style.opacity="0";
+				--openedFat;
+			}
+			if(openedCarbohydrate==1)
+			{
+				var y = document.getElementById("aboutCarbohydrate");
+				y.style.height="0px";
+				y.style.visibility="hidden";
+				y.style.opacity="0";
+				--openedCarbohydrate;
+			}
+			if(openedSalt==1)
+			{
+				var y = document.getElementById("aboutSalt");
+				y.style.height="0px";
+				y.style.visibility="hidden";
+				y.style.opacity="0";
+				--openedSalt;
+			}
+			
+			x.style.height="130px";
+			x.style.visibility="visible";
+			x.style.opacity="1";
+			++openedProtein;
+		}
+		else
+		{
+			x.style.height="0px";
+			x.style.visibility="hidden";
+			x.style.opacity="0";
+			--openedProtein;
+		}
+	}
+	
+	function fatAbout()
+	{
+		var x = document.getElementById("aboutFat");
+		if(openedFat==0)
+		{
+			if(openedProtein==1)
+			{	
+				var y = document.getElementById("aboutProtein");
+				y.style.height="0px";
+				y.style.visibility="hidden";
+				y.style.opacity="0";
+				--openedProtein;
+			}
+			if(openedCarbohydrate==1)
+			{
+				var y = document.getElementById("aboutCarbohydrate");
+				y.style.height="0px";
+				y.style.visibility="hidden";
+				y.style.opacity="0";
+				--openedCarbohydrate;
+			}
+			if(openedSalt==1)
+			{
+				var y = document.getElementById("aboutSalt");
+				y.style.height="0px";
+				y.style.visibility="hidden";
+				y.style.opacity="0";
+				--openedSalt;
+			}
+			
+			x.style.height="130px";
+			x.style.visibility="visible";
+			x.style.opacity="1";
+			++openedFat;
+		}
+		else
+		{
+			x.style.height="0px";
+			x.style.visibility="hidden";
+			x.style.opacity="0";
+			--openedFat;
+		}
+	}
+	
+	function carbohydrateAbout()
+	{
+		var x = document.getElementById("aboutCarbohydrate");
+		if(openedCarbohydrate==0)
+		{
+			if(openedProtein==1)
+			{	
+				var y = document.getElementById("aboutProtein");
+				y.style.height="0px";
+				y.style.visibility="hidden";
+				y.style.opacity="0";
+				--openedProtein;
+			}
+			if(openedFat==1)
+			{
+				var y = document.getElementById("aboutFat");
+				y.style.height="0px";
+				y.style.visibility="hidden";
+				y.style.opacity="0";
+				--openedFat;
+			}
+			if(openedSalt==1)
+			{
+				var y = document.getElementById("aboutSalt");
+				y.style.height="0px";
+				y.style.visibility="hidden";
+				y.style.opacity="0";
+				--openedSalt;
+			}
+			
+			x.style.height="130px";
+			x.style.visibility="visible";
+			x.style.opacity="1";
+			++openedCarbohydrate;
+		}
+		else
+		{
+			x.style.height="0px";
+			x.style.visibility="hidden";
+			x.style.opacity="0";
+			--openedCarbohydrate;
+		}
+	}
+	
+	function saltAbout()
+	{
+		var x = document.getElementById("aboutSalt");
+		if(openedSalt==0)
+		{
+			if(openedProtein==1)
+			{	
+				var y = document.getElementById("aboutProtein");
+				y.style.height="0px";
+				y.style.visibility="hidden";
+				y.style.opacity="0";
+				--openedProtein;
+			}
+			if(openedFat==1)
+			{
+				var y = document.getElementById("aboutFat");
+				y.style.height="0px";
+				y.style.visibility="hidden";
+				y.style.opacity="0";
+				--openedFat;
+			}
+			if(openedCarbohydrate==1)
+			{
+				var y = document.getElementById("aboutCarbohydrate");
+				y.style.height="0px";
+				y.style.visibility="hidden";
+				y.style.opacity="0";
+				--openedCarbohydrate;
+			}
+			
+			x.style.height="130px";
+			x.style.visibility="visible";
+			x.style.opacity="1";
+			++openedSalt;
+		}
+		else
+		{
+			x.style.height="0px";
+			x.style.visibility="hidden";
+			x.style.opacity="0";
+			--openedSalt;
+		}
+	}
+	
+	var pressedYes = 0;
+	function yesMessage()
+	{
+		document.getElementById("yesContent").style.display="block";
+		document.getElementById("noContent").style.display="none";
+		++pressedYes;
+	}
+	
+	function noMessage()
+	{
+		document.getElementById("noContent").style.display="block";
+		document.getElementById("yesContent").style.display="none";
+		if (pressedYes == 1)
+			document.getElementById("noOriginal").style.display="none";
+	}
+	
+	function removeTypingEffect()
+	{
+		document.getElementById("chickenDescriptionText").classList.remove("typingEffect");
+	}
+	
+	
+	var nuggetDisplayed = 0;
+	var wingsDisplayed = 0;
+	function displayNugget()
+	{
+		var x = document.getElementsByClassName("cube");
+		if (nuggetDisplayed==0)
+		{
+			if(wingsDisplayed==1)
+			{--wingsDisplayed;}
+			x[0].style.transform="rotatey(90deg)";
+			x[0].style.left="0%";
+			++nuggetDisplayed;
+		}
+		else
+		{
+			x[0].style.transform="rotatey(0deg)";
+			x[0].style.left="0%";
+			--nuggetDisplayed;
+		}
+	}
+	
+	function displayWings()
+	{
+		var x = document.getElementsByClassName("cube");
+		if (wingsDisplayed==0)
+		{
+			if(nuggetDisplayed==1)
+			{--nuggetDisplayed;}
+			x[0].style.transform="rotatey(-90deg)";
+			x[0].style.left="235%";
+			++wingsDisplayed;
+		}
+		else
+		{
+			x[0].style.transform="rotatey(0deg)";
+			x[0].style.left="0%";
+			--wingsDisplayed;
+		}
+	}
+	
+	var saladSide = 0;
+	function flipSalad()
+	{
+		if (saladSide==0)
+		{
+			document.getElementsByClassName("saladFace")[0].style.transform="rotatey(180deg)";
+			document.getElementsByClassName("saladFace")[0].style.backfaceVisibility="hidden";
+			document.getElementsByClassName("saladFace")[1].style.transform="rotatey(0deg)";
+			++saladSide;
+		}
+		else
+		{
+			document.getElementsByClassName("saladFace")[1].style.transform="rotatey(180deg)";
+			document.getElementsByClassName("saladFace")[1].style.backfaceVisibility="hidden";
+			document.getElementsByClassName("saladFace")[0].style.transform="rotatey(0deg)";
+			--saladSide;
+		}
+	}
+	
+	
+	var VC=0;
+	var OMF=0;
+	var HFS=0;
+	var AP=0;
+	function desertOver(num)
+	{
+		if (VC==1&&num==0){}
+		else if (OMF==1&&num==1){}
+		else if (HFS==1&&num==2){}
+		else if (AP==1&&num==3){}
+		else
+			document.getElementsByClassName("tabLink")[num].style.backgroundColor="#cccccc"
+	}
+
+	function desertOut(num)
+	{
+		if (VC==1&&num==0){}
+		else if (OMF==1&&num==1){}
+		else if (HFS==1&&num==2){}
+		else if (AP==1&&num==3){}
+		else
+		document.getElementsByClassName("tabLink")[num].style.backgroundColor="#e6e6e6"
+	}
+
+	function displayVanillaCone()
+	{
+		if (VC!=1)
+		{
+			document.getElementById("DesertDefault").style.display="none";
+			var x = document.getElementsByClassName("tabContent");
+			for (var i = 0; i < x.length; i++)
+			{
+				x[i].style.display = "none";
+			}
+			
+			var y = document.getElementsByClassName("tabLink");
+			for (var i = 0; i < y.length; i++)
+			{
+				y[i].style.backgroundColor = "#e6e6e6";
+				y[i].classList.remove("chosenDesert");
+			}
+			
+			y[0].classList.add("chosenDesert");
+			document.getElementById("VanillaCone").style.display = "block";
+			y[0].style.backgroundColor = "#0073e6";
+			VC = 1;
+			OMF = 0;
+			HFS = 0;
+			AP = 0;
+		}
+		else
+		{
+			document.getElementById("DesertDefault").style.display="block";
+			document.getElementById("VanillaCone").style.display = "none";
+			document.getElementsByClassName("tabLink")[0].style.backgroundColor = "#cccccc";
+			document.getElementsByClassName("tabLink")[0].classList.remove("chosenDesert");
+			VC = 0;
+			OMF = 0;
+			HFS = 0;
+			AP = 0;
+		}
+	}
+
+	function displayOreoMcFlurry()
+	{
+		if (OMF!=1)
+		{
+			document.getElementById("DesertDefault").style.display="none";
+			var x = document.getElementsByClassName("tabContent");
+			for (var i = 0; i < x.length; i++)
+			{
+				x[i].style.display = "none";
+			}
+			
+			var y = document.getElementsByClassName("tabLink");
+			for (var i = 0; i < y.length; i++)
+			{
+				y[i].style.backgroundColor = "#e6e6e6";
+				y[i].classList.remove("chosenDesert");
+			}
+			
+			y[1].classList.add("chosenDesert");
+			document.getElementById("OreoMcFlurry").style.display = "block";
+			y[1].style.backgroundColor = "#595959";
+			VC = 0;
+			OMF = 1;
+			HFS = 0;
+			AP = 0;
+		}
+		else
+		{
+			document.getElementById("DesertDefault").style.display="block";
+			document.getElementById("OreoMcFlurry").style.display = "none";
+			document.getElementsByClassName("tabLink")[1].style.backgroundColor = "#cccccc";
+			document.getElementsByClassName("tabLink")[1].classList.remove("chosenDesert");
+			VC = 0;
+			OMF = 0;
+			HFS = 0;
+			AP = 0;
+		}
+	}
+
+	function displayHotFudgeSundae()
+	{
+		if (HFS!=1)
+		{
+			document.getElementById("DesertDefault").style.display="none";
+			var x = document.getElementsByClassName("tabContent");
+			for (var i = 0; i < x.length; i++)
+			{
+				x[i].style.display = "none";
+			}
+			
+			var y = document.getElementsByClassName("tabLink");
+			for (var i = 0; i < y.length; i++)
+			{
+				y[i].style.backgroundColor = "#e6e6e6";
+				y[i].classList.remove("chosenDesert");
+			}
+			
+			y[2].classList.add("chosenDesert");
+			document.getElementById("HotFudgeSundae").style.display = "block";
+			y[2].style.backgroundColor = "#009933";
+			VC = 0;
+			OMF = 0;
+			HFS = 1;
+			AP = 0;
+		}
+		else
+		{
+			document.getElementById("DesertDefault").style.display="block";
+			document.getElementById("HotFudgeSundae").style.display = "none";
+			document.getElementsByClassName("tabLink")[2].style.backgroundColor = "#cccccc";
+			document.getElementsByClassName("tabLink")[2].classList.remove("chosenDesert");
+			VC = 0;
+			OMF = 0;
+			HFS = 0;
+			AP = 0;
+		}
+	}
+
+	function displayApplePie()
+	{
+		if (AP!=1)
+		{
+			document.getElementById("DesertDefault").style.display="none";
+			var x = document.getElementsByClassName("tabContent");
+			for (var i = 0; i < x.length; i++)
+			{
+				x[i].style.display = "none";
+			}
+			
+			var y = document.getElementsByClassName("tabLink");
+			for (var i = 0; i < y.length; i++)
+			{
+				y[i].style.backgroundColor = "#e6e6e6";
+				y[i].classList.remove("chosenDesert");
+			}
+			
+			y[3].classList.add("chosenDesert");
+			document.getElementById("ApplePie").style.display = "block";
+			y[3].style.backgroundColor = "#e67300";
+			VC = 0;
+			OMF = 0;
+			HFS = 0;
+			AP = 1;
+		}
+		else
+		{
+			document.getElementById("DesertDefault").style.display="block";
+			document.getElementById("ApplePie").style.display = "none";
+			document.getElementsByClassName("tabLink")[3].style.backgroundColor = "#cccccc";
+			document.getElementsByClassName("tabLink")[3].classList.remove("chosenDesert");
+			VC = 0;
+			OMF = 0;
+			HFS = 0;
+			AP = 0;
+		}
+	}
+
+	function turnVanillaCone()
+	{
+		document.getElementsByClassName("cubeDesert")[0].style.transform="rotateY(0deg)";
+	}
+	
+	function turnOreoMcFlurry()
+	{
+		if (OMF==1)
+			document.getElementsByClassName("cubeDesert")[0].style.transform="rotateY(-90deg)";
+		else
+			document.getElementsByClassName("cubeDesert")[0].style.transform="rotateY(0deg)";
+	}
+	
+	function turnHotFudgeSundae()
+	{
+		if (HFS==1)
+			document.getElementsByClassName("cubeDesert")[0].style.transform="rotateY(-180deg)";
+		else
+			document.getElementsByClassName("cubeDesert")[0].style.transform="rotateY(0deg)";
+	}
+	
+	function turnApplePie()
+	{
+		if (AP==1)
+			document.getElementsByClassName("cubeDesert")[0].style.transform="rotateY(-270deg)";
+		else
+			document.getElementsByClassName("cubeDesert")[0].style.transform="rotateY(0deg)";
+	}
+	
+	function turn(x)
+	{
+		document.getElementsByClassName("cubeDesert")[0].style.transform="rotateY("+x+"deg)";
+	}
+	
+	function openBook()
+	{
+		var x =document.getElementById("BookFrontPage");
+		x.style.transform="rotateY(-90deg)";
+		x.style.background="#666";
+	}
+	
+	function closeBook()
+	{
+		var x =document.getElementById("BookFrontPage");
+		x.style.transform="rotateY(0deg)";
+		x.style.backgroundColor="#d0f1f2";
+	}
+	</script>
+</body>
+</html>

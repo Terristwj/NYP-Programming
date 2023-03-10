@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="Images/favicon.png" />
+	<title>Support</title>
+	<link href="Images/MainFormat.css" rel="stylesheet" type="text/css"/>
+	<script src="Images/MainScript.js"></script>
+	<style>
+		#email{									/*<!-- Done in:								    -->*/
+			font-size:16px;						/*<!-- 1920 x 1080 Resolution					-->*/
+		}										/*<!-- Size of Text, Apps and other items: 100% -->*/
+		
+		.contactChip {
+			margin-right: 17px;
+			display: inline-block;
+			padding: 0 25px;
+			height: 50px;
+			font-size: 16px;
+			line-height: 50px;
+			border-radius: 25px;
+			background-color: #d0f1f2;
+			cursor: pointer;
+		}
+		
+		.contactChip:hover{
+			background-color: #87dbde;
+		}
+
+		.contactChip img {
+			float: left;
+			margin: 0 10px 0 -25px;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+		}
+		
+		#ChipsSection{
+			padding:10px;
+		}
+		
+		.chipName{
+			cursor:pointer;
+			text-decoration:none;
+			color:black;
+		}
+		
+		.videos{
+        	width:0px;
+            height:0px;
+			display:inline;
+		} 
+		
+		#VideoSelect{
+			border: 5px solid #87dbde;
+			box-shadow: 4px 4px 2px gray;
+			border-radius:20px;
+			height:250px;
+		}
+		
+		.audio{
+			display:inline;
+			float:left;
+			margin:32px;
+		}
+		
+		.playButton{
+			border: none;
+			border-radius:8px;
+			color: white;
+			padding: 14px 28px;
+			font-size: 16px;
+			cursor: pointer;
+			box-shadow: 4px 4px 2px gray;
+		}
+		
+		.audio1 {
+			background-color: #4CAF50;
+			width: 70px;
+			margin:5px;
+			cursor: default;
+		}
+		.audio1-1 {background-color: #4CAF50;}
+		.audio1-1:hover {background-color: #46a049;}
+
+		.audio2 {
+			background-color: #2196F3;
+			width: 70px;
+			margin:5px;
+			cursor: default;
+		}
+		.audio2-1 {background-color: #2196F3;}
+		.audio2-1:hover {background: #0b7dda;}
+
+		.audio3 {
+			background-color: #ff9800;
+			width: 70px;
+			margin:5px;
+			cursor: default;
+		}
+		.audio3-1 {background-color: #ff9800;}
+		.audio3-1:hover {background: #e68a00;}
+
+		.audio4 {
+			background-color: #f44336;
+			width: 70px;
+			margin:5px;
+			cursor: default;
+		}
+		.audio4-1 {background-color: #f44336;}
+		.audio4-1:hover {background: #da190b;}
+
+		.audio5 {
+			background-color: #e7e7e7; color: black;
+			width: 70px;
+			margin:5px;
+			cursor: default;
+		}
+		.audio5-1 {background-color: #e7e7e7; color: black;}
+		.audio5-1:hover {background: #ddd;}
+		
+		#SpeedControl{
+			border: 2.5px solid #87dbde;
+			text-align: center;
+			width:300px;
+			float:left;
+			padding: 10px;
+			height:45px;
+			margin: 15px 0px 0px 20px;
+			box-shadow: 4px 4px 2px gray;
+		}
+		
+		.controls{
+			display:inline;
+			border: none;
+			border-radius:8px;
+			background-color: #5fcfd3;
+			color: #f8f8f8;
+			cursor: pointer;
+			margin: 5px;;
+			padding: 4px 15px;
+			box-shadow: 4px 4px 2px gray;
+		}
+		
+		#NowPlayingText{
+			border: 5px solid #87dbde;
+			text-align: center;
+			float:left;
+			margin: 0px 80px 0px 10px;
+			padding: 10px;
+			height:90px;
+			box-shadow: 4px 4px 2px gray;
+		}
+		
+		#Speed{
+			border: 2.5px solid #87dbde;
+			text-align: center;
+			float:left;
+			padding: 10px;
+			width:60px;
+			height:45px;
+			margin: 15px 0px 0px 0px;
+			box-shadow: 4px 4px 2px gray;
+		}
+		
+		/*<!--Form Section-->*/
+		.button{
+			background-color: #d0f1f2;
+			border: none;
+			border-radius:8px;
+			color: black;
+			padding: 14px 28px;
+			font-size: 16px;
+			cursor: pointer;
+			box-shadow: 4px 4px 2px gray;
+		}
+		
+		.startButton{
+			padding: 20px;
+			border-radius:12px;
+			margin:60px 363.5px 0px 363.5px;
+		}
+
+		.button:hover{
+			background-color:#87dbde;
+		}
+		
+		.form {
+			display: none; /* Hidden by default */
+			position: fixed; /* Stay in place */
+			z-index: 1; /* Sit on top */
+			padding-top: 100px; /* Location of the box */
+			left: 0;
+			top: 0;
+			width: 100%; /* Full width */
+			height: 100%; /* Full height */
+			overflow: auto; /* Enable scroll if needed */
+			background-color: rgb(0,0,0); /* Fallback color */
+			background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+
+		.form-content {
+			position: relative;
+			background-color: #fefefe;
+			margin: auto;
+			border: 1px solid #888;
+			width: 752.8px;
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+			animation-name: animatetop;
+			animation-duration: 0.4s;
+			animation-name: animatetop;
+			animation-duration: 0.4s
+		}
+
+		@keyframes animatetop {
+			from {top:-300px; opacity:0}
+			to {top:0; opacity:1}
+		}
+
+		.closeStyle1 {
+			color: white;
+			float: right;
+			font-size: 50px;
+			font-weight: bold;
+		}
+
+		.closeStyle1:hover{
+			color: red;
+			text-decoration: none;
+			cursor: pointer;
+		}
+
+		.closeStyle2{
+			background-color:#afe7e9;
+			margin-right:15px;
+		}
+
+		.form-header {
+			padding: 15px 16px;
+			background-color: #595959;
+			color: white;
+		}
+
+		.form-body {
+			padding: 50px 30px;
+		}
+
+		.form-footer {
+			padding: 20px 16px;
+			background-color: #595959;
+			color: white;
+		}
+
+		legend{
+			margin-left:20px;
+		}
+		
+		fieldset{
+				border-radius:20px;
+			}
+			
+		table{
+			border-collapse:collapse;
+		}
+
+		td{
+			padding:10px;
+			text-align:center;
+		}
+
+		.ratingLeft{
+			float:left;
+			padding-top:50px;
+			padding-left:75px;
+			padding-right:23px;
+			padding-bottom:50px;
+		}
+
+		.ratingRight{
+			float:left;
+			padding-top:50px;
+			padding-right:75px;
+			padding-left:23px;
+			padding-bottom:50px;
+		}
+		
+		/*<!--SnackBar Section-->*/
+		#snackbar {
+			visibility: hidden;
+			width: 250px;
+			margin-left: -140px;
+			background-color: #333;
+			color: #fff;
+			text-align: center;
+			border-radius: 2px;
+			padding: 8px;
+			line-height: 20px;
+			position: fixed;
+			z-index: 1;
+			left: 50%;
+			bottom: 30px;
+			font-size: 17px;
+		}
+
+		#snackbar.show {
+			visibility: visible;
+			-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+			animation: fadein 0.5s, fadeout 0.5s 2.5s;
+		}
+
+		@-webkit-keyframes fadein {
+			from {bottom: 0; opacity: 0;} 
+			to {bottom: 30px; opacity: 1;}
+		}
+
+		@keyframes fadein {
+			from {bottom: 0; opacity: 0;}
+			to {bottom: 30px; opacity: 1;}
+		}
+
+		@-webkit-keyframes fadeout {
+			from {bottom: 30px; opacity: 1;} 
+			to {bottom: 0; opacity: 0;}
+		}
+
+		@keyframes fadeout {
+			from {bottom: 30px; opacity: 1;}
+			to {bottom: 0; opacity: 0;}
+		}
+		
+		/**<!--FAQ Section-->**/
+		#FAQ{
+			border:1px solid black;
+			border-radius: 15px;
+			background-color: #d0f1f2;
+			height:200px;
+			max-width: 1000px;
+			position: relative;
+			font-family: Verdana;
+			box-shadow: 2px 2px 5px gray;
+		}
+		
+		.prev, .next {
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			width: auto;
+			padding: 16px;
+			margin-top: -22px;
+			color: black;
+			font-weight: bold;
+			font-size: 18px;
+			transition: 0.6s ease;
+			border-radius: 0 3px 3px 0;
+		}
+
+		/*<!--Position the "next button" to the right-->*/
+		.next {
+			right: 0;
+			border-radius: 3px 0 0 3px;
+		}
+
+		/*<!--On hover, add a black background color with a little bit see-through-->*/
+		.prev:hover, .next:hover {
+			background-color: rgba(0,0,0,0.8);
+			color:white;
+		}
+
+		/*<!--Caption text-->*/
+		.text {
+			border:1px solid black;
+			background-color:white;
+			border-radius: 15px;
+			width:87.55%;
+			height:60%;
+			color: black;
+			font-size: 15px;
+			padding: 8px 12px;
+			position: absolute;
+			margin: 30px 42px;
+			text-align: center;
+			box-shadow: 2px 2px 5px gray;
+		}
+
+		/*<!--Number text (1/3)-->*/
+		.numbertext {
+			color: b;ack;
+			font-size: 12px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 0;
+		}
+
+		/*<!--The dots/bullets/indicators-->*/
+		.dot {
+			cursor:pointer;
+			height: 13px;
+			width: 13px;
+			margin: 162px 2px 0px 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+		}
+
+		.active, .dot:hover {
+			background-color: #717171;
+		}
+
+		/*<!--Fading animation Start*-->*/
+		.fade {
+			-webkit-animation-name: fade;
+			-webkit-animation-duration: 1.5s;
+			animation-name: fade;
+			animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+			from {opacity: .4} 
+			to {opacity: 1}
+		}
+
+		@keyframes fade {
+			from {opacity: .4} 
+			to {opacity: 1}
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="top">
+		</div>
+		
+		<div id="container">
+			<div id="header">
+				<div class="banner">
+					<a href="MainWebPage.html">
+						<img src ="Images/logo.png" height="60" width="60">
+					</a>
+				</div>
+				
+				<div id="caption">
+					<h1 id="title">
+						<a href="MainWebPage.html" title="A Healthier McDonalds">A Healthier McDonalds</a>
+					</h1>
+					<div id="tagline">Your guide to a healthier experience in McDonalds!</div>
+				</div>
+			</div>
+			
+			<div id="navigation">
+					<ul id="menus" class="menu">
+						<li>
+							<a class="home" href="MainWebPage.html" title="Home">Home</a>
+						</li>
+						
+						<li>
+							<a class="homeButton item" href="MainWebPage.html">Home</a>
+						</li>
+						
+						<li>
+							<a class="about item" href="AboutMe.html">About Me</a>
+						</li>
+						
+						<li>
+							<a class="explore item" href="Explore.html">Explore</a>
+						</li>
+						
+						<li>	<!--class="support"-->
+							<a class="currentPage" href="Support.html">Support</a>
+						</li>
+						
+						<li>
+							<a title="Click Me!">
+								<form class="clock2" name="clockForm">
+									<input id="clock" name="clockButton" onClick="showDate()" readonly />
+								</form>	
+							</a>
+						</li>
+					</ul>
+			</div>
+			<div id="content">
+				<h1 class="contentHeader">Support</h1>
+				<div class="scroll">
+					<div class="scrollContainer">
+						<button onclick="topFunction()" id="myBtn" title="Refresh to go top">Top</button>
+						<br>
+						<h3>Welcome to the support centre of my Website!</h3>
+						<p>Here, you can view some particular contact details from myself,
+						the creator of this Website.</p>
+						<p>You can also send an email to me for any enquires by clicking <a href="mailto:someone@gmail.com" id="email">this line</a>.</p>
+						<br><br>
+						<h3>Social Media platforms:</h3>
+						<div id="ChipsSection">  <!--Just links to social media platforms, not actual profile-->
+							<div class="contactChip">
+								<a class="chipName" href="http://facebook.com/" target="_blank">
+									<img src="images/FacebookLogo.png" style="background-color:#3b5998;" width="96" height="96">
+									<label class="chipName">Facebook</label>
+								</a>
+							</div>
+							<div class="contactChip">
+								<a class="chipName" href="https://twitter.com/" target="_blank">
+									<img src="images/TwitterLogo.png" style="background-color:#1da1f2;" width="96" height="96">
+									<label class="chipName">Twitter</label>
+								</a>
+							</div>
+							<div class="contactChip">
+								<a class="chipName" href="https://discord.com/" target="_blank">
+									<img src="images/DiscordLogo.png" style="background-color:#7289da;" width="96" height="96">
+									<label class="chipName">Discord</label>
+								</a>
+							</div>
+							<div class="contactChip">
+								<a class="chipName" href="https://youtube.com/" target="_blank">
+									<img src="images/YoutubeLogo.png" style="background-color:white;" width="96" height="96">
+									<label class="chipName">Youtube</label>
+								</a>
+							</div>
+							<div class="contactChip">
+								<a class="chipName" href="https://instagram.com/" target="_blank">
+									<img src="images/InstagramLogo.jpg" style="background-color:white;" width="96" height="96">
+									<label class="chipName">Instagram</label>
+								</a>
+							</div>
+						</div>
+						<br><br>
+						<div id="VideoSection">
+							<h3>(Auto-Replay enabled)</h3>
+							<h3>Some music to listen while at support:</h3>
+							<div id="VideoSelect">
+								<div class="audio">
+									<button class="playButton audio1-1" onclick="playVideo(0)">Audio 1</button>
+									<div class="video">
+									</div>
+								</div>
+								
+								<div class="audio">
+									<button class="playButton audio2-1" onclick="playVideo(1)">Audio 2</button>
+									<div class="video">
+									</div>
+								</div>
+								
+								<div class="audio">
+									<button class="playButton audio3-1" onclick="playVideo(2)">Audio 3</button>
+									<div class="video">
+									</div>
+								</div>
+								
+								<div class="audio">
+								<button class="playButton audio4-1" onclick="playVideo(3)">Audio 4</button>
+									<div class="video">
+									</div>
+								</div>
+								
+								<div class="audio">
+								<button class="playButton audio5-1" onclick="playVideo(4)">Audio 5</button>
+									<div class="video">
+									</div>
+								</div>
+								
+								<div id="SpeedControl">
+									<h3>Controls:</h3>
+									<div style="margin-top:6px;">
+										<div class="controls" onclick="videoSpeed(1)">
+											<p style="display:inline;">Normal</p>
+										</div>
+										<div class="controls" onclick="videoSpeed(2)">
+											<p style="display:inline;">Fast</p>
+										</div>
+										<div class="controls" onclick="videoSpeed(3)">
+											<p style="display:inline;">Faster</p>
+										</div>
+									</div>
+								</div>
+								
+								<div id="NowPlayingText">
+									<h1>Now Playing:</h1>
+									<div id="NowPlaying">
+										<br><h2>Nothing</h2>
+									</div>
+								</div>
+								
+								<div id="Speed">
+									<h3>Speed:</h3>
+									<div style="margin-top:6px;" id="VideoSpeed">
+										<h4>Nothing</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="FormSection">
+							<button id="RateButton" class="button startButton">Rate My Website</button>
+							<div id="myForm" class="form">
+								<div class="form-content">
+									<form>
+										<div class="form-header">
+											<span class="closeStyle1 close">&times;</span>
+											<h2>Feedback Form</h2>
+										</div>
+										<div class="form-body">
+											<fieldset>
+												<legend>(Optional)Personal Details</legend>
+												<br>
+												<label for="nameInput">Name:</label>
+												<input type="text" id="nameInput" placeholder="Enter Name" autofocus>
+												<br><br>
+												<label for="emailInput">Age:&nbsp;&nbsp;</label>
+												<input type="number" id="ageInput" placeholder="Enter Age">
+												<br><br>
+											</fieldset>
+											<br>
+											<fieldset>
+												<legend>Rating Details</legend>
+												<div class="ratingLeft">
+													<table border="1">
+														<tbody>
+															<tr>
+																<td rowspan="2"></td>
+																<td colspan="5">Horrible to Awsome</td>
+															</td>
+															<tr>
+																<td onclick="checkOne()">1</td>
+																<td onclick="checkTwo()">2</td>
+																<td onclick="checkThree()">3</td>
+																<td onclick="checkFour()">4</td>
+																<td onclick="checkFive()">5</td>
+															</tr>
+															<tr>
+																<td><label>Informative</label></td>
+																<td><input type="radio" id="informative" class="1" name="informative" value="1" required></td>
+																<td><input type="radio" id="informative" class="2" name="informative" value="2" required></td>
+																<td><input type="radio" id="informative" class="3" name="informative" value="3" required></td>
+																<td><input type="radio" id="informative" class="4" name="informative" value="4" required></td>
+																<td><input type="radio" id="informative" class="5" name="informative" value="5" required></td>
+															</tr>
+															<tr>
+																<td><label>Unique</label></td>
+																<td><input type="radio" id="unique" class="1" name="unique" value="1" required></td>
+																<td><input type="radio" id="unique" class="2" name="unique" value="2" required></td>
+																<td><input type="radio" id="unique" class="3" name="unique" value="3" required></td>
+																<td><input type="radio" id="unique" class="4" name="unique" value="4" required></td>
+																<td><input type="radio" id="unique" class="5" name="unique" value="5" required></td>
+															</tr>
+															<tr>
+																<td><label>Creative</label></td>
+																<td><input type="radio" id="creative" class="1" name="creative" value="1" required></td>
+																<td><input type="radio" id="creative" class="2" name="creative" value="2" required></td>
+																<td><input type="radio" id="creative" class="3" name="creative" value="3" required></td>
+																<td><input type="radio" id="creative" class="4" name="creative" value="4" required></td>
+																<td><input type="radio" id="creative" class="5" name="creative" value="5" required></td>
+															</tr>
+															<tr>
+																<td><label>Engaging</label></td>
+																<td><input type="radio" id="engaging" class="1" name="engaging" value="1" required></td>
+																<td><input type="radio" id="engaging" class="2" name="engaging" value="2" required></td>
+																<td><input type="radio" id="engaging" class="3" name="engaging" value="3" required></td>
+																<td><input type="radio" id="engaging" class="4" name="engaging" value="4" required></td>
+																<td><input type="radio" id="engaging" class="5" name="engaging" value="5" required></td>
+															</tr>
+															<tr>
+																<td><label>Appealing</label></td>
+																<td><input type="radio" id="appealing" class="1" name="appealing" value="1" required></td>
+																<td><input type="radio" id="appealing" class="2" name="appealing" value="2" required></td>
+																<td><input type="radio" id="appealing" class="3" name="appealing" value="3" required></td>
+																<td><input type="radio" id="appealing" class="4" name="appealing" value="4" required></td>
+																<td><input type="radio" id="appealing" class="5" name="appealing" value="5" required></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+												<div class="ratingRight">
+													<label for="comments">(Optional)Any Comments:</label>
+													<p>
+														<textarea id="comments" cols="29" rows="15" maxlength="450" ></textarea>
+													</p>
+												</div>
+											</fieldset>
+										</div>
+										<div class="form-footer">
+											<input type="submit" class="button closeStyle2 close">
+											<input type="reset" class="button closeStyle2" value="Clear">
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div id="snackbar">
+							<p>Form Submission Cancelled..</p>
+						</div>
+						<br><br><br><br><br><br>
+						<h3 style="text-align:center;">FAQ Section</h3>
+						<div id="FAQ">
+							<div class="slideshow-container">
+								<div class="slidesFAQ fade">
+									<div class="numbertext">1 / 3</div>
+									<div class="text">
+										<h3>Are these contents true?</h3>
+										<br>
+										<p>Not really. All of my contents are based on articles and</p>
+										<p>information I have gathered over the course of this assignment.</p>
+										<p>To put it bluntly, all of my information gathered are based on</p>
+										<p>my personal opinion and the provided informations may vary.</p>
+									</div>
+								</div>
+								<div class="slidesFAQ fade">
+									<div class="numbertext">2 / 3</div>
+									<div class="text">
+										<h3>Is this even relevant to me?</h3>
+										<br>
+										<p>Yes. McDonald outlets are growing at an exponential rate.</p>
+										<p>There will always be an outlet at every corner, everywhere.</p>
+										<p>Even if you don't visit one, surely there will be friends or</p>
+										<p>families bringing it up into a conversation or talking about it.</p>
+									</div>
+								</div>
+								<div class="slidesFAQ fade">
+									<div class="numbertext">3 / 3</div>
+									<div class="text">
+										<h3>Are you a robot?</h3>
+										<br>
+										<p>No. I am a mordern homo sapien. Capable of expressing care and</p>
+										<p>concern to others by sharing my visual displays with regards to the</p>
+										<p>food served in McDonalds. I do not possess any mechanical parts nor have</p>
+										<p>any malfunctioning internal hardware installed in my memory of the brain.</p>
+									</div>
+								</div>
+								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1)">&#10095;</a>
+							</div>
+							<br>
+							<div style="text-align:center">
+							  <span class="dot" onclick="currentSlide(1)"></span> 
+							  <span class="dot" onclick="currentSlide(2)"></span> 
+							  <span class="dot" onclick="currentSlide(3)"></span> 
+							</div>
+						</div>
+						<br><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var playingVideo1 = 0;
+		var playingVideo2 = 0;
+		var playingVideo3 = 0;
+		var playingVideo4 = 0;
+		var playingVideo5 = 0;
+		function playVideo(x)
+		{
+			var y = document.getElementsByClassName("video");
+			var z = document.getElementById("NowPlaying");
+			var a = document.getElementById("VideoSpeed");
+			
+			y[0].innerHTML="";
+			y[1].innerHTML="";
+			y[2].innerHTML="";
+			y[3].innerHTML="";
+			y[4].innerHTML="";
+			
+			if (x==0 && playingVideo1 == 0)
+			{
+				y[x].innerHTML="<audio id='myAudio' loop autoplay><source src='images/Legends.mp3' type='audio/mpeg'></audio>";
+				z.innerHTML="<p class='playButton audio1'>Audio 1</p><h2>Legends</h2>";
+				a.innerHTML="<h3>1x</h3>";
+				++playingVideo1;
+				playingVideo2 = 0;
+				playingVideo3 = 0;
+				playingVideo4 = 0;
+				playingVideo5 = 0;
+			}
+			else if (x==1 && playingVideo2 == 0)
+			{
+				y[x].innerHTML="<audio id='myAudio' loop autoplay><source src='images/Ruins.mp3' type='audio/mpeg'></audio>";
+				z.innerHTML="<p class='playButton audio2'>Audio 2</p><h2>Ruins</h2>";
+				a.innerHTML="<h3>1x</h3>";
+				++playingVideo2;
+				playingVideo1 = 0;
+				playingVideo3 = 0;
+				playingVideo4 = 0;
+				playingVideo5 = 0;
+			}
+			else if (x==2 && playingVideo3 == 0)
+			{
+				y[x].innerHTML="<audio id='myAudio' loop autoplay><source src='images/AmusementPark.mp3' type='audio/mpeg'></audio>";
+				z.innerHTML="<p class='playButton audio3'>Audio 3</p><h2>Amusement Park</h2>";
+				a.innerHTML="<h3>1x</h3>";
+				++playingVideo3;
+				playingVideo1 = 0;
+				playingVideo2 = 0;
+				playingVideo4 = 0;
+				playingVideo5 = 0;
+			}
+			else if (x==3 && playingVideo4 == 0)
+			{
+				y[x].innerHTML="<audio id='myAudio' loop autoplay><source src='images/RetroStereo.mp3' type='audio/mpeg'></audio>";
+				z.innerHTML="<p class='playButton audio4'>Audio 4</p><h2>Retro Stereo</h2>";
+				a.innerHTML="<h3>1x</h3>";
+				++playingVideo4;
+				playingVideo1 = 0;
+				playingVideo2 = 0;
+				playingVideo3 = 0;
+				playingVideo5 = 0;
+			}
+			else if (x==4 && playingVideo5 == 0)
+			{
+				y[x].innerHTML="<audio id='myAudio' loop autoplay><source src='images/Aeons.mp3' type='audio/mpeg'></audio>";
+				z.innerHTML="<p class='playButton audio5'>Audio 5</p><h2>Aeons</h2>";
+				a.innerHTML="<h3>1x</h3>";
+				++playingVideo5;
+				playingVideo1 = 0;
+				playingVideo2 = 0;
+				playingVideo3 = 0;
+				playingVideo4 = 0;
+			}
+			else
+			{
+				z.innerHTML="<br><h2>Nothing</h2>";
+				a.innerHTML="<p>Nothing</p>";
+				playingVideo1 = 0;
+				playingVideo2 = 0;
+				playingVideo3 = 0;
+				playingVideo4 = 0;
+				playingVideo5 = 0;
+			}
+		}
+	
+		function videoSpeed(x)
+		{
+			var y = document.getElementById("VideoSpeed");
+			
+			if (playingVideo1==1||playingVideo2==1||playingVideo3==1||playingVideo4==1||playingVideo5==1)
+			{
+				var Aud = document.getElementById("myAudio");
+				
+				if (x==1)
+				{
+					y.innerHTML="<h3>1x</h3>";
+					Aud.playbackRate = 1;
+				}
+				else if(x==2)
+				{
+					y.innerHTML="<h3>2x</h3>";
+					Aud.playbackRate = 2;
+				}
+				else
+				{
+					y.innerHTML="<h3>3x</h3>";
+					Aud.playbackRate = 3;
+				}
+			}
+			else
+			{}
+		}
+	
+		var form = document.getElementById('myForm');
+		var btn = document.getElementById("RateButton");
+		var close = document.getElementsByClassName("close");
+		btn.onclick = function() 
+		{
+			form.style.display = "block";
+		}
+
+		close[0].onclick = function() 
+		{
+			form.style.display = "none";
+			showBar();
+		}
+
+		window.onclick = function(event) 
+		{
+			if (event.target == form) 
+			{
+				form.style.display = "none";
+				showBar();
+			}
+		}
+
+		function checkOne()
+		{
+			var x = document.getElementsByClassName("1");
+			for(var i = 0; i<x.length;i++)
+			{
+				x[i].checked=true;
+			}
+		}
+
+		function checkTwo()
+		{
+			var x = document.getElementsByClassName("2");
+			for(var i = 0; i<x.length;i++)
+			{
+				x[i].checked=true;
+			}
+		}
+
+		function checkThree()
+		{
+			var x = document.getElementsByClassName("3");
+			for(var i = 0; i<x.length;i++)
+			{
+				x[i].checked=true;
+			}
+		}
+
+		function checkFour()
+		{
+			var x = document.getElementsByClassName("4");
+			for(var i = 0; i<x.length;i++)
+			{
+				x[i].checked=true;
+			}
+		}
+
+		function checkFive()
+		{
+			var x = document.getElementsByClassName("5");
+			for(var i = 0; i<x.length;i++)
+			{	
+				x[i].checked=true;
+			}
+		}
+		
+		function showBar()
+		{
+			setTimeout(function()
+			{
+				var x = document.getElementById("snackbar")
+				x.className = "show";
+				setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+			}, 500);
+		}
+		
+		var slideIndexFAQ = 1;
+		showSlidesFAQ(slideIndexFAQ);
+
+		function plusSlides(n) 
+		{
+			showSlidesFAQ(slideIndexFAQ += n);
+		}
+
+		function currentSlide(n) 
+		{
+			showSlidesFAQ(slideIndexFAQ = n);
+		}
+
+		function showSlidesFAQ(n) 
+		{
+			var i;
+			var slides = document.getElementsByClassName("slidesFAQ");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length)
+			{slideIndexFAQ = 1}    
+			if (n < 1)
+			{slideIndexFAQ = slides.length}
+			for (i = 0; i < slides.length; i++)
+			{slides[i].style.display = "none";}
+			for (i = 0; i < dots.length; i++) 
+			{dots[i].className = dots[i].className.replace(" active", "");}
+			slides[slideIndexFAQ-1].style.display = "block";  
+			dots[slideIndexFAQ-1].className += " active";
+		}
+		
+	</script>
+</body>
+</html>
