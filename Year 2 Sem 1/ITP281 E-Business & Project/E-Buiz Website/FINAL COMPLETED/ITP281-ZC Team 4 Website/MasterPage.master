@@ -1,0 +1,136 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<Head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="CSS and Images/MainCss.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="CSS and Images/Images and fonts/favicon.png" />
+	<script src="CSS and Images/MainJS.js"></script>
+	<script src="CSS and Images/jquery-3.3.1.js"></script>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</Head>
+<body onload="currentPage()">
+    <form id="form1" runat="server">
+        <div id="container">
+            <div class="header">
+                <div class="hBox1">
+                    <div id="CompanyLogo">
+                        <table>
+                            <tr id="CompanyLogoTop">
+                                <td>
+                                    <div style="padding-top:5px;">
+                                        <h1 id="CompanyName">Mum's Story</h1>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div style="padding-top:4px;">
+                                        <a runat="server" id="btnHomeImage"><asp:Image ID="ImageLogo" runat="server" ImageUrl="~/CSS and Images/Images and fonts/Logo.png" /></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div id="CompanyLogoBottom">
+                                        <h3 class="tagline">A community for parents</h3>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="hBox2">
+                    <div id="LoginBtnContainer">
+                        <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
+                    </div>
+                </div>
+                <div class="hBox3">
+                    <div class="socialMediaContainer">
+                        <div id="SocialMediaContainer">
+                            <div class="SMC1">
+                                <div class="SMLogo" title="@Facebook">
+                                    <asp:Image ID="Facebook" class="SMLogos" runat="server" ImageUrl="~/CSS and Images/Images and fonts/FacebookLogo.png" />
+                                    <div class="SM">@Mum's_Story SG</div>
+                                </div>
+                            </div>
+                            <div class="SMC2">
+                                <div class="SMLogo" title="@Twitter">
+                                    <asp:Image ID="Twitter" class="SMLogos" runat="server" ImageUrl="~/CSS and Images/Images and fonts/TwitterLogo.png" />
+                                    <div class="SM">@Mum's_Story SG</div>
+                                </div>
+                            </div>
+                            <div class="SMC3">
+                                <div class="SMLogo" title="@Instagram">
+                                    <asp:Image ID="Instagram" class="SMLogos" runat="server" ImageUrl="~/CSS and Images/Images and fonts/InstagramLogo.jpg" />
+                                    <div class="SM">@Mum's_Story SG</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <div class="nBox0"">
+                    <div class="nItem">
+                        <div class="nItem0" style="padding-top:4px;padding-bottom:6px;" onclick="dropdownFunc()">
+                            <asp:Image ID="DropdownMenuIcon" runat="server" ImageUrl="~/CSS and Images/Images and fonts/Dropdown Menu Icon.png" Height="33px" Width="37px" />
+                        </div>
+                        <div id="dropdownNavi">
+                            <a runat="server" id="btnHome1"><p runat="server" id="p1" class="DDNItem">Home</p></a>
+                            <a runat="server" id="btnDoctor1"><p runat="server" id="p2" class="DDNItem">Doctor</p></a>
+                            <a runat="server" id="btnStore1"><p runat="server" id="p3" class="DDNItem">Store</p></a>
+                            <a runat="server" id="btnProfile1"><p runat="server" id="p4" class="DDNItem">Profile</p></a>
+                            <a runat="server" id="btnForum1"><p runat="server" id="p5" class="DDNItem">Chat Room</p></a>
+                            <a runat="server" id="btnDonate1"><p runat="server" id="p6" class="DDNItem">Donate</p></a>
+                            <a runat="server" id="btnContacts1"><p runat="server" id="p7" class="DDNItem">Contacts</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nBox1">
+                    <div class="nItem">
+                        <a runat="server" id="btnHome2"><p runat="server" id="p8" class="nItems">Home</p></a>
+                    </div>
+                </div>
+                <div class="nBox2">
+                    <div class="nItem">
+                        <a runat="server" id="btnDoctor2"><p runat="server" id="p9" class="nItems">Doctor</p></a>
+                    </div>
+                </div>
+                <div class="nBox3">
+                    <div class="nItem">
+                        <a runat="server" id="btnStore2"><p runat="server" id="p10" class="nItems">Store</p></a>
+                    </div>
+                </div>
+                <div class="nBox4">
+                    <div class="nItem">
+                        <a runat="server" id="btnProfile2"><p runat="server" id="p11" class="nItems">Profile</p></a>
+                    </div>
+                </div>
+                <div class="nBox5">
+                    <div class="nItem">
+                        <a runat="server" id="btnForum2"><p runat="server" id="p12" class="nItems">Chat Room</p></a>
+                    </div>
+                </div>
+                <div class="nBox6">
+                    <div class="nItem">
+                        <a runat="server" id="btnDonate2"><p runat="server" id="p13" class="nItems">Donate</p></a>
+                    </div>
+                </div>
+                <div class="nBox7">
+                    <div class="nItem">
+                        <a runat="server" id="btnContacts2"><p runat="server" id="p14" class="nItems">Contacts</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

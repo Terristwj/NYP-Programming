@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="MasterStore.master.cs" Inherits="MasterStore" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <script>
+        function getPageNum() {
+            return 2;
+        }
+        
+        function currentPage2() {
+            var x = document.getElementsByClassName("storeMenuItem");
+            var i = getPageNum2();
+            if (i !== -1) {
+                x[i].style.background = "rgba(255, 192, 203, 0.45)";
+            }
+        }
+    </script>
+    <style>
+        .content{
+            min-height:820px;
+            height:auto;
+        }
+
+        #extraDiv{
+            border:1px solid transparent;
+        }
+
+        #StoreMenuContainer{
+            margin:auto;
+            margin-top:25px;
+            display:flex;
+        }
+
+        .storeMenuItem{
+            font-size:16px;
+            width:150px;
+            border:1px solid grey;
+            background:white;
+            padding-top:10px;
+            padding-bottom:10px;
+            cursor:pointer;
+            flex:7;
+        }
+
+        .storeMenuItem:hover{
+            background:rgb(255, 235, 238);
+        }
+
+        .space{
+            flex:1;
+        }
+
+        @media(min-width: 1250px){
+            .space{
+                flex:2;
+            }
+        }
+
+        @media(min-width: 1450px){
+            .space{
+                flex:4;
+            }
+        }
+
+        #StoreContentContainer{
+            display:flex;
+            margin-top:30px;
+        }
+
+        #StoreContent{
+            flex:8;
+        }
+
+        .StoreContentContainerSpace{
+            flex:1;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head2" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <div id="extraDiv">
+        <div id="StoreMenuContainer">
+            <div class="space"></div>
+            <asp:Button ID="btn_Produts" CssClass="storeMenuItem" runat="server" Text="Baby Products" OnClick="btn_Produts_Click" />
+            <div class="space"></div>
+            <asp:Button ID="btn_Food" CssClass="storeMenuItem" runat="server" Text="Baby Food" OnClick="btn_Food_Click" />
+            <div class="space"></div>
+            <asp:Button ID="btn_Medicine" CssClass="storeMenuItem" runat="server" Text="Medicine" OnClick="btn_Medicine_Click" />
+            <div class="space"></div>
+            <asp:Button ID="btn_SponsorProducts" CssClass="storeMenuItem" runat="server" Text="Sponsor Product" OnClick="btn_SponsorProducts_Click" />
+            <div class="space"></div>
+            <asp:Button ID="btn_Cart" CssClass="storeMenuItem" runat="server" Text="Cart" OnClick="btn_Cart_Click" />
+            <div class="space"></div>
+        </div>
+        <div id ="StoreContentContainer">
+            <div class="StoreContentContainerSpace"></div>
+            <div id="StoreContent">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="StoreContentContainerSpace"></div>
+        </div>
+    </div>
+    <script>
+        currentPage2();
+    </script>
+</asp:Content>
+

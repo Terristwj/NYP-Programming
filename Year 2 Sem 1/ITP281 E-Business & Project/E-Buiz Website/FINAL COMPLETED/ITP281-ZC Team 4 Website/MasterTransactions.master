@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="MasterTransactions.master.cs" Inherits="MasterTransactions" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <script>
+        function getPageNum() {
+            return 3;
+        }
+        
+        function currentPage2() {
+            var x = document.getElementsByClassName("transactionMenuItem");
+            var i = getPageNum2();
+            if (i !== -1) {
+                x[i].style.background = "rgba(255, 192, 203, 0.45)";
+            }
+        }
+    </script>
+    <style>
+        .content{
+            min-height:820px;
+            height:auto;
+        }
+
+        #extraDiv{
+            border:1px solid transparent;
+        }
+
+        #TransactionMenuContainer{
+            margin:auto;
+            margin-top:25px;
+            display:flex;
+        }
+
+        .transactionMenuItem{
+            font-size:16px;
+            width:150px;
+            border:1px solid grey;
+            background:white;
+            padding-top:10px;
+            padding-bottom:10px;
+            cursor:pointer;
+            flex:7;
+        }
+
+        .transactionMenuItem:hover{
+            background:rgb(255, 235, 238);
+        }
+
+        .space{
+            flex:1;
+        }
+
+        @media(min-width: 1250px){
+            .space{
+                flex:2;
+            }
+        }
+
+        @media(min-width: 1450px){
+            .space{
+                flex:4;
+            }
+        }
+
+        #TransactionContentContainer{
+            display:flex;
+            margin-top:30px;
+        }
+
+        #TransactionContent{
+            flex:8;
+        }
+
+        .TransactionContentContainerSpace{
+            flex:1;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head2" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <div id="extraDiv">
+        <div id="TransactionMenuContainer">
+            <div class="space"></div>
+            <asp:Button ID="btn_Wallet" CssClass="transactionMenuItem" runat="server" Text="E-Wallet" OnClick="btn_Wallet_Click" />
+            <div class="space"></div>
+            <asp:Button ID="btn_Store" CssClass="transactionMenuItem" runat="server" Text="Store" OnClick="btn_Store_Click" />
+            <div class="space"></div>
+            <asp:Button ID="btn_Doctor" CssClass="transactionMenuItem" runat="server" Text="Online Doctor" OnClick="btn_Doctor_Click" />
+            <div class="space"></div>
+        </div>
+        <div id ="TransactionContentContainer">
+            <div class="TransactionContentContainerSpace"></div>
+            <div id="TransactionContent">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="TransactionContentContainerSpace"></div>
+        </div>
+    </div>
+    <script>
+        currentPage2();
+    </script>
+</asp:Content>
