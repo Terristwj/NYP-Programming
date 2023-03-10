@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c6490306-1372-454e-a88f-31959e2d7ac4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:11330/WsIT2605Pra02.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WsIT2605Pra02.xsd" MetadataType="Schema" ID="9e31d42c-aa18-4a17-8516-c8c63c6d69be" SourceId="1" SourceUrl="http://localhost:11330/WsIT2605Pra02.svc?xsd=xsd1" />
+    <MetadataFile FileName="WsIT2605Pra021.xsd" MetadataType="Schema" ID="7b850191-db45-40f6-8160-29dc3aa71863" SourceId="1" SourceUrl="http://localhost:11330/WsIT2605Pra02.svc?xsd=xsd0" />
+    <MetadataFile FileName="WsIT2605Pra022.xsd" MetadataType="Schema" ID="7e4b854d-d25a-4c3e-bf82-067f348dffbd" SourceId="1" SourceUrl="http://localhost:11330/WsIT2605Pra02.svc?xsd=xsd2" />
+    <MetadataFile FileName="WsIT2605Pra02.disco" MetadataType="Disco" ID="a4ee84bb-5240-4cdc-b547-d1798d94070f" SourceId="1" SourceUrl="http://localhost:11330/WsIT2605Pra02.svc?disco" />
+    <MetadataFile FileName="WsIT2605Pra02.wsdl" MetadataType="Wsdl" ID="b4f30042-321e-437c-90a2-e5e8f9885d2f" SourceId="1" SourceUrl="http://localhost:11330/WsIT2605Pra02.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
