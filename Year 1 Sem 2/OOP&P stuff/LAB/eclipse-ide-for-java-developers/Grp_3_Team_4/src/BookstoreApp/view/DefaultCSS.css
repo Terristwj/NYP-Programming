@@ -1,0 +1,7 @@
+#AnchorPane
+{
+	-fx-background-image: url(/Images/background_image.jpg);
+	-fx-background-size: 1300px 850px;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: 0 60px;
+}

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1300.0" stylesheets="@DefaultCSS.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BookstoreApp.controller.InstructionController">
+   <children>
+      <BorderPane prefHeight="850.0" prefWidth="1300.0">
+         <bottom>
+            <VBox maxHeight="660.0" maxWidth="896.0" prefHeight="660.0" prefWidth="896.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="50.0" />
+               </BorderPane.margin>
+               <children>
+                  <StackPane maxHeight="60.0" maxWidth="302.0" prefHeight="59.0" prefWidth="302.0">
+                     <children>
+                        <Pane prefHeight="62.0" prefWidth="336.0" style="-fx-background-color: white; -fx-border-color: black;">
+                           <children>
+                              <Text fill="#d31616" layoutX="56.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Instruction" wrappingWidth="190.93673706054688">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="300.0" />
+                     </VBox.margin>
+                  </StackPane>
+                  <VBox prefHeight="517.0" prefWidth="896.0" style="-fx-border-color: black; -fx-background-color: white;">
+                     <children>
+                        <Pane prefHeight="73.0" prefWidth="894.0">
+                           <children>
+                              <Label layoutY="13.0" prefHeight="47.0" prefWidth="491.0" text="Step 1: Search the item">
+                                 <padding>
+                                    <Insets left="30.0" top="-4.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="73.0" prefWidth="894.0">
+                           <children>
+                              <Label layoutY="13.0" prefHeight="47.0" prefWidth="452.0" text="Step 2: Select item">
+                                 <padding>
+                                    <Insets left="30.0" top="-4.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="73.0" prefWidth="894.0">
+                           <children>
+                              <Label layoutY="13.0" prefHeight="47.0" prefWidth="468.0" text="Step 3: Select quantity">
+                                 <padding>
+                                    <Insets left="30.0" top="-4.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="73.0" prefWidth="894.0">
+                           <children>
+                              <Label layoutY="13.0" prefHeight="47.0" prefWidth="342.0" text="Step 4: Add to cart">
+                                 <padding>
+                                    <Insets left="30.0" top="-4.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="73.0" prefWidth="894.0">
+                           <children>
+                              <Label layoutY="13.0" prefHeight="47.0" prefWidth="358.0" text="Step 5: Checkout">
+                                 <padding>
+                                    <Insets left="30.0" top="-4.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="73.0" prefWidth="894.0">
+                           <children>
+                              <Label layoutY="13.0" prefHeight="47.0" prefWidth="439.0" text="Step 6: Collect queue number">
+                                 <padding>
+                                    <Insets left="30.0" top="-4.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="73.0" prefWidth="894.0">
+                           <children>
+                              <Label layoutY="13.0" prefHeight="47.0" prefWidth="400.0" text="Step 7: Visit counter">
+                                 <padding>
+                                    <Insets left="30.0" top="-4.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </bottom>
+         <top>
+            <StackPane prefHeight="87.0" prefWidth="800.0" style="-fx-background-color: #ff8080;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="108.0" prefWidth="1195.0">
+                     <children>
+                        <StackPane prefHeight="108.0" prefWidth="378.0">
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="-65.0" />
+                           </padding>
+                           <children>
+                              <Button fx:id="btnBackHome" mnemonicParsing="false" onAction="#handleBackHome" prefHeight="64.0" prefWidth="136.0" style="-fx-font-size: 25px; -fx-background-color: white; -fx-border-color: #000000;" text="Back">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </StackPane>
+                        <ImageView fitHeight="108.0" fitWidth="439.0">
+                           <image>
+                              <Image url="@../../Images/Popular%20Logo.png" />
+                           </image>
+                        </ImageView>
+                        <StackPane prefHeight="108.0" prefWidth="208.0">
+                           <children>
+                              <Button fx:id="btnCart" mnemonicParsing="false" onAction="#handleCart" prefHeight="64.0" prefWidth="136.0" style="-fx-font-size: 25px; -fx-background-color: white; -fx-border-color: #000000;" text="Cart">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets right="-14.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </StackPane>
+                        <StackPane prefHeight="108.0" prefWidth="183.0">
+                           <padding>
+                              <Insets right="-14.0" />
+                           </padding>
+                           <children>
+                              <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#handleLogout" prefHeight="64.0" prefWidth="136.0" style="-fx-font-size: 25px; -fx-background-color: white; -fx-border-color: #000000;" text="Logout">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </StackPane>
+                     </children>
+                     <StackPane.margin>
+                        <Insets left="10.0" />
+                     </StackPane.margin>
+                     <padding>
+                        <Insets left="-10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </StackPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

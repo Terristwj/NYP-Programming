@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1300.0" stylesheets="@DefaultCSS.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BookstoreApp.controller.SearchController">
+   <children>
+      <BorderPane prefHeight="850.0" prefWidth="1300.0">
+         <bottom>
+            <VBox maxHeight="716.0" maxWidth="1045.0" prefHeight="716.0" prefWidth="1045.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <children>
+                  <Pane minHeight="73.0" prefHeight="72.0" prefWidth="654.0" style="-fx-background-color: white; -fx-border-color: black;">
+                     <children>
+                        <TextField fx:id="searchBar" layoutX="1.0" layoutY="-1.0" onAction="#onEnter" prefHeight="74.0" prefWidth="1043.0" promptText="Search" style="-fx-border-color: black;">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </Pane>
+                  <GridPane prefHeight="614.0" prefWidth="1045.0" style="-fx-background-color: white; -fx-border-color: black;">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <VBox prefHeight="136.0" prefWidth="328.0" style="-fx-border-color: black;">
+                           <children>
+                              <StackPane prefHeight="141.0" prefWidth="326.0" style="-fx-border-color: black; -fx-background-color: #cccccc;">
+                                 <children>
+                                    <ImageView fx:id="image1" fitHeight="140.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Button fx:id="imageBtn1" disable="true" mnemonicParsing="false" onAction="#toItemPage1" opacity="0.0" prefHeight="233.0" prefWidth="324.0">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </StackPane>
+                              <Pane prefHeight="42.0" prefWidth="213.0" style="-fx-border-color: black; -fx-background-color: white;">
+                                 <children>
+                                    <Label fx:id="item1" layoutX="1.0" prefHeight="40.0" prefWidth="324.0">
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </VBox>
+                        <VBox prefHeight="216.0" prefWidth="348.0" style="-fx-border-color: black;" GridPane.columnIndex="1">
+                           <children>
+                              <StackPane prefHeight="141.0" prefWidth="326.0" style="-fx-border-color: black; -fx-background-color: #cccccc;">
+                                 <children>
+                                    <ImageView fx:id="image2" fitHeight="140.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Button fx:id="imageBtn2" disable="true" mnemonicParsing="false" onAction="#toItemPage2" opacity="0.0" prefHeight="233.0" prefWidth="324.0">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </StackPane>
+                              <Pane prefHeight="42.0" prefWidth="213.0" style="-fx-border-color: black; -fx-background-color: white;">
+                                 <children>
+                                    <Label fx:id="item2" layoutX="1.0" prefHeight="40.0" prefWidth="324.0">
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </VBox>
+                        <VBox prefHeight="136.0" prefWidth="328.0" style="-fx-border-color: black;" GridPane.columnIndex="2">
+                           <children>
+                              <StackPane prefHeight="141.0" prefWidth="326.0" style="-fx-border-color: black; -fx-background-color: #cccccc;">
+                                 <children>
+                                    <ImageView fx:id="image3" fitHeight="140.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Button fx:id="imageBtn3" disable="true" mnemonicParsing="false" onAction="#toItemPage3" opacity="0.0" prefHeight="233.0" prefWidth="324.0">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </StackPane>
+                              <Pane prefHeight="42.0" prefWidth="213.0" style="-fx-border-color: black; -fx-background-color: white;">
+                                 <children>
+                                    <Label fx:id="item3" layoutX="1.0" prefHeight="40.0" prefWidth="324.0">
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </VBox>
+                        <VBox prefHeight="136.0" prefWidth="328.0" style="-fx-border-color: black;" GridPane.rowIndex="1">
+                           <children>
+                              <StackPane prefHeight="141.0" prefWidth="326.0" style="-fx-border-color: black; -fx-background-color: #cccccc;">
+                                 <children>
+                                    <ImageView fx:id="image4" fitHeight="140.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Button fx:id="imageBtn4" disable="true" mnemonicParsing="false" onAction="#toItemPage4" opacity="0.0" prefHeight="233.0" prefWidth="324.0">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </StackPane>
+                              <Pane prefHeight="42.0" prefWidth="213.0" style="-fx-border-color: black; -fx-background-color: white;">
+                                 <children>
+                                    <Label fx:id="item4" layoutX="1.0" prefHeight="40.0" prefWidth="324.0">
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </VBox>
+                        <VBox prefHeight="136.0" prefWidth="328.0" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <StackPane prefHeight="141.0" prefWidth="326.0" style="-fx-border-color: black; -fx-background-color: #cccccc;">
+                                 <children>
+                                    <ImageView fx:id="image5" fitHeight="140.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Button fx:id="imageBtn5" disable="true" mnemonicParsing="false" onAction="#toItemPage5" opacity="0.0" prefHeight="233.0" prefWidth="324.0">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </StackPane>
+                              <Pane prefHeight="42.0" prefWidth="213.0" style="-fx-border-color: black; -fx-background-color: white;">
+                                 <children>
+                                    <Label fx:id="item5" layoutX="1.0" prefHeight="40.0" prefWidth="324.0">
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </VBox>
+                        <VBox prefHeight="136.0" prefWidth="328.0" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <children>
+                              <StackPane prefHeight="141.0" prefWidth="326.0" style="-fx-border-color: black; -fx-background-color: #cccccc;">
+                                 <children>
+                                    <ImageView fx:id="image6" fitHeight="140.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Button fx:id="imageBtn6" disable="true" mnemonicParsing="false" onAction="#toItemPage6" opacity="0.0" prefHeight="233.0" prefWidth="324.0">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </StackPane>
+                              <Pane prefHeight="42.0" prefWidth="213.0" style="-fx-border-color: black; -fx-background-color: white;">
+                                 <children>
+                                    <Label fx:id="item6" layoutX="1.0" prefHeight="40.0" prefWidth="324.0">
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </VBox>
+                        <VBox prefHeight="136.0" prefWidth="328.0" style="-fx-border-color: black;" GridPane.rowIndex="2">
+                           <children>
+                              <StackPane prefHeight="141.0" prefWidth="326.0" style="-fx-border-color: black; -fx-background-color: #cccccc;">
+                                 <children>
+                                    <ImageView fx:id="image7" fitHeight="140.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Button fx:id="imageBtn7" disable="true" mnemonicParsing="false" onAction="#toItemPage7" opacity="0.0" prefHeight="233.0" prefWidth="324.0">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </StackPane>
+                              <Pane prefHeight="42.0" prefWidth="213.0" style="-fx-border-color: black; -fx-background-color: white;">
+                                 <children>
+                                    <Label fx:id="item7" layoutX="1.0" prefHeight="40.0" prefWidth="324.0">
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </VBox>
+                        <VBox prefHeight="136.0" prefWidth="328.0" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <StackPane prefHeight="141.0" prefWidth="326.0" style="-fx-border-color: black; -fx-background-color: #cccccc;">
+                                 <children>
+                                    <ImageView fx:id="image8" fitHeight="140.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Button fx:id="imageBtn8" disable="true" mnemonicParsing="false" onAction="#toItemPage8" opacity="0.0" prefHeight="233.0" prefWidth="324.0">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </StackPane>
+                              <Pane prefHeight="42.0" prefWidth="213.0" style="-fx-border-color: black; -fx-background-color: white;">
+                                 <children>
+                                    <Label fx:id="item8" layoutX="1.0" prefHeight="40.0" prefWidth="324.0">
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </VBox>
+                        <VBox prefHeight="136.0" prefWidth="328.0" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <children>
+                              <StackPane prefHeight="141.0" prefWidth="326.0" style="-fx-border-color: black; -fx-background-color: #cccccc;">
+                                 <children>
+                                    <ImageView fx:id="image9" fitHeight="140.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Button fx:id="imageBtn9" disable="true" mnemonicParsing="false" onAction="#toItemPage9" opacity="0.0" prefHeight="233.0" prefWidth="324.0">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </StackPane>
+                              <Pane prefHeight="42.0" prefWidth="213.0" style="-fx-border-color: black; -fx-background-color: white;">
+                                 <children>
+                                    <Label fx:id="item9" layoutX="1.0" prefHeight="40.0" prefWidth="324.0">
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </VBox>
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+         </bottom>
+         <top>
+            <StackPane prefHeight="87.0" prefWidth="800.0" style="-fx-background-color: #ff8080;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="108.0" prefWidth="1195.0">
+                     <children>
+                        <StackPane prefHeight="108.0" prefWidth="378.0">
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="-65.0" />
+                           </padding>
+                           <children>
+                              <Button fx:id="btnBackHome" mnemonicParsing="false" onAction="#handleBackHome" prefHeight="64.0" prefWidth="136.0" style="-fx-font-size: 25px; -fx-background-color: white; -fx-border-color: #000000;" text="Back">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </StackPane>
+                        <ImageView fitHeight="108.0" fitWidth="439.0">
+                           <image>
+                              <Image url="@../../Images/Popular%20Logo.png" />
+                           </image>
+                        </ImageView>
+                        <StackPane prefHeight="108.0" prefWidth="208.0">
+                           <children>
+                              <Button fx:id="btnCart" mnemonicParsing="false" onAction="#handleCart" prefHeight="64.0" prefWidth="136.0" style="-fx-font-size: 25px; -fx-background-color: white; -fx-border-color: #000000;" text="Cart">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets right="-14.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </StackPane>
+                        <StackPane prefHeight="108.0" prefWidth="183.0">
+                           <padding>
+                              <Insets right="-14.0" />
+                           </padding>
+                           <children>
+                              <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#handleLogout" prefHeight="64.0" prefWidth="136.0" style="-fx-font-size: 25px; -fx-background-color: white; -fx-border-color: #000000;" text="Logout">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </StackPane>
+                     </children>
+                     <StackPane.margin>
+                        <Insets left="10.0" />
+                     </StackPane.margin>
+                     <padding>
+                        <Insets left="-10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </StackPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

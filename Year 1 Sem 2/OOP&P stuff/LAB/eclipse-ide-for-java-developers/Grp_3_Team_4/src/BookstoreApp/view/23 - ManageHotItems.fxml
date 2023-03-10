@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1300.0" stylesheets="@DefaultCSS.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BookstoreApp.controller.ManageHotItemsController">
+   <children>
+      <BorderPane prefHeight="850.0" prefWidth="1300.0">
+         <bottom>
+            <VBox maxHeight="660.0" maxWidth="896.0" prefHeight="660.0" prefWidth="896.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="50.0" />
+               </BorderPane.margin>
+               <children>
+                  <Pane prefHeight="59.0" prefWidth="896.0" style="-fx-border-color: black; -fx-background-color: white;">
+                     <children>
+                        <Button fx:id="btnPrevious" layoutX="374.0" layoutY="3.0" mnemonicParsing="false" onAction="#handlePrevious" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="&lt;&lt;" textFill="#796d6d" underline="true">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                        <Text fx:id="itemNumber" layoutX="442.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="btnNext" layoutX="455.0" layoutY="3.0" mnemonicParsing="false" onAction="#handleNext" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="&gt;&gt;" textFill="#796d6d" underline="true">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="13.0" prefWidth="896.0" />
+                  <GridPane prefHeight="589.0" prefWidth="896.0" style="-fx-background-color: white; -fx-border-color: black;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="441.0" minWidth="10.0" prefWidth="313.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="616.0" minWidth="10.0" prefWidth="581.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="142.0" minHeight="10.0" prefHeight="81.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="212.0" minHeight="10.0" prefHeight="212.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="126.0" text="Item Name:">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="170.0" right="5.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="126.0" text="Price:" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="236.0" right="5.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Text fx:id="itemPrice" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="581.2734375" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Text>
+                        <Button fx:id="btnChangeItem" mnemonicParsing="false" onAction="#handleChangeItem" text="Change item" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                        <Label prefHeight="35.0" prefWidth="73.0" text="Image:" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="236.0" right="5.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <StackPane prefHeight="148.0" prefWidth="366.0" style="-fx-border-color: black; -fx-background-color: #cccccc;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <ImageView fx:id="itemImage" fitHeight="148.0" fitWidth="226.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                           <GridPane.margin>
+                              <Insets right="353.0" />
+                           </GridPane.margin>
+                        </StackPane>
+                        <Text fx:id="itemName" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="581.2734375" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+         </bottom>
+         <top>
+            <StackPane prefHeight="87.0" prefWidth="800.0" style="-fx-background-color: #ff8080;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="108.0" prefWidth="1195.0">
+                     <children>
+                        <StackPane prefHeight="108.0" prefWidth="378.0">
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="-65.0" />
+                           </padding>
+                           <children>
+                              <Button fx:id="btnBackHome" mnemonicParsing="false" onAction="#handleBackHome" prefHeight="64.0" prefWidth="136.0" style="-fx-font-size: 25px; -fx-background-color: white; -fx-border-color: #000000;" text="Back">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </StackPane>
+                        <ImageView fitHeight="108.0" fitWidth="439.0">
+                           <image>
+                              <Image url="@../../Images/Popular%20Logo.png" />
+                           </image>
+                        </ImageView>
+                        <StackPane prefHeight="108.0" prefWidth="208.0">
+                           <padding>
+                              <Insets right="-14.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </StackPane>
+                        <StackPane prefHeight="108.0" prefWidth="183.0">
+                           <padding>
+                              <Insets right="-14.0" />
+                           </padding>
+                           <children>
+                              <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#handleLogout" prefHeight="64.0" prefWidth="136.0" style="-fx-font-size: 25px; -fx-background-color: white; -fx-border-color: #000000;" text="Logout">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </StackPane>
+                     </children>
+                     <StackPane.margin>
+                        <Insets left="10.0" />
+                     </StackPane.margin>
+                     <padding>
+                        <Insets left="-10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </StackPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

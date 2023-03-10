@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1300.0" stylesheets="@DefaultCSS.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BookstoreApp.controller.OrderController">
+   <children>
+      <StackPane prefHeight="108.0" prefWidth="1300.0" style="-fx-background-color: #ff8080;">
+         <children>
+            <HBox prefHeight="108.0" prefWidth="1195.0">
+               <children>
+                  <StackPane prefHeight="108.0" prefWidth="378.0">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="-65.0" />
+                     </padding>
+                     <children>
+                        <Button fx:id="btnBack" mnemonicParsing="false" onAction="#handleBack" prefHeight="64.0" prefWidth="136.0" style="-fx-font-size: 25px; -fx-background-color: white; -fx-border-color: #000000;" text="Back">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </StackPane>
+                  <ImageView fitHeight="108.0" fitWidth="439.0">
+                     <image>
+                        <Image url="@../../Images/Popular%20Logo.png" />
+                     </image>
+                  </ImageView>
+                  <StackPane prefHeight="108.0" prefWidth="432.0">
+                     <padding>
+                        <Insets right="-14.0" />
+                     </padding>
+                     <children>
+                        <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#handleLogout" prefHeight="64.0" prefWidth="136.0" style="-fx-font-size: 25px; -fx-background-color: white; -fx-border-color: #000000;" text="Logout">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </StackPane>
+               </children>
+               <StackPane.margin>
+                  <Insets left="10.0" />
+               </StackPane.margin>
+               <padding>
+                  <Insets left="-10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </StackPane>
+      <Pane layoutX="512.0" layoutY="116.0" prefHeight="80.0" prefWidth="277.0" style="-fx-background-color: white; -fx-border-color: black;">
+         <children>
+            <Text fill="#d31616" layoutX="27.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Confirmation" wrappingWidth="237.06691467761993">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <VBox layoutX="64.0" layoutY="207.0" prefHeight="304.0" prefWidth="1173.0">
+         <children>
+            <Pane prefHeight="49.0" prefWidth="1173.0">
+               <children>
+                  <HBox prefHeight="50.0" prefWidth="1158.0" style="-fx-border-color: black; -fx-background-color: white;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <Pane prefHeight="48.0" prefWidth="502.0" style="-fx-border-color: black;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <Label layoutX="190.0" layoutY="6.0" text="Item Name">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="48.0" prefWidth="218.0" style="-fx-border-color: black;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <Label layoutX="62.0" layoutY="6.0" text="Quantity">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="48.0" prefWidth="218.0" style="-fx-border-color: black;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <Label layoutX="38.0" layoutY="6.0" text="Unit Price ($)">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="48.0" prefWidth="218.0" style="-fx-border-color: black;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <Label layoutX="34.0" layoutY="6.0" text="Total Price ($)">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="1.0" />
+               </VBox.margin>
+            </Pane>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="254.0" prefWidth="1173.0" style="-fx-background-color: transparent;">
+               <content>
+                  <VBox prefHeight="253.0" prefWidth="1158.0" style="-fx-background-color: white; -fx-border-color: black;">
+                     <children>
+                        <GridPane fx:id="gridPane" gridLinesVisible="true" prefHeight="0.0" prefWidth="1156.0" style="-fx-background-color: white; -fx-border-color: black;">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="500.0" minWidth="500.0" prefWidth="500.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.0" minWidth="218.0" prefWidth="218.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.0" minWidth="218.0" prefWidth="218.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.0" minWidth="217.0" prefWidth="217.0" />
+                           </columnConstraints>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <Pane layoutX="64.0" layoutY="510.0" prefHeight="1.0" prefWidth="1159.0" style="-fx-background-color: black;" />
+      <HBox layoutX="356.0" layoutY="541.0" prefHeight="195.0" prefWidth="588.0" style="-fx-background-color: white; -fx-border-color: black;">
+         <children>
+            <VBox prefHeight="177.0" prefWidth="309.0">
+               <children>
+                  <Pane prefHeight="53.0" prefWidth="280.0" style="-fx-border-color: black;">
+                     <children>
+                        <Text layoutX="40.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choice of payment">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <VBox prefHeight="156.0" prefWidth="309.0">
+                     <children>
+                        <VBox prefHeight="205.0" prefWidth="309.0">
+                           <children>
+                              <HBox prefHeight="152.0" prefWidth="309.0" style="-fx-border-color: black;">
+                                 <children>
+                                    <VBox prefHeight="152.0" prefWidth="308.0">
+                                       <children>
+                                          <HBox prefHeight="74.0" prefWidth="308.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cash">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets left="30.0" top="15.0" />
+                                                   </HBox.margin>
+                                                </Text>
+                                                <RadioButton fx:id="cash" mnemonicParsing="false" onAction="#handleRadioButton">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" right="40.0" top="20.0" />
+                                                   </HBox.margin>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="payment" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Credit">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets top="16.0" />
+                                                   </HBox.margin>
+                                                </Text>
+                                                <RadioButton fx:id="card" mnemonicParsing="false" onAction="#handleRadioButton" toggleGroup="$payment">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" right="18.0" top="19.0" />
+                                                   </HBox.margin>
+                                                </RadioButton>
+                                             </children>
+                                          </HBox>
+                                          <Label fx:id="errorMessage" alignment="CENTER" prefHeight="17.0" prefWidth="769.0" textFill="RED">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <HBox prefHeight="177.0" prefWidth="277.0" style="-fx-border-color: black;">
+               <children>
+                  <VBox prefHeight="191.0" prefWidth="276.0">
+                     <children>
+                        <Pane prefHeight="29.0" prefWidth="168.0">
+                           <children>
+                              <Label layoutX="46.0" layoutY="-3.0" prefHeight="35.0" prefWidth="144.0" text="Sub-Total: $">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="subtotal" layoutX="190.0" layoutY="-2.0" prefHeight="29.0" prefWidth="86.0">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="29.0" prefWidth="168.0">
+                           <children>
+                              <Label layoutX="15.0" layoutY="-3.0" text="Membership: $">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="membershipDiscount" layoutX="190.0" layoutY="-2.0" prefHeight="29.0" prefWidth="86.0">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="29.0" prefWidth="168.0">
+                           <children>
+                              <Label layoutX="39.0" layoutY="-4.0" prefHeight="35.0" prefWidth="150.0" text="   Voucher: $">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="voucherDiscount" layoutX="190.0" layoutY="-3.0" prefHeight="29.0" prefWidth="86.0">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="29.0" prefWidth="168.0">
+                           <children>
+                              <Label layoutX="26.0" layoutY="-3.0" prefHeight="36.0" prefWidth="164.0" text="GST @ 7% : $">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="gstValue" layoutX="190.0" layoutY="-2.0" prefHeight="29.0" prefWidth="86.0">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <VBox prefHeight="63.0" prefWidth="157.0">
+                           <children>
+                              <Pane prefHeight="5.0" prefWidth="157.0">
+                                 <children>
+                                    <Pane prefHeight="2.0" prefWidth="277.0" style="-fx-border-style: dotted;" />
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="grandtotal" layoutX="92.0" layoutY="14.0" prefHeight="36.0" prefWidth="86.0" text="Total: $">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="grandtotal" layoutX="190.0" layoutY="14.0" prefHeight="29.0" prefWidth="86.0">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <Button fx:id="btnCancel" layoutX="395.0" layoutY="760.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="59.0" prefWidth="183.0" style="-fx-background-color: white; -fx-border-color: black;" text="Cancel">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnConfirm" layoutX="718.0" layoutY="760.0" mnemonicParsing="false" onAction="#handleConfirm" prefHeight="59.0" prefWidth="183.0" style="-fx-background-color: white; -fx-border-color: black;" text="Confirm">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
