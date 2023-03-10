@@ -1,0 +1,18 @@
+D:\NYP\1 - Academic Matters\AY2015 S2\IT2605(ML)\MyPractical\IT2605Prac05_ACME\IT2605Prac05_ACME\bin\IT2605Prac05_ACME.dll.config
+D:\NYP\1 - Academic Matters\AY2015 S2\IT2605(ML)\MyPractical\IT2605Prac05_ACME\IT2605Prac05_ACME\bin\IT2605Prac05_ACME.dll
+D:\NYP\1 - Academic Matters\AY2015 S2\IT2605(ML)\MyPractical\IT2605Prac05_ACME\IT2605Prac05_ACME\bin\IT2605Prac05_ACME.pdb
+D:\NYP\1 - Academic Matters\AY2015 S2\IT2605(ML)\MyPractical\IT2605Prac05_ACME\IT2605Prac05_ACME\obj\Debug\IT2605Prac05_ACME.dll
+D:\NYP\1 - Academic Matters\AY2015 S2\IT2605(ML)\MyPractical\IT2605Prac05_ACME\IT2605Prac05_ACME\obj\Debug\IT2605Prac05_ACME.pdb
+D:\NYP\1 - Academic Matters\AY2015 S2\IT2605(ML)\MyPractical\IT2605Prac05_ACME\IT2605Prac05_ACME\obj\Debug\IT2605Prac05_ACME.csprojResolveAssemblyReference.cache
+C:\Users\Terris Tan\Documents\Visual Studio 2015\Projects\IT2605 AWS\Week 8\IT2605Prac05_ACME\IT2605Prac05_ACME\bin\IT2605Prac05_ACME.dll.config
+C:\Users\Terris Tan\Documents\Visual Studio 2015\Projects\IT2605 AWS\Week 8\IT2605Prac05_ACME\IT2605Prac05_ACME\bin\IT2605Prac05_ACME.dll
+C:\Users\Terris Tan\Documents\Visual Studio 2015\Projects\IT2605 AWS\Week 8\IT2605Prac05_ACME\IT2605Prac05_ACME\bin\IT2605Prac05_ACME.pdb
+C:\Users\Terris Tan\Documents\Visual Studio 2015\Projects\IT2605 AWS\Week 8\IT2605Prac05_ACME\IT2605Prac05_ACME\obj\Debug\IT2605Prac05_ACME.csprojResolveAssemblyReference.cache
+C:\Users\Terris Tan\Documents\Visual Studio 2015\Projects\IT2605 AWS\Week 8\IT2605Prac05_ACME\IT2605Prac05_ACME\obj\Debug\IT2605Prac05_ACME.dll
+C:\Users\Terris Tan\Documents\Visual Studio 2015\Projects\IT2605 AWS\Week 8\IT2605Prac05_ACME\IT2605Prac05_ACME\obj\Debug\IT2605Prac05_ACME.pdb
+C:\Users\Terris Tan\Desktop\NYP\Year 2 Sem 2\2018S2-IT2605-Applications Of Web Services\2. Practical\Week 8\IT2605Prac05_ACME\IT2605Prac05_ACME\bin\IT2605Prac05_ACME.dll.config
+C:\Users\Terris Tan\Desktop\NYP\Year 2 Sem 2\2018S2-IT2605-Applications Of Web Services\2. Practical\Week 8\IT2605Prac05_ACME\IT2605Prac05_ACME\bin\IT2605Prac05_ACME.dll
+C:\Users\Terris Tan\Desktop\NYP\Year 2 Sem 2\2018S2-IT2605-Applications Of Web Services\2. Practical\Week 8\IT2605Prac05_ACME\IT2605Prac05_ACME\bin\IT2605Prac05_ACME.pdb
+C:\Users\Terris Tan\Desktop\NYP\Year 2 Sem 2\2018S2-IT2605-Applications Of Web Services\2. Practical\Week 8\IT2605Prac05_ACME\IT2605Prac05_ACME\obj\Debug\IT2605Prac05_ACME.csprojResolveAssemblyReference.cache
+C:\Users\Terris Tan\Desktop\NYP\Year 2 Sem 2\2018S2-IT2605-Applications Of Web Services\2. Practical\Week 8\IT2605Prac05_ACME\IT2605Prac05_ACME\obj\Debug\IT2605Prac05_ACME.dll
+C:\Users\Terris Tan\Desktop\NYP\Year 2 Sem 2\2018S2-IT2605-Applications Of Web Services\2. Practical\Week 8\IT2605Prac05_ACME\IT2605Prac05_ACME\obj\Debug\IT2605Prac05_ACME.pdb

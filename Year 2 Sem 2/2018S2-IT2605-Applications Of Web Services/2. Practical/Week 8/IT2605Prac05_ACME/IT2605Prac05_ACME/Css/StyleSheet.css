@@ -1,0 +1,30 @@
+﻿body 
+{
+  font-family: Verdana, Sans-Serif;
+  font-size: 12pt;
+  background-color: Gray
+}
+
+#header, #footer
+{
+  color: White;
+  background-color: Maroon;
+}
+
+#header, #content, #footer
+{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+#content
+{
+  background-color: White;
+}
+
+#footer
+{
+  font-size: 80%;
+}
