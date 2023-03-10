@@ -1,0 +1,231 @@
+		 *{
+            transition-duration:0.5s;
+        }
+
+        a, a:visited{
+            text-decoration:none;
+            color:black;
+        }
+
+        .header{
+            margin-top:-8px;
+            margin-left:-8px;
+            margin-right:-8px;
+            background:linear-gradient(141deg, rgba(255, 192, 203, 0.75) 0%, rgba(166, 235, 242, 0.75) 45%, rgba(121, 224, 236, 0.75) 80%, rgba(255, 192, 203, 0.75) 100%) no-repeat;
+            opacity: 1;
+            display:flex;
+            border-bottom:1px black solid;
+        }
+
+        .hBox1, .hBox2, .hBox3{
+            flex:1;
+        }
+
+        @media(max-width: 900px) {
+          .hBox3 {
+            display: none;
+          }
+        }
+
+        #CompanyLogo{
+            width:265px;
+            display:block;
+            margin:auto;
+        }
+
+        #CompanyName{
+            color:black;
+        }
+
+        #ImageLogo{
+            width:76px;
+            height:76px;
+            cursor:pointer;
+            background:none;
+            border-radius:60%;
+        }
+
+        #ImageLogo:hover{
+            border-radius:20%;
+            background:#FEAEC7;
+        }
+
+        #CompanyLogoBottom{
+            margin-top: -7px;
+            border-top:black 1px solid;
+            height:35px;
+        }
+
+        .tagline{
+            margin-top: 0;
+        }
+
+        #LoginBtnContainer{
+            width:70%;
+            display:block;
+            margin:auto;
+            margin-top:25px;
+        }
+
+        #btnLogin{
+            background-color: white;
+            border: 3px rgba(255, 179, 191, 1) solid;
+            padding: 18px 36px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            font-size:18px;
+            display:block;
+            margin:auto;
+        }
+
+        @keyframes MasterLgnBtn{
+            0%{border-radius:0%;}
+            10%{border-radius:12.5%;}
+            20%{border-radius:25%;}
+            30%{border-radius:37.5%;}
+            40%{border-radius:50%;}
+        }
+
+        #btnLogin:hover{
+            background: radial-gradient(white, white, rgba(255, 179, 191,1));
+            border: 3px rgba(255, 179, 191, 1) solid;
+            padding: 18px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            font-size:18px;
+            display:block;
+            margin:auto;
+            animation-name: MasterLgnBtn;
+            animation-duration: 1.1s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+        }
+
+        .socialMediaContainer{
+            width:186px;
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:7px;
+        }
+
+        #SocialMediaContainer{
+            display:flex;
+            flex-direction:column;
+        }
+
+        .SMC1, .SMC2, .SMC3{flex:1;}
+
+         .SMLogos{
+            float: left;
+            height: 33px;
+            width: 33px;
+            border-radius: 50%;
+            background-color: #3b5998;
+        }
+
+        .SMLogo {
+            font-family:'Franklin Gothic Medium';
+            width:185px;
+			display: inline-block;
+            font-size: 16px;
+            line-height: 33px;
+            border-radius: 25px;
+            background-color: white;
+            cursor:pointer;
+        }
+        
+        .SMLogo:hover {
+            background-color: #ffe6e9;
+        }
+
+        .SM{
+            padding-left:40px;
+        }
+
+        .navigation{
+            font-family: Arial;
+            margin-left:-8px;
+            margin-right:-8px;
+            background:linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(230, 230, 230, 0.75) 100%) no-repeat;
+            opacity: 1;
+            display:flex;
+            border-bottom:1px black solid;
+        }
+
+        @media(max-width: 719.9px) {
+            .nBox1, .nBox2, .nBox3, .nBox4, .nBox5, .nBox6, .nBox7, .nItems{
+            display:none;
+            }
+
+            .nBox0{
+                flex:1;
+            }
+        }
+
+        @media(min-width: 720px) {
+            .nBox1, .nBox2, .nBox3, .nBox4, .nBox5, .nBox6 {
+                flex: 1;
+                border-right: 1px black solid;
+            }
+
+            .nBox7 {
+                flex: 1;
+            }
+
+            .nBox0, .nItem0 {
+                display: none;
+            }
+        }
+
+        .nBox0{
+            overflow:hidden;
+            height:43px;
+        }
+
+        .nItem {
+            display: block;
+            margin: auto;
+            text-align: center;
+        }
+
+        .nItems, .DDNItem{
+            margin:0px;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            cursor:pointer;
+        }
+
+        .nItem0{
+            margin-top:0px;
+            margin-bottom:0px;
+            cursor:pointer;
+            border-bottom: 1px black solid;
+        }
+
+        .nItems:hover, .nItem0:hover, .DDNItem:hover{
+            background: rgba(255, 192, 203, 0.45);
+        }
+
+        .content h1, .content h2,
+        .content h3, .content h4, 
+        .content h5, .content h6{
+            font-family:Arial;
+        }
+
+        .content p{
+            font-family:Verdana;
+        }
+
+        .content{
+            margin-left:-8px;
+            margin-right:-8px;
+            background:linear-gradient(180deg, rgba(255, 192, 203, 0.25) 0%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 75%, rgba(255, 192, 203, 0.25) 100%);
+            height:820px;
+        }
