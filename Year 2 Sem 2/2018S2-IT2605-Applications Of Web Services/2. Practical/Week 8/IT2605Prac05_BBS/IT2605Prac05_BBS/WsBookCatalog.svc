@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="IT2605Prac05_BBS.WsBookCatalog" CodeBehind="WsBookCatalog.svc.cs" %>
