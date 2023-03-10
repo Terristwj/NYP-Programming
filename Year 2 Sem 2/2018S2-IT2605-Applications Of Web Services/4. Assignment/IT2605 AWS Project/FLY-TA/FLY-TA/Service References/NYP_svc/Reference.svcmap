@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c90c4c63-5801-4664-b29e-e3c3196c376f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:25392/WsNYP.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WsNYP.xsd" MetadataType="Schema" ID="8ecaebfa-18dc-4576-8c34-7f303ea10958" SourceId="1" SourceUrl="http://localhost:25392/WsNYP.svc?xsd=xsd1" />
+    <MetadataFile FileName="WsNYP.disco" MetadataType="Disco" ID="8db35fc3-2421-4e2b-b3de-b383369bd08d" SourceId="1" SourceUrl="http://localhost:25392/WsNYP.svc?disco" />
+    <MetadataFile FileName="WsNYP1.xsd" MetadataType="Schema" ID="e37d846d-fe03-405c-8898-b4c168a15a58" SourceId="1" SourceUrl="http://localhost:25392/WsNYP.svc?xsd=xsd0" />
+    <MetadataFile FileName="WsNYP.wsdl" MetadataType="Wsdl" ID="62740ebe-9faf-45ee-be2b-8e59f01e7ef5" SourceId="1" SourceUrl="http://localhost:25392/WsNYP.svc?wsdl" />
+    <MetadataFile FileName="WsNYP2.xsd" MetadataType="Schema" ID="fdce9fb8-5603-4220-935f-287d49800c20" SourceId="1" SourceUrl="http://localhost:25392/WsNYP.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
