@@ -1,0 +1,16 @@
+Both this files contain the original documents. Since they both already contain comprehensive guides, I won't explain too much.
+
+FYPJ:
+Uses live database that has already closed, AWS and Google BigQuery.
+Uses Spotfire, a paid analyst tool. So anything Spotfire will not work.
+To learn about the project, go to Presentations.
+
+Covered topics - IoT, WinForm C# w/ VS2017, IoT BackgroundApp C# w/ VS2017, Networking tool.
+
+Final creaions - SQLite-to-Excel convertor, DemoTest App for integrating Spotfire into WinForms, IoT sensors.
+
+
+Internship:
+Unfortunately unable to properly guide as this is just a snippet of the company data.
+
+Runned on PyCharm, uses Flask template, code behind language is Python.
