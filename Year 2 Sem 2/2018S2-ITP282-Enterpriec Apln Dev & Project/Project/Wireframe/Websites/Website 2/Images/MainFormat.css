@@ -1,0 +1,123 @@
+		@font-face{
+			font-family: Anson;
+			src: url("Anson-Regular.otf");
+		}
+		
+		body{
+			font-family: Verdana;
+		}
+		
+		*{
+			margin: 0;
+			padding: 0;
+			transition-duration: 1s;
+		}
+		
+		a:link{
+			text-decoration:none;
+			font-size:16px;
+			color:black;
+		}
+	
+		#wrap{
+			background: url("Background.jpg") center top no-repeat;
+			background-size: 100% 100%;
+			background-color: white;
+			height: 100%;
+		}
+		
+		#container{
+			width: 100%;
+		}
+		
+		#header{
+			background: linear-gradient(141deg, rgba(255, 51, 153, 0.65) 5%, #ffccff 20%, #ffccff 40%, rgba(255, 153, 204, 0.75) 60%, #ff99ff 80%,rgba(255, 51, 204,0.65) 95%);
+			height: 120px;
+			padding-top:20px;
+		}
+		h1{
+			font-size: 200%;
+		}
+		
+		h1, h2, h3, h4, h5, h6{
+			font-weight: bold;
+			letter-spacing: -0.05em;
+			font-family: Arial;
+		}
+		
+		.logo{
+			height: 50px;
+			width: 50px;
+			margin-bottom: -15px;
+		}
+		
+		#caption{
+			border:1px solid black;
+			height:70px;
+			margin:auto;
+			margin-top:5px;
+			width:420px;
+			padding:0;
+		}
+	
+		#navigation{
+			background: white;
+			border-top: 2px solid black;
+			border-bottom: 2px solid black;
+			height:40px;
+			width: 100%;
+			display:flex;
+		}
+		
+		.menu{
+			flex:1;
+			text-align:center;
+			padding-top:7px;
+			cursor:pointer;
+		}
+		
+		.item{
+			border-right:1px solid grey;
+		}
+		
+		.menu:hover{
+			background-color: rgba(255, 153, 214, 0.20);
+		}
+		
+		.currentmenu{
+			background-color: rgba(255, 153, 214, 0.30);
+			flex:1;
+			text-align:center;
+			padding-top:7px;
+			cursor:pointer;
+		}
+		
+		
+		#content{
+			clear: both;
+			background: linear-gradient(180deg, rgba(255, 153, 204, 0.35) 0%, white 10%);
+			padding: 5px 15px 0 15px;
+			height:770px;
+		}
+		
+		.scroll{
+			background-color: transparent;
+			height:760px;
+			width: 100%;
+			overflow: hidden;
+			border:1px green solid;
+		}
+
+		.scrollContainer{
+			width: 101.7%;
+			height: 100%;
+			overflow-y: scroll;
+			padding-right: 18px; /*Increase/decrease value to hide scroll bar for other browsers too. */
+			margin-left:14px;
+		}
+		
+		.footer{
+			height:60px;
+			width:100%;
+		}
+		

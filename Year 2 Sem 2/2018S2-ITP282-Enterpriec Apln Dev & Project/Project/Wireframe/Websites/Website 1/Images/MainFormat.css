@@ -1,0 +1,206 @@
+		@font-face{
+			font-family: Anson;
+			src: url("Anson-Regular.otf");
+		}
+		
+		body{
+			font-family: Verdana;
+		}
+		
+		*{
+			margin: 0;
+			padding: 0;
+			transition-duration: 1s;
+		}
+		
+		a:link{
+			text-decoration:none;
+			font-size:16px;
+			color:black;
+		}
+	
+		#wrap{
+			background: url("Background.jpg") center top no-repeat;
+			background-size: 100% 100%;
+			background-color: white;
+			height: 100%;
+		}
+		
+		#container{
+			width: 100%;
+		}
+		
+		#header{
+			background: linear-gradient(141deg, #33ccff 5%, #00ffff 60%, rgba(102, 255, 255, 0.15) 99%, rgba(230, 255, 255, 0.75) 100%);
+			height: 120px;
+			padding-top:20px;
+		}
+		
+		.contactChip {
+			display: block;
+			padding: 0;
+			height: 25px;
+		}
+
+		.contactChip img {
+			float: left;
+			margin: 0 10px 0 0;
+			height: 25px;
+			width: 25px;
+			border-radius: 50%;
+		}
+		
+		#ChipsSection{
+			float:right;
+			padding-left:10px;
+			margin-right:3%;
+			width:17%;
+		}
+		
+		.chipName{
+			position:absolute;
+			cursor:pointer;
+			text-decoration:none;
+			color:black;
+			width:16%;
+			height:25px;
+			border-radius: 25px;
+			background-color: #e6ffff;
+			border:none;
+			margin-left:-8px;
+			transition-duration: 1s;
+			max-width:150px;
+			min-width:65px;
+		}
+		
+		.chipName:hover{
+			background-color: #009999;
+			transition-duration: 0.7s;
+		}
+		
+		.chipName2{
+			margin-right:48%;
+			font-size:13px;
+			text-align:left;
+		}
+		
+		.sign-up{
+			float: right;
+			padding: 23px 0 0 0;
+			margin-right:2%;
+			color: #999;
+			height: 80px;
+		}
+		
+		.sign-upContatiner{
+			background-color: #e6ffff;
+			color: black;
+			height: 42px;
+			width: 100%;
+			padding: 10px 20px 0 20px;
+			transition-duration: 1s;
+			border:1px solid black;
+		}
+		
+		.sign-upContatiner:hover{
+			background-color: #00ffff;
+			transition-duration: 0.5s;
+		}
+		
+		.username{
+			font-size:18px;
+			text-align:center;
+		}
+		
+		#caption{
+			padding: 15px 30px 0;
+			height: 100px;
+			width: 265px;
+			margin-left: 7%;
+		}
+		
+		h1{
+			font-size: 200%;
+		}
+		
+		h1, h2, h3, h4, h5, h6{
+			font-weight: bold;
+			letter-spacing: -0.05em;
+			font-family: Arial;
+		}
+		
+		.logo{
+			height: 50px;
+			width: 50px;
+			margin-bottom: -15px;
+		}
+		
+		#caption{
+			border:1px solid black;
+			height:100px;
+			margin-top:-10px;
+			width:350px;
+			padding:0;
+		}
+	
+		#navigation{
+			background: white;
+			border-top: 2px solid black;
+			border-bottom: 2px solid black;
+			height:40px;
+			width: 100%;
+			display:flex;
+		}
+		
+		.menu{
+			flex:1;
+			text-align:center;
+			padding-top:7px;
+			cursor:pointer;
+		}
+		
+		.item{
+			border-right:1px solid grey;
+		}
+		
+		.menu:hover{
+			background-color: rgba(102, 255, 255, 0.25);
+		}
+		
+		.currentmenu{
+			background-color: rgba(102, 255, 255, 0.35);
+			flex:1;
+			text-align:center;
+			padding-top:7px;
+			cursor:pointer;
+		}
+		
+		
+		#content{
+			clear: both;
+			background: linear-gradient(180deg, rgba(230, 255, 255, 1) 0%, white 10%);
+			padding: 5px 15px 0 15px;
+			height:770px;
+		}
+		
+		.scroll{
+			background-color: transparent;
+			height:760px;
+			width: 100%;
+			overflow: hidden;
+			border:1px green solid;
+		}
+
+		.scrollContainer{
+			width: 101.7%;
+			height: 100%;
+			overflow-y: scroll;
+			padding-right: 18px; /*Increase/decrease value to hide scroll bar for other browsers too. */
+			margin-left:14px;
+		}
+		
+		.footer{
+			height:60px;
+			width:100%;
+		}
+		

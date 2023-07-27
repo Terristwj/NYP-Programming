@@ -1,0 +1,41 @@
+	<asp:Panel ID="pnlPopUp"  Visible="false" CssClass="popupWindow"  runat="server">
+          <!-- category -->
+            <div class="catLabel">
+                <asp:Label ID="Label1" runat="server" Text="Category"></asp:Label>
+            </div>
+            <div class="catText">
+                <asp:DropDownList ID="ddlCatInsert" runat="server">
+                </asp:DropDownList>
+            </div>
+            <div class="clear" />
+            
+             <!-- Title -->
+             <div class="catLabel">
+                <asp:Label ID="Label2" runat="server" Text="Title"></asp:Label>
+            </div>
+            <div class="catText">
+                <asp:TextBox ID="txtTitle"  runat="server"></asp:TextBox>
+            </div>
+            <div class="clear" />
+           
+               <!-- price -->
+             <div class="catLabel">
+                <asp:Label ID="Label4" runat="server" Text="Price"></asp:Label>
+            </div>
+            <div class="catText">
+                <asp:TextBox ID="txtPrice"  Width="50px" runat="server"></asp:TextBox>
+            </div>
+            <div class="clear" />
+            
+                   <!-- Filename -->
+             <div class="catLabel">
+                <asp:Label ID="Label3" runat="server" Text="File Name"></asp:Label>
+            </div>
+            <div class="catText">
+                <asp:FileUpload ID="ImageFileUpload"  Width="180px" runat="server" />
+            </div>
+            <div class="clear" />
+      <asp:Button ID="btnInsert" runat="server" Text="Insert" onclick="btnInsert_Click" />
+          
+   </asp:Panel>
+   
