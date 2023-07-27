@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="84d59579-71e4-4434-a5b8-0f1cfe771d4e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1045/WsBookCatalog.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WsBookCatalog.xsd" MetadataType="Schema" ID="10f1e895-2e47-4dab-afc6-649d0fa48339" SourceId="1" SourceUrl="http://localhost:1045/WsBookCatalog.svc?xsd=xsd0" />
+    <MetadataFile FileName="WsBookCatalog.wsdl" MetadataType="Wsdl" ID="a672b56f-dc73-4395-8cf9-ce4b66c71969" SourceId="1" SourceUrl="http://localhost:1045/WsBookCatalog.svc?wsdl" />
+    <MetadataFile FileName="WsBookCatalog1.xsd" MetadataType="Schema" ID="bd9c216e-acae-41df-acdf-73dc1a784ea8" SourceId="1" SourceUrl="http://localhost:1045/WsBookCatalog.svc?xsd=xsd3" />
+    <MetadataFile FileName="WsBookCatalog2.xsd" MetadataType="Schema" ID="5cd65c2a-ce66-4fcf-8ba7-806bcfee0929" SourceId="1" SourceUrl="http://localhost:1045/WsBookCatalog.svc?xsd=xsd1" />
+    <MetadataFile FileName="WsBookCatalog.disco" MetadataType="Disco" ID="03929a8d-9eb5-49b5-96ca-0686d79a1419" SourceId="1" SourceUrl="http://localhost:1045/WsBookCatalog.svc?disco" />
+    <MetadataFile FileName="WsBookCatalog3.xsd" MetadataType="Schema" ID="83af242a-ba5c-4b10-abaf-bcbead1d6539" SourceId="1" SourceUrl="http://localhost:1045/WsBookCatalog.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

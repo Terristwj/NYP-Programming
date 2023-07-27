@@ -1,0 +1,13 @@
+WebService - About booking. Simple.
+
+EADP - About buying chairs & sofas.
+The worst project. Parts are not even integrated properly. Not everything is working as it was incomplete.
+
+Unique features:
+Group Chat
+
+Applies to both projects:
+Ran on Visual Studio 2015
+C# language
+Requires to run two separate Project Website
+Uses Web Service to communicate w/ each other

@@ -1,0 +1,35 @@
+D:\Workspace\IT2506\ABCHealth\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+D:\Workspace\IT2506\ABCHealth\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\Workspace\IT2506\ABCHealth\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\Workspace\IT2506\ABCHealth\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+D:\Workspace\IT2506\ABCHealth\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\2014S2_IT2605\ABCHealth - ShoppingCart Sol\ABCHealth - ShoppingCart Sol\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\2014S2_IT2605\ABCHealth - ShoppingCart Sol\ABCHealth - ShoppingCart Sol\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\2014S2_IT2605\ABCHealth - ShoppingCart Sol\ABCHealth - ShoppingCart Sol\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\2014S2_IT2605\ABCHealth - ShoppingCart Sol\ABCHealth - ShoppingCart Sol\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\2014S2_IT2605\ABCHealth - ShoppingCart Sol\ABCHealth - ShoppingCart Sol\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\2014S2_IT2605\ABCHealth - ShoppingCart Sol\ABCHealth - ShoppingCart Sol\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+D:\2014S2_IT2605\Delivery\Week06\ABCHealth - ShoppingCart Sol - Initial\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+D:\2014S2_IT2605\Delivery\Week06\ABCHealth - ShoppingCart Sol - Initial\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\2014S2_IT2605\Delivery\Week06\ABCHealth - ShoppingCart Sol - Initial\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\2014S2_IT2605\Delivery\Week06\ABCHealth - ShoppingCart Sol - Initial\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+D:\2014S2_IT2605\Delivery\Week06\ABCHealth - ShoppingCart Sol - Initial\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+D:\2014S2_IT2605\Delivery\Week06\ABCHealth - ShoppingCart Sol - Initial\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+D:\IT2605_2014S2\Delivery\week06_check\Initial Resource\ABCHealth - ShoppingCart_Initial\ABCHealth - ShoppingCart Sol\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+D:\IT2605_2014S2\Delivery\week06_check\Initial Resource\ABCHealth - ShoppingCart_Initial\ABCHealth - ShoppingCart Sol\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\IT2605_2014S2\Delivery\week06_check\Initial Resource\ABCHealth - ShoppingCart_Initial\ABCHealth - ShoppingCart Sol\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\IT2605_2014S2\Delivery\week06_check\Initial Resource\ABCHealth - ShoppingCart_Initial\ABCHealth - ShoppingCart Sol\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+D:\IT2605_2014S2\Delivery\week06_check\Initial Resource\ABCHealth - ShoppingCart_Initial\ABCHealth - ShoppingCart Sol\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+D:\IT2605_2014S2\Delivery\week06_check\Initial Resource\ABCHealth - ShoppingCart_Initial\ABCHealth - ShoppingCart Sol\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 07 - Implement 3 Tier App Part 3\ABCHealth - ShoppingCart\ABCHealth - ShoppingCart\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 07 - Implement 3 Tier App Part 3\ABCHealth - ShoppingCart\ABCHealth - ShoppingCart\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 07 - Implement 3 Tier App Part 3\ABCHealth - ShoppingCart\ABCHealth - ShoppingCart\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 07 - Implement 3 Tier App Part 3\ABCHealth - ShoppingCart\ABCHealth - ShoppingCart\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 07 - Implement 3 Tier App Part 3\ABCHealth - ShoppingCart\ABCHealth - ShoppingCart\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 07 - Implement 3 Tier App Part 3\ABCHealth - ShoppingCart\ABCHealth - ShoppingCart\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\Terris Tan\Documents\Visual Studio 2015\Projects\IT2605 AWS\Week 7\ABCHealth\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\Terris Tan\Documents\Visual Studio 2015\Projects\IT2605 AWS\Week 7\ABCHealth\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Terris Tan\Documents\Visual Studio 2015\Projects\IT2605 AWS\Week 7\ABCHealth\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Terris Tan\Documents\Visual Studio 2015\Projects\IT2605 AWS\Week 7\ABCHealth\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Terris Tan\Documents\Visual Studio 2015\Projects\IT2605 AWS\Week 7\ABCHealth\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\Terris Tan\Documents\Visual Studio 2015\Projects\IT2605 AWS\Week 7\ABCHealth\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

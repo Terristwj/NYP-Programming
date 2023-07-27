@@ -1,0 +1,103 @@
+D:\2014S2_IT2605\Delivery\Week 05_Implement 3_Tier App Part 1\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll.config
+D:\2014S2_IT2605\Delivery\Week 05_Implement 3_Tier App Part 1\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll
+D:\2014S2_IT2605\Delivery\Week 05_Implement 3_Tier App Part 1\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.pdb
+D:\2014S2_IT2605\Delivery\Week 05_Implement 3_Tier App Part 1\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.csprojResolveAssemblyReference.cache
+D:\2014S2_IT2605\Delivery\Week 05_Implement 3_Tier App Part 1\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.dll
+D:\2014S2_IT2605\Delivery\Week 05_Implement 3_Tier App Part 1\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.pdb
+D:\2014S2_IT2605\Delivery\Week05_Implement 3_Tier App Part 1\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll.config
+D:\2014S2_IT2605\Delivery\Week05_Implement 3_Tier App Part 1\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll
+D:\2014S2_IT2605\Delivery\Week05_Implement 3_Tier App Part 1\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.pdb
+D:\2014S2_IT2605\Delivery\Week05_Implement 3_Tier App Part 1\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.dll
+D:\2014S2_IT2605\Delivery\Week05_Implement 3_Tier App Part 1\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.pdb
+D:\2014S2_IT2605\Delivery\Week06\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll.config
+D:\2014S2_IT2605\Delivery\Week06\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll
+D:\2014S2_IT2605\Delivery\Week06\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.pdb
+D:\2014S2_IT2605\Delivery\Week06\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.dll
+D:\2014S2_IT2605\Delivery\Week06\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.pdb
+C:\2014S2_IT2605\Delivery\Week06\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll.config
+C:\2014S2_IT2605\Delivery\Week06\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll
+C:\2014S2_IT2605\Delivery\Week06\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.pdb
+C:\2014S2_IT2605\Delivery\Week06\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.dll
+C:\2014S2_IT2605\Delivery\Week06\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.pdb
+C:\2014S2_IT2605\Delivery\Week06\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.csprojResolveAssemblyReference.cache
+D:\2014S2_IT2605\Delivery\Week06\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.csprojResolveAssemblyReference.cache
+D:\2014S2_IT2605\Delivery\Week06\IT2605Prac05_BBS - Initial\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.dll
+D:\2014S2_IT2605\Delivery\Week06\IT2605Prac05_BBS - Initial\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.pdb
+D:\2014S2_IT2605\Delivery\Week06\IT2605Prac05_BBS - Initial\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll.config
+D:\2014S2_IT2605\Delivery\Week06\IT2605Prac05_BBS - Initial\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll
+D:\2014S2_IT2605\Delivery\Week06\IT2605Prac05_BBS - Initial\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.pdb
+D:\NYP\1 - Academic Matters\AY2015 S2\IT2605(ML)\MyPractical\Week 6\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll.config
+D:\NYP\1 - Academic Matters\AY2015 S2\IT2605(ML)\MyPractical\Week 6\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll
+D:\NYP\1 - Academic Matters\AY2015 S2\IT2605(ML)\MyPractical\Week 6\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.pdb
+D:\NYP\1 - Academic Matters\AY2015 S2\IT2605(ML)\MyPractical\Week 6\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.dll
+D:\NYP\1 - Academic Matters\AY2015 S2\IT2605(ML)\MyPractical\Week 6\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.pdb
+D:\NYP\1 - Academic Matters\AY2015 S2\IT2605(ML)\MyPractical\Week 6\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.csprojResolveAssemblyReference.cache
+C:\Users\jasminen\Documents\NYP\1 - Academic Matters\AY2015 S2\IT2605(ML)\Lesson\Week 06 - Implement 3 Tier App Part 2\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll.config
+C:\Users\jasminen\Documents\NYP\1 - Academic Matters\AY2015 S2\IT2605(ML)\Lesson\Week 06 - Implement 3 Tier App Part 2\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll
+C:\Users\jasminen\Documents\NYP\1 - Academic Matters\AY2015 S2\IT2605(ML)\Lesson\Week 06 - Implement 3 Tier App Part 2\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.pdb
+C:\Users\jasminen\Documents\NYP\1 - Academic Matters\AY2015 S2\IT2605(ML)\Lesson\Week 06 - Implement 3 Tier App Part 2\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.csprojResolveAssemblyReference.cache
+C:\Users\jasminen\Documents\NYP\1 - Academic Matters\AY2015 S2\IT2605(ML)\Lesson\Week 06 - Implement 3 Tier App Part 2\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.dll
+C:\Users\jasminen\Documents\NYP\1 - Academic Matters\AY2015 S2\IT2605(ML)\Lesson\Week 06 - Implement 3 Tier App Part 2\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.pdb
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 06 - Implement 3 Tier App Part 2\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.csprojResolveAssemblyReference.cache
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 06 - Implement 3 Tier App Part 2\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.dll
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 06 - Implement 3 Tier App Part 2\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.pdb
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 06 - Implement 3 Tier App Part 2\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll.config
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 06 - Implement 3 Tier App Part 2\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 06 - Implement 3 Tier App Part 2\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.pdb
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 07 - Implement 3 Tier App Part 3\P05 & P06 Solution\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll.config
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 07 - Implement 3 Tier App Part 3\P05 & P06 Solution\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 07 - Implement 3 Tier App Part 3\P05 & P06 Solution\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.pdb
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 07 - Implement 3 Tier App Part 3\P05 & P06 Solution\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.csprojResolveAssemblyReference.cache
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 07 - Implement 3 Tier App Part 3\P05 & P06 Solution\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.dll
+C:\NYP\1 - Academic Matters\AY2017 S2\IT2605(ML)\Lesson\Week 07 - Implement 3 Tier App Part 3\P05 & P06 Solution\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.pdb
+F:\IT2605\AY2018 S2\Delivery\Week 07 - Implement 3 Tier App Part 3\P05 & P06 Solution\P05 & P06 Solution\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll.config
+F:\IT2605\AY2018 S2\Delivery\Week 07 - Implement 3 Tier App Part 3\P05 & P06 Solution\P05 & P06 Solution\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll
+F:\IT2605\AY2018 S2\Delivery\Week 07 - Implement 3 Tier App Part 3\P05 & P06 Solution\P05 & P06 Solution\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.pdb
+F:\IT2605\AY2018 S2\Delivery\Week 07 - Implement 3 Tier App Part 3\P05 & P06 Solution\P05 & P06 Solution\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.csproj.CoreCompileInputs.cache
+F:\IT2605\AY2018 S2\Delivery\Week 07 - Implement 3 Tier App Part 3\P05 & P06 Solution\P05 & P06 Solution\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.dll
+F:\IT2605\AY2018 S2\Delivery\Week 07 - Implement 3 Tier App Part 3\P05 & P06 Solution\P05 & P06 Solution\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.pdb
+F:\IT2605\AY2018 S2\Delivery\Week 07 - Implement 3 Tier App Part 3\P05 & P06 Solution\P05 & P06 Solution\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\EntityFramework.dll
+F:\IT2605\AY2018 S2\Delivery\Week 07 - Implement 3 Tier App Part 3\P05 & P06 Solution\P05 & P06 Solution\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\EntityFramework.SqlServer.dll
+F:\IT2605\AY2018 S2\Delivery\Week 07 - Implement 3 Tier App Part 3\P05 & P06 Solution\P05 & P06 Solution\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\EntityFramework.xml
+F:\IT2605\AY2018 S2\Delivery\Week 07 - Implement 3 Tier App Part 3\P05 & P06 Solution\P05 & P06 Solution\Solution\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\EntityFramework.SqlServer.xml
+C:\Users\Joycel\Desktop\WSA\Week 07\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll.config
+C:\Users\Joycel\Desktop\WSA\Week 07\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll
+C:\Users\Joycel\Desktop\WSA\Week 07\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.pdb
+C:\Users\Joycel\Desktop\WSA\Week 07\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\EntityFramework.dll
+C:\Users\Joycel\Desktop\WSA\Week 07\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\EntityFramework.SqlServer.dll
+C:\Users\Joycel\Desktop\WSA\Week 07\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\EntityFramework.xml
+C:\Users\Joycel\Desktop\WSA\Week 07\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\EntityFramework.SqlServer.xml
+C:\Users\Joycel\Desktop\WSA\Week 07\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.csprojResolveAssemblyReference.cache
+C:\Users\Joycel\Desktop\WSA\Week 07\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.csproj.CoreCompileInputs.cache
+C:\Users\Joycel\Desktop\WSA\Week 07\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.dll
+C:\Users\Joycel\Desktop\WSA\Week 07\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.pdb
+C:\Users\Joycel\Desktop\WSA\Week 07\IT2605Prac06_Resource\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll.config
+C:\Users\Joycel\Desktop\WSA\Week 07\IT2605Prac06_Resource\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll
+C:\Users\Joycel\Desktop\WSA\Week 07\IT2605Prac06_Resource\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.pdb
+C:\Users\Joycel\Desktop\WSA\Week 07\IT2605Prac06_Resource\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\EntityFramework.dll
+C:\Users\Joycel\Desktop\WSA\Week 07\IT2605Prac06_Resource\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\EntityFramework.SqlServer.dll
+C:\Users\Joycel\Desktop\WSA\Week 07\IT2605Prac06_Resource\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\EntityFramework.xml
+C:\Users\Joycel\Desktop\WSA\Week 07\IT2605Prac06_Resource\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\EntityFramework.SqlServer.xml
+C:\Users\Joycel\Desktop\WSA\Week 07\IT2605Prac06_Resource\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.csprojResolveAssemblyReference.cache
+C:\Users\Joycel\Desktop\WSA\Week 07\IT2605Prac06_Resource\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.csproj.CoreCompileInputs.cache
+C:\Users\Joycel\Desktop\WSA\Week 07\IT2605Prac06_Resource\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.dll
+C:\Users\Joycel\Desktop\WSA\Week 07\IT2605Prac06_Resource\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.pdb
+C:\Users\Terris Tan\Documents\Visual Studio 2015\Projects\IT2605 AWS\Week 7\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll.config
+C:\Users\Terris Tan\Documents\Visual Studio 2015\Projects\IT2605 AWS\Week 7\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll
+C:\Users\Terris Tan\Documents\Visual Studio 2015\Projects\IT2605 AWS\Week 7\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.pdb
+C:\Users\Terris Tan\Documents\Visual Studio 2015\Projects\IT2605 AWS\Week 7\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\EntityFramework.dll
+C:\Users\Terris Tan\Documents\Visual Studio 2015\Projects\IT2605 AWS\Week 7\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\EntityFramework.SqlServer.dll
+C:\Users\Terris Tan\Documents\Visual Studio 2015\Projects\IT2605 AWS\Week 7\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\EntityFramework.xml
+C:\Users\Terris Tan\Documents\Visual Studio 2015\Projects\IT2605 AWS\Week 7\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\EntityFramework.SqlServer.xml
+C:\Users\Terris Tan\Documents\Visual Studio 2015\Projects\IT2605 AWS\Week 7\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.dll
+C:\Users\Terris Tan\Documents\Visual Studio 2015\Projects\IT2605 AWS\Week 7\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.pdb
+C:\Users\Terris Tan\Desktop\NYP\Year 2 Sem 2\2018S2-IT2605-Applications Of Web Services\2. Practical\Week 7\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll.config
+C:\Users\Terris Tan\Desktop\NYP\Year 2 Sem 2\2018S2-IT2605-Applications Of Web Services\2. Practical\Week 7\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.dll
+C:\Users\Terris Tan\Desktop\NYP\Year 2 Sem 2\2018S2-IT2605-Applications Of Web Services\2. Practical\Week 7\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\IT2605Prac05_BBS.pdb
+C:\Users\Terris Tan\Desktop\NYP\Year 2 Sem 2\2018S2-IT2605-Applications Of Web Services\2. Practical\Week 7\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\EntityFramework.dll
+C:\Users\Terris Tan\Desktop\NYP\Year 2 Sem 2\2018S2-IT2605-Applications Of Web Services\2. Practical\Week 7\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\EntityFramework.SqlServer.dll
+C:\Users\Terris Tan\Desktop\NYP\Year 2 Sem 2\2018S2-IT2605-Applications Of Web Services\2. Practical\Week 7\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\EntityFramework.xml
+C:\Users\Terris Tan\Desktop\NYP\Year 2 Sem 2\2018S2-IT2605-Applications Of Web Services\2. Practical\Week 7\IT2605Prac05_BBS\IT2605Prac05_BBS\bin\EntityFramework.SqlServer.xml
+C:\Users\Terris Tan\Desktop\NYP\Year 2 Sem 2\2018S2-IT2605-Applications Of Web Services\2. Practical\Week 7\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.csprojResolveAssemblyReference.cache
+C:\Users\Terris Tan\Desktop\NYP\Year 2 Sem 2\2018S2-IT2605-Applications Of Web Services\2. Practical\Week 7\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.dll
+C:\Users\Terris Tan\Desktop\NYP\Year 2 Sem 2\2018S2-IT2605-Applications Of Web Services\2. Practical\Week 7\IT2605Prac05_BBS\IT2605Prac05_BBS\obj\Debug\IT2605Prac05_BBS.pdb
