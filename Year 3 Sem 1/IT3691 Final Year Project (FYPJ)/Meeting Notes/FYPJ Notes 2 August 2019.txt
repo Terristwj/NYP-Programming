@@ -1,0 +1,26 @@
+AWS and BigQuery - Do visuals with Spotfire
+DiscussionRoomBooking - Cloud DB - Better Visual
+IoT face recognition
+Documentation
+Spotfire 3 sec lag
+
+
+Completed work so far after mid-term that can be presented:
+OH 2019, Guide TaskForce - School timing Spotfire visual
+Spotfire using BigQuery
+Spotfire using AWS
+Language
+Conclusion of databases (Free/ performance/ services/ accessiblity)
+
+RoomBooking data insights
+- Early Leave
+- Check sleeping?
+- Using sensor data (raw) to create insights data then help adjust the system
+
+raw > info > trend 
+light + motion > empty room early > Avg(empty room early)
+
+count(light:on + motion:off) > empty room frequency > Avg(empty room frequency) > Conclusion: Room booking should consider room left empty too many times is considered as empty
+
+Reverse engineering the idea.
+Think about the outcome then what data I need.

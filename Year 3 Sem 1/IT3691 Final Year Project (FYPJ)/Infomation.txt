@@ -1,0 +1,14 @@
+3 WinForms Project Completed:
+1. IoT Raspberry Pi
+2. TIBCO Connection Demo App (Online databases)
+3. SQLiteToExcel File Convertor
+
+
+Important Notes:
+1. TIBCO Cloud Spotfire Analyst App (External) must be installed on the main Website with a valid account.
+2. All Online Databases have already been shut down.
+3. Customized Raspberry Pi device was provided by the school during this project.
+
+
+Accessable Information:
+Reports, Documentations, Images, Slides, Presentations, SQLiteToExcel App, First page of Demo App.

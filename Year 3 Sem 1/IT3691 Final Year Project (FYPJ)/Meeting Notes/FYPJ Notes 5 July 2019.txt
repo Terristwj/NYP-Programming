@@ -1,0 +1,38 @@
+Spotfire:
+OH database create one with school.
+Tour History, change the Route Schools.
+Try to think/create other visualtions with the OH database.
+
+IoT part, try to make better reload system, see why it loads long/lags.
+
+Docuemntation for usage guide for Spotfire.
+Send to Mr Roy usage guide for Spotfire.
+
+Spotfire visualisation, put relevant visuals together in one page.
+
+TIBCO Mosquito research.
+Try to use online database instead of local.
+
+More IoT data that can produce reports
+
+Later: (Impressive feature)
+Messaging/ SMS feature. Or Chatbot
+
+Visual studio:
+Database check if can add Chinese Character.
+Try with ASP.NET with better visualisation/UI
+
+Conclude not on if can add to curriculum, but on how easy the learning curve and if outside people will be using.
+
+Can mention personally, if may or may noy be added into curriculum. Can relate to how easy to find for solution online.
+
+Is the support good for spotfire, and how active the forum is? Can relate to decision making.
+
+Make a report of it.
+
+
+
+Presentation:
+Do not present bugs and why it occurs.
+QnA don't show the slides, rather try to on the spot say.
+Transition and animation, smoother. Can add multiplie animation for 1 entity on 1 slide.

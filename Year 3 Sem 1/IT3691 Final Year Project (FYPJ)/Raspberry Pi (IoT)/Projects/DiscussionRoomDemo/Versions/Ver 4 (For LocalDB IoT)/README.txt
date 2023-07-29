@@ -1,0 +1,1 @@
+Only Compatible With SpotfireDemo - LocalDB IoT

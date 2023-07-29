@@ -1,0 +1,24 @@
+Spotfire:
+Day1&2 Database:
+- Values to filter out (Eg. Day1 has day2 date)
+OH_DAY1_ArrivalTime
+- Value to time
+- Values change from count busId to count students
+- Check if there is a overlay graph
+  - Overlay student actual vs expected
+  - Arrival time expected vs actual
+AttendanceRemarks
+- Not useful, remove
+Documentation
+
+Windows Forms
+- UI
+  - Upload database
+  - View database
+  - Export to Excel
+- Change Excel export location to current directory
+
+Visualisation:
+- Something we do not know
+  - Cannot be seen, trends
+  - Can't be seen in Excel

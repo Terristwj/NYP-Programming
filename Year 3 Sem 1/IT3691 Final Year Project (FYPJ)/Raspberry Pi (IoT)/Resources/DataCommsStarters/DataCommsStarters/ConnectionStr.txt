@@ -1,0 +1,7 @@
+<configuration>
+  <connectionStrings>
+    <add name="DataCommsDBConnection"
+         connectionString="Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\temp\DataCommsDB.mdf;Integrated Security=True;Connect Timeout=30"
+        providerName="System.Data.SqlClient" />
+  </connectionStrings>  
+</configuration>

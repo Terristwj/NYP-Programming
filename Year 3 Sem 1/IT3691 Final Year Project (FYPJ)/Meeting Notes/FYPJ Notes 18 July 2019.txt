@@ -1,0 +1,17 @@
+First To Last:
+
+Use Excel, make a good table for Spotfire Visuals.
+Visualisation must have a duration for each Stop.
+
+
+Go back to Convertor App. See why is there a bug in converting the time.
+
+Using the Chinese character, use VS to create a mini project where can use unicode to store Chinese characters. Can reuse the fruit store.
+
+Do I want to remake a better IoT project?
+
+Online database. Connect to Spotfire.
+
+TIBCO Mousquito, explore and see how to use - said to be related to online database too.
+
+Refer back to previous note for any other outstanding work.

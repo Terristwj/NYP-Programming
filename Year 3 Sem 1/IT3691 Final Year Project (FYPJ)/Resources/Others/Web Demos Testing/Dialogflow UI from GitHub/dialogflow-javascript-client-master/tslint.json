@@ -1,0 +1,10 @@
+{
+  "extends": "tslint:latest",
+  "rules": {
+    "max-classes-per-file": 0,
+    "object-literal-sort-keys": false,
+    "no-namespace": false,
+    "trailing-comma": false,
+    "no-console": false
+  }
+}

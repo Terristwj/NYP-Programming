@@ -1,0 +1,39 @@
+
+AES Doubts
+
+1. What project do I click?
+- The title is "Guide Tour Taskforce" but my current project is not actually that.
+
+
+2. What that is to be submitted exactly?
+- I have a list of reports
+    - Usage Guides
+    - How to recreate
+    - Trouble-shooting
+- Most are not related to each other, but parts of the project like network troubleshooting
+
+
+3. Can I just upload them as word documents?
+- Or do I have to rewrite everything into proper sections?
+
+
+4. From existing work, I saw infographs, diagrams, use-cases
+- Must I also provide those since the nature of the work is "Exploration".
+
+
+5. Is there a strict rule on how to organise what is uploaded?
+- I saw sections like:
+   - Project Documentation
+   - Project Management
+   - Document Share
+   - Project Discussions
+- Are there any sections that are not applicable for me as I am a solo student?
+
+
+Create a specific documentation for Google BigQuery and AWS RDS
+Look through all documentations again and export into Word document
+
+Collect all files and collate them into a zip file orderly
+ - Eg. Reports, Slides, Demo Codes, Resources (Anything additional)
+
+Remove all connection String and GOOGLE CREDENTIALS
