@@ -1,0 +1,24 @@
+Live demo link:
+https://staffcorps-ff2bb.web.app/home
+
+Free OCR API link:
+https://ocr.space/OCRAPI
+
+News API link:
+https://newsapi.org/
+
+News API documentations:
+https://newsapi.org/docs/endpoints/everything
+
+Singapore API:
+https://data.gov.sg/developer
+
+
+All APIs are using HTTP
+- “@angular/common/http"
+
+Using Firebase
+- Hosting
+- Storage
+- Database/Firestore
+- Authentication

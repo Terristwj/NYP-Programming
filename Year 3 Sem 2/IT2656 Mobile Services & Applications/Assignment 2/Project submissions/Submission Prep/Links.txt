@@ -1,0 +1,24 @@
+Project link:
+https://console.firebase.google.com/u/0/project/staffcorps-ff2bb/overview
+
+Saved images link:
+https://firebasestorage.googleapis.com/v0/b/staffcorps-ff2bb.appspot.com/o/picture?alt=media
+
+Live demo link:
+https://staffcorps-ff2bb.web.app/home
+
+Sample demo link:
+https://sampledemo-41106.web.app/home
+
+Free OCR API link:
+https://ocr.space/OCRAPI
+
+News API link:
+https://newsapi.org/
+
+News API documentations:
+https://newsapi.org/docs/endpoints/everything
+
+
+Singapore API:
+https://data.gov.sg/developer
