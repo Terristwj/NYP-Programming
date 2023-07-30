@@ -1,0 +1,2 @@
+Follow setup step 1 and replace the 'src'.
+Project can now be opened
