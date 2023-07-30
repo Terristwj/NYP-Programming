@@ -1,0 +1,51 @@
+Ionic Documentation:
+https://ionicframework.com/docs/v3/
+https://ionicframework.com/docs
+
+Ionic icons:
+https://ionicframework.com/docs/v3/ionicons/
+
+Ionic Colors:
+https://htmlcolorcodes.com/
+https://ionicframework.com/docs/theming/themes
+https://ionicframework.com/docs/theming/color-generator
+https://ionicframework.com/docs/theming/dark-mode
+
+Tutorials:
+https://ionicthemes.com/tutorials
+
+Dark mode:
+https://www.youtube.com/watch?v=tuxdjjw_FV4
+
+Epic UI sample:
+https://ionicsvelte.firebaseapp.com/
+
+Free_OCR API:
+https://ocr.space/OCRAPI
+
+FireStore in TypeScript:
+https://stackoverflow.com/questions/57071062/how-to-order-firestore-collection-in-angular-typescript
+
+Firebase Storage Ionic:
+https://www.youtube.com/watch?v=urFpUVjLw0Y
+
+Javascript SetTimeout:
+https://stackoverflow.com/questions/37764665/typescript-sleep/50797405
+
+IPhone images - Photo vs Screenshot:
+https://www.macobserver.com/tmo/article/why-your-iphone-uses-png-for-screen-shots-and-jpg-for-photos
+
+News API:
+https://newsapi.org/
+
+Infinite scroll tutorial:
+https://www.youtube.com/watch?v=M86HPj_YuXQ
+
+Singapore API:
+https://data.gov.sg/developer
+
+Singapore weather forecast:
+https://data.gov.sg/dataset/weather-forecast?view_id=4c127d9a-cba6-445a-8fc1-978b565f9bf7&resource_id=571ef5fb-ed31-48b2-85c9-61677de42ca9
+
+Singapore road traffic:
+https://data.gov.sg/dataset/traffic-images?view_id=39ba8de0-6242-40d3-8664-793316c47b09&resource_id=e127e29a-bd48-47e2-a0a7-e89ce31f10c7
