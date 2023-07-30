@@ -1,0 +1,21 @@
+Any business scenario.
+App must serve a purpose.
+
+User Experience - Enhance user understanding. 
+Eg Red color -> error
+Eg Meaningful icons & colors
+Eg Visual feedbacks -> Eg. Toastbox, display typing
+CSS does not signify user experience, unless it actually helps.
+
+Must use firebase database.
+
+Cannot use ionic serve present demo.
+
+Present using ionic developer app.
+Or use andriod studio emulator.
+
+Video & poster.
+
+Wk14: Bring and fill in grading sheet
+Wk15/16: Prsentation
+Wk15
