@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="end">
+        <ion-button (click)="dismiss()">
+          Close
+        </ion-button>
+      </ion-buttons>
+      <ion-title>Log In</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <ion-item>
+        <ion-label>Email</ion-label>
+        <ion-input type="email" formControlName="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Password</ion-label>
+        <ion-input type="password" formControlName="password"></ion-input>
+      </ion-item>
+      <ion-button expand="block" color="tertiary" type="submit">Log In</ion-button>
+    </form>
+  
+    <ion-label color='danger'>
+      <p>{{loginError}}</p>
+    </ion-label>
+
+    <ion-button expand="block" fill="clear" color="primary" type="submit" (click)="goToSignup()">Or Create an Account
+    </ion-button>
+
+  </ion-content>

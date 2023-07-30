@@ -1,0 +1,7 @@
+{
+  "name": "skippyQ",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
