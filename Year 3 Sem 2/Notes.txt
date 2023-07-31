@@ -1,0 +1,21 @@
+MSA:
+Focused on PWA Web development, it uses VSCode and IonicAngular as the framework. It requires a basic understanding of Ionic to run this app. E.g. 'ionic serve'.
+
+Assignment 2 ... The project was previously hosted online and used online database, Firebase. So it will not be working now.
+
+
+BIPJ:
+Project is about selling PC parts & services.
+Only sure of my own part for the process.
+
+Products is done by Kai Hong.
+Services is done by Terris.
+
+Password uses encryption, so is tricky to startup.
+All password currently is 'aaa'.
+
+
+My Unique features:
+Booking Process - from start to end
+Discord Widget bot - From 3rd party API that created with Discord, not owned my Discord.
+FAQ chatbot - Dialogflow
