@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="Staff_ServiceTransactions.master.cs" Inherits="BitzAndBytez.Staff_ServiceTransactions" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style>
+        /* Debugging */
+        /*.upperContainer{
+            border:1px solid red;
+        }
+        .upperContainer2{
+            border:1px solid green;
+        }
+        .mainHeader{
+            border:1px solid red;
+        }
+        .mainHeader_buttonContainer{
+            border:1px solid blue;
+        }
+        .mainContent{
+            border:1px solid blue;
+        }*/
+        
+        .upperContainer{
+            width:90%;
+            margin:auto;
+            justify-content:center;
+            align-items:center;
+        }
+        .upperContainer2{
+            width:95%;
+            margin:auto;
+            background:#fff;
+        }
+        .mainHeader{
+            width:95%;
+            margin:auto;
+            border-bottom:1px solid black;
+        }
+        .mainHeader_buttonContainer{
+            width:95%;
+            padding:25px 0 25px 0;
+            margin:auto;
+            display:flex;
+        }
+        .mainHeader_buttonContainer input{
+            flex:1;
+            height:50px;
+            background:#17a2b8;
+            border:1px solid transparent;
+            box-shadow: 0px 5px 8px #888888;
+            letter-spacing: 1px;
+            font-size:18px;
+            color:white;
+            margin:0 15px 0 15px;
+        }
+        .mainHeader_buttonContainer input:hover{
+            background:#138496;
+        }
+        .mainContent{
+            width:95%;
+            margin:auto;
+            background:#fff;
+            padding:25px 0 25px 10px;
+        }
+
+        @media (max-width: 1560px) {
+        }
+        @media (max-width: 1100px) {
+        }
+        @media (max-width: 991px) { 
+        }
+        @media (max-width: 950px) {
+        }
+        @media (max-width: 740px) {
+        }
+        @media (max-width: 640px) {
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head2" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="upperContainer">
+        <div class="upperContainer2">
+            <div class="mainHeader">
+                <div class="mainHeader_buttonContainer">
+                    <asp:Button ID="btn_appointments" runat="server" Text="Appointments" OnClick="btn_appointments_Click" />
+                    <asp:Button ID="btn_transactions" runat="server" Text="Transactions" OnClick="btn_transactions_Click" />
+                </div>
+            </div>
+            <div class="mainContent">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+</asp:Content>
+
+

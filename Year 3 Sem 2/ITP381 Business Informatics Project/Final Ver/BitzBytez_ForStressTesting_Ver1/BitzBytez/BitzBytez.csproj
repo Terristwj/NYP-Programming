@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1055DAB9-4BF9-4DB9-8D62-01665730A48A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BitzBytez</RootNamespace>
+    <AssemblyName>BitzBytez</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.Api.CommonProtos, Version=1.7.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Api.CommonProtos.1.7.0\lib\net45\Google.Api.CommonProtos.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Api.Gax, Version=2.10.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Api.Gax.2.10.0\lib\net45\Google.Api.Gax.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Api.Gax.Grpc, Version=2.10.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Api.Gax.Grpc.2.10.0\lib\net45\Google.Api.Gax.Grpc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis, Version=1.41.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.41.1\lib\net45\Google.Apis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.41.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.41.1\lib\net45\Google.Apis.Auth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.41.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.41.1\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.41.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.41.1\lib\net45\Google.Apis.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.41.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.41.1\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Cloud.Dialogflow.V2, Version=1.2.0.0, Culture=neutral, PublicKeyToken=185c282632e132a0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Cloud.Dialogflow.V2.1.2.0\lib\net45\Google.Cloud.Dialogflow.V2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.LongRunning, Version=1.1.0.0, Culture=neutral, PublicKeyToken=185c282632e132a0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.LongRunning.1.1.0\lib\net45\Google.LongRunning.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.8.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.8.0\lib\net45\Google.Protobuf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Grpc.Auth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d754f35622e28bad, processorArchitecture=MSIL">
+      <HintPath>..\packages\Grpc.Auth.1.22.0\lib\net45\Grpc.Auth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Grpc.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d754f35622e28bad, processorArchitecture=MSIL">
+      <HintPath>..\packages\Grpc.Core.1.22.1\lib\net45\Grpc.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Grpc.Core.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d754f35622e28bad, processorArchitecture=MSIL">
+      <HintPath>..\packages\Grpc.Core.Api.1.22.1\lib\net45\Grpc.Core.Api.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Interactive.Async, Version=3.2.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Interactive.Async.3.2.0\lib\net45\System.Interactive.Async.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AboutUs.aspx" />
+    <Content Include="Admin_ManageCompanyInfo.aspx" />
+    <Content Include="BookingHistory.aspx" />
+    <Content Include="Cust_ChangePassword.aspx" />
+    <Content Include="Cust_Notification.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="img\American Express.jpg" />
+    <Content Include="img\chatBotIcon.png" />
+    <Content Include="img\CreditCardCVV.PNG" />
+    <Content Include="img\CustDefaultPic.png" />
+    <Content Include="img\desktop1.jpg" />
+    <Content Include="img\desktop2.jpg" />
+    <Content Include="img\desktop3.jpg" />
+    <Content Include="img\Discover.jpg" />
+    <Content Include="img\MasterCard.jpg" />
+    <Content Include="img\VisaCard.png" />
+    <Content Include="Info.aspx" />
+    <Content Include="Payment.aspx" />
+    <Content Include="PaymentFinal.aspx" />
+    <Content Include="PurchaseHistory.aspx" />
+    <Content Include="ServicesRegister.aspx" />
+    <Content Include="Staff_AddBuiltPCInfo.aspx" />
+    <Content Include="Staff_AddProductConfigCombo.aspx" />
+    <Content Include="Staff_AddProductConfiguration.aspx" />
+    <Content Include="Cart.aspx" />
+    <Content Include="ChatSupport.asmx" />
+    <Content Include="ChatSupport.aspx" />
+    <Content Include="css\main.css" />
+    <Content Include="CustomerProfile.aspx" />
+    <Content Include="js\global.js" />
+    <Content Include="Staff_AddProduct.aspx" />
+    <Content Include="js\jquery.js" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="css\bootstrap-grid.css.map" />
+    <Content Include="css\bootstrap-grid.min.css.map" />
+    <Content Include="css\bootstrap-reboot.css.map" />
+    <Content Include="css\bootstrap-reboot.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="js\bootstrap.bundle.js.map" />
+    <Content Include="js\bootstrap.bundle.min.js.map" />
+    <Content Include="js\bootstrap.js.map" />
+    <Content Include="js\bootstrap.min.js.map" />
+    <Content Include="Master.Master" />
+    <Content Include="RequestChatSupport.aspx" />
+    <Content Include="Staff_AddWarrantyInfo.aspx" />
+    <Content Include="Staff_ChatSupportRequests.aspx" />
+    <Content Include="Staff_Dashboard.aspx" />
+    <Content Include="Staff_HomePage.aspx" />
+    <Content Include="Staff_ManageServices_General.aspx" />
+    <Content Include="Staff_ManageServices_Template.aspx" />
+    <Content Include="Staff_ManageStaff.aspx" />
+    <Content Include="Staff_ManageStaff_AddStaff.aspx" />
+    <Content Include="Staff_ManageStaff_ViewUsers.aspx" />
+    <Content Include="Staff_ServiceTransactions_Appointments.aspx" />
+    <Content Include="Staff_ServiceTransactions_Transactions.aspx" />
+    <Content Include="Staff_ViewUsers.aspx" />
+    <Content Include="UpcomingBookings.aspx" />
+    <Content Include="vendor\font-awesome-4.7\fonts\fontawesome-webfont.eot" />
+    <Content Include="vendor\font-awesome-4.7\fonts\fontawesome-webfont.ttf" />
+    <Content Include="vendor\font-awesome-4.7\fonts\fontawesome-webfont.woff" />
+    <Content Include="vendor\font-awesome-4.7\fonts\fontawesome-webfont.woff2" />
+    <Content Include="vendor\font-awesome-4.7\fonts\FontAwesome.otf" />
+    <Content Include="vendor\mdi-font\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="vendor\mdi-font\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="vendor\mdi-font\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="vendor\mdi-font\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="Customer_Profile.master" />
+    <Content Include="Staff_ManageServices.master" />
+    <Content Include="Staff_ServiceTransactions.master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\db.mdf" />
+    <Content Include="App_Data\db_log.ldf">
+      <DependentUpon>db.mdf</DependentUpon>
+    </Content>
+    <Content Include="css\bootstrap-grid.css" />
+    <Content Include="css\bootstrap-grid.min.css" />
+    <Content Include="css\bootstrap-reboot.css" />
+    <Content Include="css\bootstrap-reboot.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="img\bg_login.jpg" />
+    <Content Include="img\bitzbytez_logo.png" />
+    <Content Include="img\evga_gtx1060_ssc_1.jpg" />
+    <Content Include="img\evga_gtx1060_ssc_2.jpg" />
+    <Content Include="img\evga_gtx1060_ssc_3.jpg" />
+    <Content Include="img\evga_gtx1060_ssc_4.jpg" />
+    <Content Include="img\evga_gtx1060_ssc_5.jpg" />
+    <Content Include="img\evga_gtx1060_ssc_6.jpg" />
+    <Content Include="img\evga_gtx1060_ssc_7.jpg" />
+    <Content Include="img\evga_gtx1060_ssc_8.jpg" />
+    <Content Include="img\sample.jpg" />
+    <Content Include="js\bootstrap.bundle.js" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-3.3.1.min.js" />
+    <Content Include="js\jquery-3.3.1.slim.min.js" />
+    <Content Include="js\popper.min.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="ProductCatalog.aspx" />
+    <Content Include="ProductDetails.aspx" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Services.aspx" />
+    <Content Include="SignUp.aspx" />
+    <Content Include="vendor\datepicker\daterangepicker.css" />
+    <Content Include="vendor\datepicker\daterangepicker.js" />
+    <Content Include="vendor\datepicker\moment.min.js" />
+    <Content Include="vendor\font-awesome-4.7\css\font-awesome.css" />
+    <Content Include="vendor\font-awesome-4.7\css\font-awesome.min.css" />
+    <Content Include="vendor\font-awesome-4.7\fonts\fontawesome-webfont.svg" />
+    <Content Include="vendor\jquery\jquery.js" />
+    <Content Include="vendor\jquery\jquery.min.js" />
+    <Content Include="vendor\mdi-font\css\material-design-iconic-font.css" />
+    <Content Include="vendor\mdi-font\css\material-design-iconic-font.min.css" />
+    <Content Include="vendor\mdi-font\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="vendor\select2\select2.min.css" />
+    <Content Include="vendor\select2\select2.min.js" />
+    <Content Include="WarrantyTracker.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_ManageCompanyInfo.aspx.cs">
+      <DependentUpon>Admin_ManageCompanyInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ManageCompanyInfo.aspx.designer.cs">
+      <DependentUpon>Admin_ManageCompanyInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookingHistory.aspx.cs">
+      <DependentUpon>BookingHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookingHistory.aspx.designer.cs">
+      <DependentUpon>BookingHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="codes\Entities\ComponentWarrantyDetails.cs" />
+    <Compile Include="codes\Entities\CreditCard.cs" />
+    <Compile Include="codes\Entities\DaysOfTheWeek.cs" />
+    <Compile Include="codes\Entities\FullComponentWarrantyDetails.cs" />
+    <Compile Include="codes\Entities\Service.cs" />
+    <Compile Include="codes\Entities\ServiceAppointments.cs" />
+    <Compile Include="codes\Entities\ServiceHolidays.cs" />
+    <Compile Include="codes\Entities\ServiceTime.cs" />
+    <Compile Include="Customer_Profile.master.cs">
+      <DependentUpon>Customer_Profile.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer_Profile.master.designer.cs">
+      <DependentUpon>Customer_Profile.master</DependentUpon>
+    </Compile>
+    <Compile Include="Cust_ChangePassword.aspx.cs">
+      <DependentUpon>Cust_ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cust_ChangePassword.aspx.designer.cs">
+      <DependentUpon>Cust_ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cust_Notification.aspx.cs">
+      <DependentUpon>Cust_Notification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cust_Notification.aspx.designer.cs">
+      <DependentUpon>Cust_Notification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Info.aspx.cs">
+      <DependentUpon>Info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Info.aspx.designer.cs">
+      <DependentUpon>Info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentFinal.aspx.cs">
+      <DependentUpon>PaymentFinal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaymentFinal.aspx.designer.cs">
+      <DependentUpon>PaymentFinal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseHistory.aspx.cs">
+      <DependentUpon>PurchaseHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseHistory.aspx.designer.cs">
+      <DependentUpon>PurchaseHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServicesRegister.aspx.cs">
+      <DependentUpon>ServicesRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServicesRegister.aspx.designer.cs">
+      <DependentUpon>ServicesRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_AddBuiltPCInfo.aspx.cs">
+      <DependentUpon>Staff_AddBuiltPCInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff_AddBuiltPCInfo.aspx.designer.cs">
+      <DependentUpon>Staff_AddBuiltPCInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_AddProductConfigCombo.aspx.cs">
+      <DependentUpon>Staff_AddProductConfigCombo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff_AddProductConfigCombo.aspx.designer.cs">
+      <DependentUpon>Staff_AddProductConfigCombo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_AddProductConfiguration.aspx.cs">
+      <DependentUpon>Staff_AddProductConfiguration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff_AddProductConfiguration.aspx.designer.cs">
+      <DependentUpon>Staff_AddProductConfiguration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChatbotController.cs" />
+    <Compile Include="ChatSupport.asmx.cs">
+      <DependentUpon>ChatSupport.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChatSupport.aspx.cs">
+      <DependentUpon>ChatSupport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChatSupport.aspx.designer.cs">
+      <DependentUpon>ChatSupport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="codes\BLL\ChatBLL.cs" />
+    <Compile Include="codes\DAL\CartDA.cs" />
+    <Compile Include="codes\DAL\ChatDA.cs" />
+    <Compile Include="codes\DAL\ProductDA.cs" />
+    <Compile Include="codes\Entities\Account.cs" />
+    <Compile Include="codes\Entities\CartItem.cs" />
+    <Compile Include="codes\Entities\CategoryPair.cs" />
+    <Compile Include="codes\Entities\ChatSupportRequest.cs" />
+    <Compile Include="codes\Entities\Message.cs" />
+    <Compile Include="codes\Entities\Product.cs" />
+    <Compile Include="codes\Entities\ProductConfigCombo.cs" />
+    <Compile Include="codes\Entities\ProductConfiguration.cs" />
+    <Compile Include="codes\Entities\WarrantyInfo.cs" />
+    <Compile Include="codes\Utilities\Utilities.cs" />
+    <Compile Include="CustomerProfile.aspx.cs">
+      <DependentUpon>CustomerProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerProfile.aspx.designer.cs">
+      <DependentUpon>CustomerProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_AddProduct.aspx.cs">
+      <DependentUpon>Staff_AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff_AddProduct.aspx.designer.cs">
+      <DependentUpon>Staff_AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCatalog.aspx.cs">
+      <DependentUpon>ProductCatalog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductCatalog.aspx.designer.cs">
+      <DependentUpon>ProductCatalog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDetails.aspx.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductDetails.aspx.designer.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestChatSupport.aspx.cs">
+      <DependentUpon>RequestChatSupport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequestChatSupport.aspx.designer.cs">
+      <DependentUpon>RequestChatSupport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services.aspx.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services.aspx.designer.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_AddWarrantyInfo.aspx.cs">
+      <DependentUpon>Staff_AddWarrantyInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff_AddWarrantyInfo.aspx.designer.cs">
+      <DependentUpon>Staff_AddWarrantyInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_ChatSupportRequests.aspx.cs">
+      <DependentUpon>Staff_ChatSupportRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff_ChatSupportRequests.aspx.designer.cs">
+      <DependentUpon>Staff_ChatSupportRequests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_Dashboard.aspx.cs">
+      <DependentUpon>Staff_Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff_Dashboard.aspx.designer.cs">
+      <DependentUpon>Staff_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_HomePage.aspx.cs">
+      <DependentUpon>Staff_HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff_HomePage.aspx.designer.cs">
+      <DependentUpon>Staff_HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_ManageServices.master.cs">
+      <DependentUpon>Staff_ManageServices.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff_ManageServices.master.designer.cs">
+      <DependentUpon>Staff_ManageServices.master</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_ManageServices_General.aspx.cs">
+      <DependentUpon>Staff_ManageServices_General.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff_ManageServices_General.aspx.designer.cs">
+      <DependentUpon>Staff_ManageServices_General.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_ManageServices_Template.aspx.cs">
+      <DependentUpon>Staff_ManageServices_Template.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff_ManageServices_Template.aspx.designer.cs">
+      <DependentUpon>Staff_ManageServices_Template.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_ManageStaff.aspx.cs">
+      <DependentUpon>Staff_ManageStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff_ManageStaff.aspx.designer.cs">
+      <DependentUpon>Staff_ManageStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_ManageStaff_AddStaff.aspx.cs">
+      <DependentUpon>Staff_ManageStaff_AddStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff_ManageStaff_AddStaff.aspx.designer.cs">
+      <DependentUpon>Staff_ManageStaff_AddStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_ManageStaff_ViewUsers.aspx.cs">
+      <DependentUpon>Staff_ManageStaff_ViewUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff_ManageStaff_ViewUsers.aspx.designer.cs">
+      <DependentUpon>Staff_ManageStaff_ViewUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_ServiceTransactions.master.cs">
+      <DependentUpon>Staff_ServiceTransactions.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff_ServiceTransactions.master.designer.cs">
+      <DependentUpon>Staff_ServiceTransactions.master</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_ServiceTransactions_Appointments.aspx.cs">
+      <DependentUpon>Staff_ServiceTransactions_Appointments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff_ServiceTransactions_Appointments.aspx.designer.cs">
+      <DependentUpon>Staff_ServiceTransactions_Appointments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_ServiceTransactions_Transactions.aspx.cs">
+      <DependentUpon>Staff_ServiceTransactions_Transactions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff_ServiceTransactions_Transactions.aspx.designer.cs">
+      <DependentUpon>Staff_ServiceTransactions_Transactions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_ViewUsers.aspx.cs">
+      <DependentUpon>Staff_ViewUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff_ViewUsers.aspx.designer.cs">
+      <DependentUpon>Staff_ViewUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpcomingBookings.aspx.cs">
+      <DependentUpon>UpcomingBookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpcomingBookings.aspx.designer.cs">
+      <DependentUpon>UpcomingBookings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WarrantyTracker.aspx.cs">
+      <DependentUpon>WarrantyTracker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarrantyTracker.aspx.designer.cs">
+      <DependentUpon>WarrantyTracker.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>35820</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:35820/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Grpc.Core.1.22.1\build\net45\Grpc.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Grpc.Core.1.22.1\build\net45\Grpc.Core.targets'))" />
+  </Target>
+  <Import Project="..\packages\Grpc.Core.1.22.1\build\net45\Grpc.Core.targets" Condition="Exists('..\packages\Grpc.Core.1.22.1\build\net45\Grpc.Core.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

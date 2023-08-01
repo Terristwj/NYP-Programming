@@ -1,0 +1,174 @@
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\ApplicationInsights.config
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\csc.exe
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\vbc.exe
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\VBCSCompiler.exe
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\BitzBytez.dll.config
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\BitzBytez.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\BitzBytez.pdb
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.AI.Web.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.AI.Web.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\obj\Debug\BitzBytez.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\obj\Debug\BitzBytez.pdb
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\grpc_csharp_ext.x86.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\grpc_csharp_ext.x64.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\libgrpc_csharp_ext.x86.so
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\libgrpc_csharp_ext.x64.so
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\libgrpc_csharp_ext.x86.dylib
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\libgrpc_csharp_ext.x64.dylib
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Api.CommonProtos.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Api.Gax.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Api.Gax.Grpc.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Apis.Auth.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Apis.Auth.PlatformServices.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Apis.Core.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Apis.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Apis.PlatformServices.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Cloud.Dialogflow.V2.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.LongRunning.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Protobuf.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Grpc.Auth.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Grpc.Core.Api.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Grpc.Core.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Newtonsoft.Json.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\System.Interactive.Async.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\System.Net.Http.Formatting.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\System.Web.Http.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\System.Web.Http.WebHost.dll
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Api.CommonProtos.pdb
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Api.CommonProtos.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Api.Gax.pdb
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Api.Gax.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Api.Gax.Grpc.pdb
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Api.Gax.Grpc.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Apis.pdb
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Apis.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Apis.Auth.pdb
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Apis.Auth.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Apis.Core.pdb
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Apis.Core.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Cloud.Dialogflow.V2.pdb
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Cloud.Dialogflow.V2.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.LongRunning.pdb
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.LongRunning.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Protobuf.pdb
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Protobuf.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Grpc.Auth.pdb
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Grpc.Auth.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Grpc.Core.pdb
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Grpc.Core.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Grpc.Core.Api.pdb
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Grpc.Core.Api.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Newtonsoft.Json.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\System.Interactive.Async.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\System.Net.Http.Formatting.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\System.Web.Http.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\System.Web.Http.WebHost.xml
+C:\Users\Goh Kai Hong\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\obj\Debug\BitzBytez.csprojResolveAssemblyReference.cache
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\ApplicationInsights.config
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\grpc_csharp_ext.x86.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\grpc_csharp_ext.x64.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\libgrpc_csharp_ext.x86.so
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\libgrpc_csharp_ext.x64.so
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\libgrpc_csharp_ext.x86.dylib
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\libgrpc_csharp_ext.x64.dylib
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\csc.exe
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\vbc.exe
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\VBCSCompiler.exe
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\BitzBytez.dll.config
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\BitzBytez.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\BitzBytez.pdb
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Api.CommonProtos.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Api.Gax.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Api.Gax.Grpc.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Apis.Auth.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Apis.Auth.PlatformServices.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Apis.Core.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Apis.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Apis.PlatformServices.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Cloud.Dialogflow.V2.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.LongRunning.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Protobuf.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Grpc.Auth.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Grpc.Core.Api.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Grpc.Core.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.AI.Web.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.ApplicationInsights.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Newtonsoft.Json.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\System.Interactive.Async.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\System.Net.Http.Formatting.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\System.Web.Http.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\System.Web.Http.WebHost.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Api.CommonProtos.pdb
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Api.CommonProtos.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Api.Gax.pdb
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Api.Gax.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Api.Gax.Grpc.pdb
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Api.Gax.Grpc.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Apis.pdb
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Apis.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Apis.Auth.pdb
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Apis.Auth.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Apis.Core.pdb
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Apis.Core.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Cloud.Dialogflow.V2.pdb
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Cloud.Dialogflow.V2.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.LongRunning.pdb
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.LongRunning.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Protobuf.pdb
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Google.Protobuf.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Grpc.Auth.pdb
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Grpc.Auth.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Grpc.Core.pdb
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Grpc.Core.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Grpc.Core.Api.pdb
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Grpc.Core.Api.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.AI.Web.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.ApplicationInsights.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\Newtonsoft.Json.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\System.Interactive.Async.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\System.Net.Http.Formatting.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\System.Web.Http.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\bin\System.Web.Http.WebHost.xml
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\obj\Debug\BitzBytez.csprojResolveAssemblyReference.cache
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\obj\Debug\BitzBytez.dll
+C:\Users\googo\Dropbox\BIPJ\Project\BitzBytez\BitzBytez\obj\Debug\BitzBytez.pdb

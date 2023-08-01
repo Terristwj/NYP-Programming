@@ -1,0 +1,13 @@
+Original:
+Must use 'D/M/YYYY' short date format for your computer.
+
+With Kai Hong integration:
+Must use 'DD-MMM-YY' short date format for your computer.
+
+With Dzul parts:
+Homepage
+About
+Manage About page
+
+Final Ver:
+Must use 'DD-MMM-YY' short date format for your computer.

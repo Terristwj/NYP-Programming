@@ -1,0 +1,151 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="BitzAndBytez.Master" %>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/31b55a5c8a.js" crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Numans');
+        .img-responsive {
+            width: 10%;
+            height: 10%;
+        }  
+
+        @media (max-width: 1100px) {
+            .img-responsive {
+                
+            }        
+        }
+
+        @media (max-width: 950px) {
+            .img-responsive {
+                width: 30%;
+                height: 30%;
+                margin: auto;
+            }        
+        }
+
+        /* Added this */
+        *{
+            transition:0.5s;
+        }
+
+        html, body {
+            background-image: url('img/bg_login.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100%;
+            margin: 0;
+            font-family: 'Numans', sans-serif;
+        }
+
+        a:visited {
+            font-weight:bold;
+        }
+
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var url = window.location;
+            $('.collapse .navbar-nav').find('.active').removeClass('active');
+            $('.collapse .navbar-nav li a').each(function () {
+                if (this.href == url) {
+                    $(this).parent().addClass('active');
+                }
+            });
+        });
+    </script>
+
+    <!-- Position moved to bottom -->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div class="main">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="img-responsive">
+                    <a class="navbar-brand">
+                        <img src="img/bitzbytez_logo.png" style="height: 92px; width: 130px" alt="bitzbytezlogo" formnovalidate/>
+                    </a>
+                </div>
+
+                <button class="navbar-toggler centre" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto" id="preLogin" runat="server">
+                        <li class="nav-item">
+                            <a href="Home.aspx" class="nav-link" style="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="AboutUs.aspx" class="nav-link" style="">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ProductCatalog.aspx" class="nav-link" style="">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Services.aspx" class="nav-link" style="">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Login.aspx" class="nav-link" style="">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Cart.aspx" class="nav-link" style=""><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ml-auto" id="postLogin" runat="server">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" style="">My Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Home.aspx" class="nav-link" style="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ProductCatalog.aspx" class="nav-link" style="">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Services.aspx" class="nav-link" style="">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Articles.aspx" class="nav-link" style="">Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ChatSupport.aspx" class="nav-link" style="">Chat Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Cart.aspx" class="nav-link" style=""><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ml-auto" id="staffLogin_cso" runat="server">
+                        <li class="nav-item">
+                            <a href="Staff_Dashboard.aspx" class="nav-link" style="">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Staff_ChatSupportRequests.aspx" class="nav-link" style="">Chat Support Requests</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

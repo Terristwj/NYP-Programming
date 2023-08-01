@@ -1,0 +1,165 @@
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\ApplicationInsights.config
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\roslyn\csc.exe
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\roslyn\System.Collections.Immutable.dll
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\roslyn\vbc.exe
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\roslyn\VBCSCompiler.exe
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\roslyn\VBCSCompiler.exe.config
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\BitzAndBytez.dll.config
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\BitzAndBytez.dll
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\BitzAndBytez.pdb
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.Web.dll
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.WindowsServer.dll
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\Microsoft.ApplicationInsights.dll
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.Web.xml
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.WindowsServer.xml
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\Microsoft.ApplicationInsights.xml
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\obj\Debug\BitzAndBytez.csprojResolveAssemblyReference.cache
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\obj\Debug\BitzAndBytez.dll
+c:\users\terris tan\documents\visual studio 2015\Projects\BitzAndBytez\BitzAndBytez\obj\Debug\BitzAndBytez.pdb
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\ApplicationInsights.config
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\csc.exe
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\vbc.exe
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\VBCSCompiler.exe
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\BitzAndBytez.dll.config
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\BitzAndBytez.dll
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\BitzAndBytez.pdb
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.Web.dll
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.ApplicationInsights.dll
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.Web.xml
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.ApplicationInsights.xml
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\obj\Debug\BitzAndBytez.csprojResolveAssemblyReference.cache
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\obj\Debug\BitzAndBytez.dll
+C:\Users\DZULFIQAR RAMADHAN\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\obj\Debug\BitzAndBytez.pdb
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\ApplicationInsights.config
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\csc.exe
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.CodeAnalysis.dll
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.CSharp.Core.targets
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.VisualBasic.Core.targets
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\System.Collections.Immutable.dll
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\System.Reflection.Metadata.dll
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\vbc.exe
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\VBCSCompiler.exe
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\VBCSCompiler.exe.config
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\BitzAndBytez.dll.config
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\BitzAndBytez.dll
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\BitzAndBytez.pdb
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.Agent.Intercept.dll
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.DependencyCollector.dll
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.PerfCounterCollector.dll
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.ServerTelemetryChannel.dll
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.Web.dll
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.WindowsServer.dll
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.ApplicationInsights.dll
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.DependencyCollector.xml
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.ServerTelemetryChannel.xml
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.Web.xml
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.WindowsServer.xml
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.ApplicationInsights.xml
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\obj\Debug\BitzAndBytez.csprojResolveAssemblyReference.cache
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\obj\Debug\BitzAndBytez.dll
+A:\BitzAndBytez\BitzAndBytez\BitzAndBytez\obj\Debug\BitzAndBytez.pdb
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\ApplicationInsights.config
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\csc.exe
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\System.Collections.Immutable.dll
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\System.Reflection.Metadata.dll
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\vbc.exe
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\VBCSCompiler.exe
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\VBCSCompiler.exe.config
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\BitzAndBytez.dll.config
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\BitzAndBytez.dll
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\BitzAndBytez.pdb
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.Agent.Intercept.dll
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.DependencyCollector.dll
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.Web.dll
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.WindowsServer.dll
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.ApplicationInsights.dll
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.DependencyCollector.xml
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.Web.xml
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.WindowsServer.xml
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.ApplicationInsights.xml
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\obj\Debug\BitzAndBytez.csprojResolveAssemblyReference.cache
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\obj\Debug\BitzAndBytez.dll
+E:\BitzAndBytez\BitzAndBytez\BitzAndBytez\obj\Debug\BitzAndBytez.pdb
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\ApplicationInsights.config
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\csc.exe
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\vbc.exe
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\VBCSCompiler.exe
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\BitzAndBytez.dll.config
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\BitzAndBytez.dll
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\BitzAndBytez.pdb
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.Web.dll
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.Web.xml
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\obj\Debug\BitzAndBytez.csprojResolveAssemblyReference.cache
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\obj\Debug\BitzAndBytez.dll
+C:\Users\Terris Tan\Downloads\BitzAndBytez\BitzAndBytez\BitzAndBytez\obj\Debug\BitzAndBytez.pdb
